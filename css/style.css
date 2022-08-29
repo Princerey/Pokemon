@@ -1,0 +1,620 @@
+html,body {
+    height: 100%;
+    line-height: 1;
+    color: #fff;
+    background-color: black;
+	font-family: 'Poppins', sans-serif;
+	/* overflow: hidden; */
+}
+#particles-js{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+#mymap {
+	position:relative;
+	height: 250px;
+	width:250px;
+	left: 5em;
+	border-radius: 7px;
+	box-shadow:inset 10px 10px 10px rgba(45, 38, 38, 0.2),
+	inset -5px 5px 15px rgba(255,255,255,0.1),
+	5px 5px 15px rgba(86, 73, 73, 0.3),
+	-5px -5px 15px rgba(255,255,255,0.1);
+}
+@media screen and  (orientation: portrait){	
+	html,body {
+		height: 100%;
+		line-height: 1;
+		color: #fff;
+		background-color: black;
+		font-family: 'Poppins', sans-serif;
+		overflow-y: unset;
+	}
+	#particles-js{
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+	}
+}
+body{
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textbox{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	line-height: 25px;
+}
+/* cursor */
+@import "compass/css3"; 
+.circle{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: 50%;
+	left: 50%;
+	margin: -50px 0 0 -50px;
+	border-radius: 80%;
+	backface-visibility: visible;
+	animation: infinite linear;
+  }
+@keyframes rotation {
+	from {
+	  transform: rotate(0deg);
+	}
+	to {
+	  transform: rotate(359deg);
+	}
+  }
+.mainbox{
+	z-index: 1;
+	bottom: 8ch;
+    position :absolute;
+    /* min-width:415px; */
+	width: 940px;
+    height:540px;
+    background:rgb(7, 7, 7);
+    box-shadow:inset 10px 10px 10px rgba(45, 38, 38, 0.2),
+	inset -5px 5px 15px rgba(255,255,255,0.1),
+	5px 5px 15px rgba(0,0,0,0.3),
+	-5px -5px 15px rgba(255,255,255,0.1);
+    border-radius:15px;
+    /* margin:30px; */
+  }
+.mainbox::before{
+	content:'';
+	position:absolute;
+	top:0;
+	Left:0;
+	width:50%;
+	height:100%;
+	background:rgba(255,255,255,0.05);
+}
+.mainbox .textbox .text{
+	position:absolute;
+	top:20px;
+	Left:20px;
+	right:20px;
+	bottom:20px;
+	background:#2a2b2f;
+	border:2px solid #1e1f23;
+	border-radius:15px;
+	transition:0.5s;
+}
+.mainbox .textbox .text:hover{
+ 	transform:translateY(30px);
+ 	box-shadow:-5px 10px rgb(21, 21, 21);
+}
+h5{
+    color: #615e5e;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+    cursor: pointer;
+	margin-top:-600px;
+	z-index: 1;
+  }
+h5 span{
+    transition: .5s linear
+  }
+h5:hover span:nth-child(1){
+    margin-right: 5px
+  }
+h5:hover span:nth-child(1):after{
+    content: "ϞϞ(๑⚈ ․̫ ⚈๑)";
+  }
+h5:hover span:nth-child(2){
+    margin-left: 30px
+  }
+h5:hover span{
+    color: #fff;
+    text-shadow: 0 0 5px #fff,
+                 0 0 5px #fff, 
+                 0 0 10px #fff;
+  }
+  @media only screen and (max-width: 1200px){
+	h5{
+		font-size: 50px;
+		padding-top: 2.5em;
+		padding-left: 2.5em;
+	  }
+	  .mainbox{
+		top: 7.5em;
+	  }
+  }
+  @media only screen and (max-width: 913px){
+	h5{
+		margin-top:-1250px;
+	  }
+	  .mainbox{
+		top: 15em;
+	  }
+  } 
+  @media only screen and (max-width: 850px){
+	h5{
+		font-size: 50px;
+	  }
+	  .mainbox{
+		top: 13em;
+	  }
+  } 
+@media only screen and (max-width: 850px){
+	h5{
+		font-size: 47px;
+		margin-top:-1100px;
+	  }
+	  #ana1::after{
+		white-space: pre;
+	}
+  } 
+  @media only screen and (max-width: 769px){
+	h5{
+		margin-top:-900px;
+	  }
+  } 
+  @media only screen and (max-width: 740px){
+	.mainbox{
+		top: 15em;
+	  }
+  } 
+  @media only screen and (max-width: 703px){
+	.mainbox{
+		top: 15em;
+	  }
+	  h5{
+		padding-left: 2.5em;
+	  }
+  } 
+  @media only screen and (max-width: 623px){
+	h5{
+		font-size: 43px;
+		margin-top:-600px;
+	  }
+  } 
+  @media only screen and (max-width: 415px){
+	h5{
+		font-size: 30px;
+		margin-top:-800px;
+		padding-left: 1em;
+	  }
+	  .mainbox{
+		top: 10em;
+		left: 0.4em;
+		right: 2em;
+		width: 380px;
+	  }
+	  #mymap {
+		position:relative;
+		height: 210px;
+		width:210px;
+		align-items: center;
+		left: 6em;
+	}
+  } 
+  @media only screen and (max-width: 391px){
+	  #mymap {
+		height: 210px;
+		width:210px;
+		left: 5em;
+	}
+	.mainbox{
+		top: 10em;
+		left: 0.5em;
+		right: 2em;
+		width: 370px;
+	  }
+  } 
+  @media only screen and (max-width: 376px){
+	h5{
+		font-size: 30px;
+		margin-top:-530px;
+		padding-left: 1em;
+	  }
+	  .mainbox{
+		top: 10em;
+		left: 0.7em;
+		right: 2em;
+		width: 350px;
+	  }
+	  #mymap {
+		position:relative;
+		height: 220px;
+		width:220px;
+		left: 3.5em;
+	}
+  } 
+  @media only screen and (max-width: 361px){
+	h5{
+		font-size: 30px;
+		margin-top:-530px;
+		padding-left: 1em;
+	  }
+	  .mainbox{
+		top: 14em;
+		left: 0.7em;
+		right: 2em;
+		width: 340px;
+	  }
+	  #mymap {
+		position:relative;
+		height: 220px;
+		width:220px;
+		left: 3.5em;
+	}
+  } 
+  
+  /* pokedex */
+  .pokedex {
+	align-items: flex-end;
+	display: flex;
+	height: 400px;
+	margin: 50px;
+	width: 800px;
+  }
+  
+  .left-container,
+  .right-container {
+	border: 3px solid black;
+	width: 50%;
+  }
+  
+  .right-container {
+	border-left: none;
+  }
+  
+  .left-container {
+	background: #3d2d2e;
+	height: 100%;
+	width: calc(50% + 50px);
+  }
+  
+  .left-container__top-section {
+	border-bottom: 3px solid black;
+	display: flex;
+	height: 50px;
+	padding: 8px;
+  }
+  
+  .top-section__blue {
+	background: radial-gradient(farthest-corner at 10px 10px, white, #369CD4, #369CD4);
+	border-radius: 50%;
+	border: 2px solid white;
+	box-shadow: 0 0 2px 2px rgba(0,0,0,.5);
+	height: 30px;
+	width: 30px;
+  }
+  
+  .top-section__small-buttons {
+	display: flex;
+	margin: 0 25px;
+  }
+  
+  .top-section__red,
+  .top-section__yellow,
+  .top-section__green {
+	border-radius: 50%;
+	border: 1px solid black;
+	height: 10px;
+	margin-right: 5px;
+	width: 10px;
+  }
+  
+  .left-container__main-section-container {
+	display: flex;
+	height: calc(100% - 50px);
+  }
+  
+  .left-container__main-section {
+	height: 100%;
+	padding: 25px;
+	width: 500px;
+  }
+  
+  .main-section__white {
+	background: #DEDEDE;
+	border: 3px solid black;
+	box-shadow: inset 0 0 3px 3px rgba(0,0,0,.3);
+	height: 325px;
+  }
+  
+  .main-section__black {
+	background: black;
+	height: calc(100% - 50px);
+	margin: 25px;
+	padding: 10px;
+	width: calc(100% - 50px);
+  }
+  
+  .main-screen {
+	border-radius: 15px;
+	height: 100%;
+	padding: 15px;
+  }
+  
+  .screen__header {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+  }
+  
+  .poke-name {
+	color: white;
+	font-size: 25px;
+	font-weight: bold;
+  }
+  
+  .poke-id {
+	color: rgba(0,0,0,.5);
+	font-size: 20px;
+  }
+  
+  .screen__image {
+	display: flex;
+	justify-content: space-around;
+  }
+  
+  .poke-front-image,
+  .poke-back-image {
+	height: 96px;
+	width: 96px;
+  }
+  
+  .screen__description {
+	display: flex;
+	height: 100px;
+	justify-content: space-around;
+  }
+  
+  .screen__stats {
+	background: rgba(0,0,0,.3);
+	border-radius: 5px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: space-between;
+	padding: 20px 15px;
+  }
+  
+  .stats__types {
+	height: 100%;
+	padding: 5px;
+  }
+  
+  .poke-type-one,
+  .poke-type-two {
+	background: rgba(255,255,255,.3);
+	border-radius: 25px;
+	display: block;
+	margin-bottom: 10px;
+	padding: 10px;
+	text-align: center;
+  }
+  
+  .left-container__controllers {
+	align-items: center;
+	display: flex;
+	justify-content: space-around;
+	margin: 10px 25px 0;
+  }
+  
+  .left-container__right {
+	border-left: 3px solid black;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: space-between;
+	width: 50px;
+  }
+  
+  .left-container__hinge {
+	background: linear-gradient(to right, #321717, #2a1a1b, #2c2727, #1c1717);
+	height: 75px;
+	width: 100%;
+  }
+  
+  .left-container__hinge:first-child {
+	border-bottom: 3px solid black;
+  }
+  
+  .left-container__hinge:last-child {
+	border-top: 3px solid black;
+  }
+  
+  .top-section__red {
+	background: #7F100F;
+  }
+  
+  .top-section__yellow {
+	background: #EDF18E;
+  }
+  
+  .top-section__green {
+	background: #33915A;
+  }
+  
+  .right-container {
+	background: #292021;
+	height: calc(100% - 50px);
+	padding: 25px;
+	width: calc(50% - 50px);
+  }
+  
+  .right-container__black {
+	background: black;
+	box-shadow: 0 0 2px 2px rgba(0,0,0,.3);
+	height: 300px;
+	padding: 10px;
+  }
+  
+  .right-container__screen {
+	background: #43B0F2;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: 100%;
+	padding: 15px 15px 0;
+  }
+  
+  .list-item {
+	align-items: center;
+	color: white;
+	cursor: pointer;
+	display: flex;
+	font-size: 12px;
+	height: 25px;
+	overflow-x: hidden;
+	padding-left: 5px;
+	width: 50%;
+  }
+  
+  .list-item:hover {
+	background: #85cbf2;
+	color: black;
+  }
+  
+  .list-item:active {
+	background: #1280f2;
+	color: white;
+  }
+  
+  .right-container__buttons {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 25px;
+  }
+  
+  .left-button,
+  .right-button {
+	align-items: center;
+	background: #1f1c18;;
+	border-radius: 3px;
+	border: 2px solid black;
+	box-shadow: 0 0 2px 2px rgba(0,0,0,.3);
+	cursor: pointer;
+	display: flex;
+	font-weight: bold;
+	height: 30px;
+	justify-content: center;
+	text-transform: uppercase;
+	width: 100px;
+  }
+  
+  .left-button:hover,
+  .right-button:hover {
+	background: white;
+  }
+  
+  .left-button:active,
+  .right-button:active {
+	box-shadow: inset 0 0 2px 2px rgba(0,0,0,.3);
+  }
+  
+  
+  .hide {
+	display: none;
+  }
+  
+  .normal {
+	background: #BABAAE;
+  }
+  
+  .fighting {
+	background: #A75543;
+  }
+  
+  .flying {
+	background: #78A2FF;
+  }
+  
+  .poison {
+	background: #A95CA0;
+  }
+  
+  .ground {
+	background: #EECC55;
+  }
+  
+  .rock {
+	background: #CCBD72;
+  }
+  
+  .bug {
+	background: #C2D21E;
+  }
+  
+  .ghost {
+	background: #7975D7;
+  }
+  
+  .steel {
+	background: #C4C2DB;
+  }
+  
+  .fire {
+	background: #FA5643;
+  }
+  
+  .water {
+	background: #56ADFF;
+  }
+  
+  .grass {
+	background: #8CD750;
+  }
+  
+  .electric {
+	background: #FDE139;
+  }
+  
+  .psychic {
+	background: #FA65B4;
+  }
+  
+  .ice {
+	background: #96F1FF;
+  }
+  
+  .dragon {
+	background: #8673FF;
+  }
+  
+  .dark {
+	background: #8D6855;
+  }
+  
+  .fairy {
+	background: #F9AEFF;
+  }
+  
