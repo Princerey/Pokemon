@@ -83,8 +83,8 @@ const fetchPokeData = id => {
       pokeId.textContent = '#' + data['id'].toString().padStart(3, '0');
       pokeWeight.textContent = data['weight'];
       pokeHeight.textContent = data['height'];
-      pokeFrontImage.src = data['sprites']['front_default'] || '';
-      pokeBackImage.src = data['sprites']['back_default'] || '';
+      pokeFrontImage.src = data.sprites.other.dream_world.front_default;
+      pokeBackImage.src = data.sprites.other.dream_world.back_default;
     });
 };
 

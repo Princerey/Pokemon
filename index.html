@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>POKEDEX</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link
     href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
     rel="stylesheet"/>
@@ -30,15 +30,14 @@
 <body>
     <div id="particles-js"> </div> 
     <div><img class="circle" src="images/pikachu.gif"></div>
-    <h5><span id="ana1">POKEMON </span><span id="ana2">WORLD</span></h5>
+    <h5><span id="ana1">Poké</span><span>dex</span></h5>
             <div class="mainbox">
-                <div class="textbox">
                     <div class="text">
             
                         <div class="pokedex">
                             <div class="left-container">
                               <div class="left-container__top-section">
-                                <div class="top-section__blue"></div>
+                                <div class="top-section__blue"><img src="images/pokedex.png" class="blue"></div>
                                 <div class="top-section__small-buttons">
                                   <div class="top-section__red"></div>
                                   <div class="top-section__yellow"></div>
@@ -56,7 +55,7 @@
                                         </div>
                                         <div class="screen__image">
                                           <img src="" class="poke-front-image" alt="front">
-                                          <img src="" class="poke-back-image" alt="back">
+                                          <!-- <img src="" class="poke-back-image" alt="back"> -->
                                         </div>
                                         <div class="screen__description">
                                           <div class="stats__types">
@@ -124,7 +123,6 @@
                           </div>
                     </div>
                
-            </div>
         </div>
         
 <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
@@ -142,42 +140,6 @@ function changeImg(imgNumber){
 }
 window.onload=changeImg;
 </script>
-<!-- <script src="js/app.js"></script> -->
-
-<script>
-    //url for live data
-    const url="https://api.wheretheiss.at/v1/satellites/25544";
-    // ISS image as an icon
-    var issIcon = L.icon({
-    iconUrl: 'images/iss.png',
-    iconSize: [50, 50], // size of the icon
-    iconAnchor: [25, 25], // point of the icon which will correspond to marker's location
-    });
-    const mymap = L.map('mymap').setView([0, 0], 3);
-    // attribution to give credit to leaf.js
-    const attribution = '<a href="https://www.openstreetmap.org/copyright"></a>'
-    const tileUrl = 'https://api.maptiler.com/maps/hybrid/{z}/{x}/{y}.jpg?key=FR7wo1Grg93xtV1wT0A8';
-    document.getElementsByClassName( 'leaflet-control-attribution' )[0].style.display = 'none';
-    const tiles = L.tileLayer(tileUrl, { attribution });
-    tiles.addTo(mymap);
-    // adding marker on the map
-    const marker = L.marker([0, 0],{icon:issIcon}).addTo(mymap);
-    // getting ISS data through Fetch
-    async function getIss(){
-    const response=await fetch(url);
-    const data=await response.json();
-    // latitude and longitude data
-    const {latitude, longitude}=data; if (latitude>7.8 && longitude<80.7){
-    }
-    document.getElementById('latitude').textContent = latitude.toFixed(1);
-    document.getElementById('longitude').textContent = longitude.toFixed(1);
-    mymap.setView([latitude, longitude], 3);
-    marker.setLatLng([latitude, longitude]);
-    }
-    //getting data in every second
-    setInterval(getIss,1000);
-    </script>
-
 </body>
 
 </html>

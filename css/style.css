@@ -77,17 +77,18 @@ body{
   }
 .mainbox{
 	z-index: 1;
-	bottom: 8ch;
+	bottom: 2ch;
     position :absolute;
-    /* min-width:415px; */
-	width: 940px;
-    height:540px;
-    background:rgb(7, 7, 7);
+    min-width:415px;
+	width: 1094px;
+    height:550px;
+    /* background:rgb(7, 7, 7);
     box-shadow:inset 10px 10px 10px rgba(45, 38, 38, 0.2),
 	inset -5px 5px 15px rgba(255,255,255,0.1),
 	5px 5px 15px rgba(0,0,0,0.3),
 	-5px -5px 15px rgba(255,255,255,0.1);
-    border-radius:15px;
+    border-radius:20px; */
+	padding-bottom:35em;
     /* margin:30px; */
   }
 .mainbox::before{
@@ -97,7 +98,7 @@ body{
 	Left:0;
 	width:50%;
 	height:100%;
-	background:rgba(255,255,255,0.05);
+	/* background:rgba(255,255,255,0.05); */
 }
 .mainbox .textbox .text{
 	position:absolute;
@@ -121,7 +122,7 @@ h5{
     font-family: monospace;
     letter-spacing: 7px;
     cursor: pointer;
-	margin-top:-600px;
+	margin-top:-570px;
 	z-index: 1;
   }
 h5 span{
@@ -131,7 +132,7 @@ h5:hover span:nth-child(1){
     margin-right: 5px
   }
 h5:hover span:nth-child(1):after{
-    content: "ϞϞ(๑⚈ ․̫ ⚈๑)";
+    content: url(https://cdn3.emoji.gg/emojis/7407_Pokeball.png);
   }
 h5:hover span:nth-child(2){
     margin-left: 30px
@@ -277,9 +278,12 @@ h5:hover span{
   .pokedex {
 	align-items: flex-end;
 	display: flex;
-	height: 400px;
-	margin: 50px;
-	width: 800px;
+	height: 500px;
+	margin-top: 30px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 30px;
+	width: 1000px;
   }
   
   .left-container,
@@ -305,13 +309,15 @@ h5:hover span{
 	padding: 8px;
   }
   
-  .top-section__blue {
-	background: radial-gradient(farthest-corner at 10px 10px, white, #369CD4, #369CD4);
+  .blue {
+	/* background: radial-gradient(farthest-corner at 10px 10px, white, #369CD4, #369CD4);
 	border-radius: 50%;
 	border: 2px solid white;
 	box-shadow: 0 0 2px 2px rgba(0,0,0,.5);
-	height: 30px;
-	width: 30px;
+	*/
+	height: 35px;
+	width: 35px; 
+	
   }
   
   .top-section__small-buttons {
@@ -344,7 +350,7 @@ h5:hover span{
 	background: #DEDEDE;
 	border: 3px solid black;
 	box-shadow: inset 0 0 3px 3px rgba(0,0,0,.3);
-	height: 325px;
+	height: 385px;
   }
   
   .main-section__black {
@@ -383,10 +389,9 @@ h5:hover span{
 	justify-content: space-around;
   }
   
-  .poke-front-image,
-  .poke-back-image {
-	height: 96px;
-	width: 96px;
+  .poke-front-image{
+	height: 10em;
+	width: 10em;
   }
   
   .screen__description {
@@ -396,21 +401,20 @@ h5:hover span{
   }
   
   .screen__stats {
-	background: rgba(0,0,0,.3);
+	/* background: rgba(0,0,0,.3); */
 	border-radius: 5px;
 	color: white;
 	display: flex;
 	flex-direction: column;
 	height: 100%;
 	justify-content: space-between;
-	padding: 20px 15px;
+	padding: 40px 15px;
   }
   
   .stats__types {
 	height: 100%;
-	padding: 5px;
-  }
-  
+	padding-top: 10px;
+  }  
   .poke-type-one,
   .poke-type-two {
 	background: rgba(255,255,255,.3);
@@ -452,15 +456,15 @@ h5:hover span{
   }
   
   .top-section__red {
-	background: #7F100F;
+	background: #90302e;
   }
   
   .top-section__yellow {
-	background: #EDF18E;
+	background: #9a9c60;
   }
   
   .top-section__green {
-	background: #33915A;
+	background: #397c54;
   }
   
   .right-container {
@@ -478,7 +482,7 @@ h5:hover span{
   }
   
   .right-container__screen {
-	background: #43B0F2;
+	background: #24485e;
 	border-radius: 15px;
 	display: flex;
 	flex-direction: column;
@@ -500,12 +504,12 @@ h5:hover span{
   }
   
   .list-item:hover {
-	background: #85cbf2;
+	background: #3d464b;
 	color: black;
   }
   
   .list-item:active {
-	background: #1280f2;
+	background: #2e547d;
 	color: white;
   }
   
@@ -547,74 +551,74 @@ h5:hover span{
   }
   
   .normal {
-	background: #BABAAE;
+	background: #787872;
   }
   
   .fighting {
-	background: #A75543;
+	background: #774438;
   }
   
   .flying {
-	background: #78A2FF;
+	background: #3e4e6e;
   }
   
   .poison {
-	background: #A95CA0;
+	background: #703d6a;
   }
   
   .ground {
-	background: #EECC55;
+	background: #937f36;
   }
   
   .rock {
-	background: #CCBD72;
+	background: #817849;
   }
   
   .bug {
-	background: #C2D21E;
+	background: #828931;
   }
   
   .ghost {
-	background: #7975D7;
+	background: #4d4b81;
   }
   
   .steel {
-	background: #C4C2DB;
+	background: #807f8f;
   }
   
   .fire {
-	background: #FA5643;
+	background: #993a30;
   }
   
   .water {
-	background: #56ADFF;
+	background: #366897;
   }
   
   .grass {
-	background: #8CD750;
+	background: #5a8835;
   }
   
   .electric {
-	background: #FDE139;
+	background: #8c7e2e;
   }
   
   .psychic {
-	background: #FA65B4;
+	background: #a14576;
   }
   
   .ice {
-	background: #96F1FF;
+	background: #4f8a93;
   }
   
   .dragon {
-	background: #8673FF;
+	background: #6154b4;
   }
   
   .dark {
-	background: #8D6855;
+	background: #614537;
   }
   
   .fairy {
-	background: #F9AEFF;
+	background: #a45fa8;
   }
   
