@@ -2,7 +2,8 @@ html,body {
     height: 100%;
     line-height: 1;
     color: #fff;
-    background-color: black;
+	background-color: #31102F;
+	background: radial-gradient(ellipse at center, rgba(49,16,47,1) 0%, rgba(40,11,41,1) 100%);
 	font-family: 'Poppins', sans-serif;
 	/* overflow: hidden; */
 }
@@ -58,8 +59,8 @@ body{
 @import "compass/css3"; 
 .circle{
 	position: absolute;
-	width: 100px;
-	height: 100px;
+	width: 140px;
+	height: 140px;
 	top: 50%;
 	left: 50%;
 	margin: -50px 0 0 -50px;
@@ -116,173 +117,51 @@ body{
  	box-shadow:-5px 10px rgb(21, 21, 21);
 }
 h5{
-    color: #615e5e;
+    /* color: #615e5e; */
+	position: absolute;
     font-size: 50px;
     font-weight: bold;
     font-family: monospace;
     letter-spacing: 7px;
     cursor: pointer;
-	margin-top:-570px;
-	z-index: 1;
+	margin-top:75px;
+	
+	margin-right:1000px;
+	z-index:10;
+	text-transform: uppercase;
+	/* transform-origin: 180 0;
+  transform: rotate(270deg); */
+  border: 5px solid rgb(46, 47, 49)#1e1f23;
   }
 h5 span{
     transition: .5s linear
   }
-h5:hover span:nth-child(1){
-    margin-right: 5px
-  }
+/* h5:hover span:nth-child(1){
+    margin-right: 5px 
+  } */
 h5:hover span:nth-child(1):after{
-    content: url(https://cdn3.emoji.gg/emojis/7407_Pokeball.png);
+    content: url(https://cdn3.emoji.gg/emojis/4413-eeveehappy.gif);
   }
-h5:hover span:nth-child(2){
-    margin-left: 30px
-  }
+/* h5:hover span:nth-child(2){
+    margin-right: 30px; 
+	
+  } 
+  */
 h5:hover span{
     color: #fff;
     text-shadow: 0 0 5px #fff,
                  0 0 5px #fff, 
                  0 0 10px #fff;
   }
-  @media only screen and (max-width: 1200px){
-	h5{
-		font-size: 50px;
-		padding-top: 2.5em;
-		padding-left: 2.5em;
-	  }
-	  .mainbox{
-		top: 7.5em;
-	  }
-  }
-  @media only screen and (max-width: 913px){
-	h5{
-		margin-top:-1250px;
-	  }
-	  .mainbox{
-		top: 15em;
-	  }
-  } 
-  @media only screen and (max-width: 850px){
-	h5{
-		font-size: 50px;
-	  }
-	  .mainbox{
-		top: 13em;
-	  }
-  } 
-@media only screen and (max-width: 850px){
-	h5{
-		font-size: 47px;
-		margin-top:-1100px;
-	  }
-	  #ana1::after{
-		white-space: pre;
-	}
-  } 
-  @media only screen and (max-width: 769px){
-	h5{
-		margin-top:-900px;
-	  }
-  } 
-  @media only screen and (max-width: 740px){
-	.mainbox{
-		top: 15em;
-	  }
-  } 
-  @media only screen and (max-width: 703px){
-	.mainbox{
-		top: 15em;
-	  }
-	  h5{
-		padding-left: 2.5em;
-	  }
-  } 
-  @media only screen and (max-width: 623px){
-	h5{
-		font-size: 43px;
-		margin-top:-600px;
-	  }
-  } 
-  @media only screen and (max-width: 415px){
-	h5{
-		font-size: 30px;
-		margin-top:-800px;
-		padding-left: 1em;
-	  }
-	  .mainbox{
-		top: 10em;
-		left: 0.4em;
-		right: 2em;
-		width: 380px;
-	  }
-	  #mymap {
-		position:relative;
-		height: 210px;
-		width:210px;
-		align-items: center;
-		left: 6em;
-	}
-  } 
-  @media only screen and (max-width: 391px){
-	  #mymap {
-		height: 210px;
-		width:210px;
-		left: 5em;
-	}
-	.mainbox{
-		top: 10em;
-		left: 0.5em;
-		right: 2em;
-		width: 370px;
-	  }
-  } 
-  @media only screen and (max-width: 376px){
-	h5{
-		font-size: 30px;
-		margin-top:-530px;
-		padding-left: 1em;
-	  }
-	  .mainbox{
-		top: 10em;
-		left: 0.7em;
-		right: 2em;
-		width: 350px;
-	  }
-	  #mymap {
-		position:relative;
-		height: 220px;
-		width:220px;
-		left: 3.5em;
-	}
-  } 
-  @media only screen and (max-width: 361px){
-	h5{
-		font-size: 30px;
-		margin-top:-530px;
-		padding-left: 1em;
-	  }
-	  .mainbox{
-		top: 14em;
-		left: 0.7em;
-		right: 2em;
-		width: 340px;
-	  }
-	  #mymap {
-		position:relative;
-		height: 220px;
-		width:220px;
-		left: 3.5em;
-	}
-  } 
   
   /* pokedex */
   .pokedex {
 	align-items: flex-end;
 	display: flex;
 	height: 500px;
-	margin-top: 30px;
-	margin-left: 50px;
+	
+	margin-left: 250px;
 	margin-right: 50px;
-	margin-bottom: 30px;
 	width: 1000px;
   }
   
@@ -587,19 +466,19 @@ h5:hover span{
   }
   
   .fire {
-	background: #993a30;
+	background-image: linear-gradient(#b62439,#32090d);
   }
   
   .water {
-	background: #366897;
+	background-image: linear-gradient(#0CBABA,#102750);
   }
   
   .grass {
-	background: #5a8835;
+	background-image: linear-gradient( #63D471,#233329);
   }
   
   .electric {
-	background: #8c7e2e;
+	background-image: linear-gradient(#f5d51f,#3b3511);
   }
   
   .psychic {
@@ -621,4 +500,15 @@ h5:hover span{
   .fairy {
 	background: #a45fa8;
   }
-  
+
+/* background */
+
+#stars {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 16rem;
+	height: 100vh;
+	z-index: 1;
+	background-image: linear-gradient(#000000,#682483);
+}

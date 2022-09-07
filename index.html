@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  
 <head>
     <title>POKEDEX</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -28,9 +29,14 @@
     <link rel="stylesheet" type = "text/css" href=  "css/style.css">
 </head>
 <body>
-    <div id="particles-js"> </div> 
-    <div><img class="circle" src="images/pikachu.gif"></div>
-    <h5><span id="ana1">Poké</span><span>dex</span></h5>
+  <canvas id="stars" width="300" height="300"></canvas>
+  
+  <script src='http://requirejs.org/docs/release/2.1.15/minified/require.js'></script>
+<script src='https://rawgit.com/ironwallaby/delaunay/master/delaunay.js'></script><script  src="js/stars.js"></script>
+  
+    <div><img class="circle" src="images/chri.gif"></div>
+    <h5><span id="ana1">P<br>o<br>k<br>é<br></span><span><br>d<br>e<br>x</span></h5>
+    
             <div class="mainbox">
                     <div class="text">
             
@@ -125,10 +131,11 @@
                
         </div>
         
+        
 <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" integrity="sha512-Kef5sc7gfTacR7TZKelcrRs15ipf7+t+n7Zh6mKNJbmW+/RRdCW9nwfLn4YX0s2nO6Kv5Y2ChqgIakaC6PW09A==" crossorigin="anonymous"></script>
-<script src="js/particle-script.js"></script>
+<script src="js/stars.js"></script>
 <script src="js/app.js"></script>
 <script src="js/app1.js"></script>
 <script>
@@ -141,5 +148,6 @@ function changeImg(imgNumber){
 window.onload=changeImg;
 </script>
 </body>
+
 
 </html>
