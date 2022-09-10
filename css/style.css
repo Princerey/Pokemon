@@ -13,17 +13,6 @@ html,body {
 	height: 100%;
 	z-index: 1;
 }
-#mymap {
-	position:relative;
-	height: 250px;
-	width:250px;
-	left: 5em;
-	border-radius: 7px;
-	box-shadow:inset 10px 10px 10px rgba(45, 38, 38, 0.2),
-	inset -5px 5px 15px rgba(255,255,255,0.1),
-	5px 5px 15px rgba(86, 73, 73, 0.3),
-	-5px -5px 15px rgba(255,255,255,0.1);
-}
 @media screen and  (orientation: portrait){	
 	html,body {
 		height: 100%;
@@ -67,6 +56,7 @@ body{
 	border-radius: 80%;
 	backface-visibility: visible;
 	animation: infinite linear;
+	z-index: 1;
   }
 @keyframes rotation {
 	from {
@@ -117,7 +107,6 @@ body{
  	box-shadow:-5px 10px rgb(21, 21, 21);
 }
 h5{
-    /* color: #615e5e; */
 	position: absolute;
     font-size: 50px;
     font-weight: bold;
@@ -125,33 +114,29 @@ h5{
     letter-spacing: 7px;
     cursor: pointer;
 	margin-top:75px;
-	
 	margin-right:1000px;
 	z-index:10;
 	text-transform: uppercase;
-	/* transform-origin: 180 0;
-  transform: rotate(270deg); */
-  border: 5px solid rgb(46, 47, 49)#1e1f23;
+    border: 5px solid rgb(46, 47, 49)#1e1f23;
   }
 h5 span{
-    transition: .5s linear
-  }
-/* h5:hover span:nth-child(1){
-    margin-right: 5px 
-  } */
-h5:hover span:nth-child(1):after{
-    content: url(https://cdn3.emoji.gg/emojis/4413-eeveehappy.gif);
-  }
-/* h5:hover span:nth-child(2){
-    margin-right: 30px; 
-	
-  } 
-  */
-h5:hover span{
-    color: #fff;
-    text-shadow: 0 0 5px #fff,
+    animation: glow 1.7s ease-in-out infinite alternate;
+	color: #fff;
+    /* text-shadow: 0 0 5px #fff,
                  0 0 5px #fff, 
-                 0 0 10px #fff;
+                 0 0 10px #fff; */
+  }
+  @-webkit-keyframes glow {
+	from {
+	  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px rgba(49,16,47,1), 0 0 40px rgba(49,16,47,1), 0 0 50px rgba(49,16,47,1), 0 0 60px rgba(49,16,47,1), 0 0 70px rgba(49,16,47,1);
+	}
+	
+	to {
+	  text-shadow: 0 0 20px #fff, 0 0 30px rgba(40,11,41,1), 0 0 40px rgba(40,11,41,1), 0 0 50px rgba(40,11,41,1), 0 0 60px rgba(40,11,41,1), 0 0 70px rgba(40,11,41,1), 0 0 80px rgba(40,11,41,1);
+	}
+  }
+h5 span:nth-child(1):after{
+    content: url(https://cdn3.emoji.gg/emojis/4413-eeveehappy.gif);
   }
   
   /* pokedex */
@@ -169,41 +154,29 @@ h5:hover span{
   .right-container {
 	border: 3px solid black;
 	width: 50%;
-  }
-  
+  }  
   .right-container {
 	border-left: none;
-  }
-  
+  }  
   .left-container {
 	background: #3d2d2e;
 	height: 100%;
 	width: calc(50% + 50px);
   }
-  
   .left-container__top-section {
 	border-bottom: 3px solid black;
 	display: flex;
 	height: 50px;
 	padding: 8px;
-  }
-  
+  }  
   .blue {
-	/* background: radial-gradient(farthest-corner at 10px 10px, white, #369CD4, #369CD4);
-	border-radius: 50%;
-	border: 2px solid white;
-	box-shadow: 0 0 2px 2px rgba(0,0,0,.5);
-	*/
 	height: 35px;
 	width: 35px; 
-	
-  }
-  
+  }  
   .top-section__small-buttons {
 	display: flex;
 	margin: 0 25px;
-  }
-  
+  }  
   .top-section__red,
   .top-section__yellow,
   .top-section__green {
@@ -238,6 +211,7 @@ h5:hover span{
 	margin: 25px;
 	padding: 10px;
 	width: calc(100% - 50px);
+	/* z-index: 1000; */
   }
   
   .main-screen {
@@ -361,7 +335,7 @@ h5:hover span{
   }
   
   .right-container__screen {
-	background: #24485e;
+	background-image: linear-gradient( #141e30, #243b55);
 	border-radius: 15px;
 	display: flex;
 	flex-direction: column;
@@ -430,39 +404,40 @@ h5:hover span{
   }
   
   .normal {
-	background: #787872;
+	background-image: linear-gradient(#eef2f3,#8e9eab);
   }
   
   .fighting {
-	background: #774438;
+		background-image: linear-gradient(#FFA17F,#00223E);
   }
   
   .flying {
-	background: #3e4e6e;
+	background-image: linear-gradient(#3498db,#2c3e50);
   }
   
   .poison {
-	background: #703d6a;
+	background-image: linear-gradient(#948E99,#2E1437);
   }
   
   .ground {
-	background: #937f36;
+	background-image: linear-gradient(#dbd5a4,#649173);
   }
   
   .rock {
-	background: #817849;
+	background-image: linear-gradient(#e9d362,
+	#333333);
   }
   
   .bug {
-	background: #828931;
+	background-image: linear-gradient(#CCCCB2,#757519);
   }
   
   .ghost {
-	background: #4d4b81;
+	background-image: linear-gradient(#efd5ff,rgba(49,16,47,1));
   }
   
   .steel {
-	background: #807f8f;
+	background-image: linear-gradient(#d7d2cc,#304352);
   }
   
   .fire {
@@ -482,27 +457,29 @@ h5:hover span{
   }
   
   .psychic {
-	background: #a14576;
+	background-image: linear-gradient(#ffdde1,#ee9ca7);
   }
   
   .ice {
-	background: #4f8a93;
+	background-image: linear-gradient(#5F9EA0,#005f69);
+	
   }
   
   .dragon {
-	background: #6154b4;
+	background-image: linear-gradient(#800080,#33006F);
   }
   
   .dark {
 	background: #614537;
+	background-image: linear-gradient(#3498db,#2c3e50);
   }
   
   .fairy {
-	background: #a45fa8;
+
+	background-image: linear-gradient(#fbd3e9,#bb377d);
   }
 
 /* background */
-
 #stars {
 	display: block;
 	position: relative;
@@ -512,3 +489,71 @@ h5:hover span{
 	z-index: 1;
 	background-image: linear-gradient(#000000,#682483);
 }
+
+/* loading screen  */
+.child-to-body {
+    width: 300px;
+    height: 400px;
+    flex-shrink: 0;
+    background-image: linear-gradient(rgb(233, 213, 213),rgb(155, 142, 142));
+    z-index: 1001;
+}
+.poke_box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.pokeball{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    border: 5px solid #000;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: inset -10px 10px 0 10px #ccc;
+    animation: shake 1.25s cubic-bezier(.36,.07,.19,.97) infinite;
+}
+@keyframes shake {
+    0% { transform: translate(0, 0) rotate(0); }
+    20% { transform: translate(-10px, 0) rotate(-20deg); }
+    30% { transform: translate(10px, 0) rotate(20deg); }
+    50% { transform: translate(-10px, 0) rotate(-10deg); }
+    60% { transform: translate(10px, 0) rotate(10deg); }
+    100% { transform: translate(0, 0) rotate(0); }
+  }
+.pokeball::before,
+.pokeball::after {
+  content:"";
+  position: absolute;
+}
+.pokeball::before {
+  background-image: linear-gradient(#ff023d,#9e081a);
+    width: 100%;
+    height: 50%;
+  }
+.pokeball::after {
+    top: calc(50% - 5px);
+    width:100%;
+    height: 10px;
+    background: #000;
+  }
+  .pokeball__button {
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border: 4px solid #7f8c8d;
+    border-radius: 50%;
+    z-index: 10;
+    box-shadow: 0 0 0 7px black;
+    animation: blink .3s alternate infinite;
+  }
+  @keyframes blink {
+    from { background: rgb(219, 208, 208);}
+    to { background: #9e081a; }
+  }
