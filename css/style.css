@@ -120,7 +120,7 @@ h5{
     border: 5px solid rgb(46, 47, 49)#1e1f23;
   }
 h5 span{
-    animation: glow 1.7s ease-in-out infinite alternate;
+    animation: glow 1.3s ease-in-out infinite alternate;
 	color: #fff;
     /* text-shadow: 0 0 5px #fff,
                  0 0 5px #fff, 
@@ -128,11 +128,11 @@ h5 span{
   }
   @-webkit-keyframes glow {
 	from {
-	  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px rgba(49,16,47,1), 0 0 40px rgba(49,16,47,1), 0 0 50px rgba(49,16,47,1), 0 0 60px rgba(49,16,47,1), 0 0 70px rgba(49,16,47,1);
+	  text-shadow: 0 0 10px rgb(52, 19, 51), 0 0 20px rgb(54, 17, 49), 0 0 30px rgba(49,16,47,1), 0 0 40px rgba(49,16,47,1), 0 0 50px rgba(49,16,47,1), 0 0 60px rgba(49,16,47,1), 0 0 70px rgba(49,16,47,1);
 	}
 	
 	to {
-	  text-shadow: 0 0 20px #fff, 0 0 30px rgba(40,11,41,1), 0 0 40px rgba(40,11,41,1), 0 0 50px rgba(40,11,41,1), 0 0 60px rgba(40,11,41,1), 0 0 70px rgba(40,11,41,1), 0 0 80px rgba(40,11,41,1);
+	  text-shadow: 0 0 20px #fff, 0 0 30px rgb(49, 14, 50), 0 0 40px rgba(40,11,41,1), 0 0 50px rgba(40,11,41,1), 0 0 60px rgba(40,11,41,1), 0 0 70px rgba(40,11,41,1), 0 0 80px rgba(40,11,41,1);
 	}
   }
 h5 span:nth-child(1):after{
@@ -144,7 +144,6 @@ h5 span:nth-child(1):after{
 	align-items: flex-end;
 	display: flex;
 	height: 500px;
-	
 	margin-left: 250px;
 	margin-right: 50px;
 	width: 1000px;
@@ -159,7 +158,7 @@ h5 span:nth-child(1):after{
 	border-left: none;
   }  
   .left-container {
-	background: #3d2d2e;
+	background: linear-gradient(rgb(35, 19, 19), rgb(27, 28, 28),rgb(35, 19, 19));
 	height: 100%;
 	width: calc(50% + 50px);
   }
@@ -182,9 +181,9 @@ h5 span:nth-child(1):after{
   .top-section__green {
 	border-radius: 50%;
 	border: 1px solid black;
-	height: 10px;
+	height: 12px;
 	margin-right: 5px;
-	width: 10px;
+	width: 12px;
   }
   
   .left-container__main-section-container {
@@ -227,14 +226,16 @@ h5 span:nth-child(1):after{
   }
   
   .poke-name {
-	color: white;
+	color: rgb(44, 32, 44);
 	font-size: 25px;
 	font-weight: bold;
+	font-family: "Nova Flat";
   }
   
   .poke-id {
 	color: rgba(0,0,0,.5);
 	font-size: 20px;
+	font-family: "Merienda";
   }
   
   .screen__image {
@@ -254,14 +255,14 @@ h5 span:nth-child(1):after{
   }
   
   .screen__stats {
-	/* background: rgba(0,0,0,.3); */
-	border-radius: 5px;
-	color: white;
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	justify-content: space-between;
-	padding: 40px 15px;
+	/* background: rgba(255,255,255,.3); */
+	/* border-radius: 25px; */
+	position: relative;
+	display: block;
+	top: 12px;
+	padding: 10px;
+	text-align: center;
+	font-family: "Nova Flat";
   }
   
   .stats__types {
@@ -276,8 +277,18 @@ h5 span:nth-child(1):after{
 	margin-bottom: 10px;
 	padding: 10px;
 	text-align: center;
+	font-family: "Merienda";
   }
-  
+  .poke-ability-one,
+  .poke-ability-two {
+	background: rgba(0, 0, 0, 0.3);
+	border-radius: 25px;
+	display: block;
+	margin-bottom: 10px;
+	padding: 10px;
+	text-align: center;
+	font-family: "Merienda";
+  }
   .left-container__controllers {
 	align-items: center;
 	display: flex;
@@ -295,7 +306,7 @@ h5 span:nth-child(1):after{
   }
   
   .left-container__hinge {
-	background: linear-gradient(to right, #321717, #2a1a1b, #2c2727, #1c1717);
+	background: linear-gradient(to right, #181616, #240e0f, #2a1112, #171414);
 	height: 75px;
 	width: 100%;
   }
@@ -309,19 +320,22 @@ h5 span:nth-child(1):after{
   }
   
   .top-section__red {
-	background: #90302e;
+	margin-top: 10px;
+	background: #a13836;
   }
   
   .top-section__yellow {
-	background: #9a9c60;
+	background: #d2d579;
+	margin-top: 10px;
   }
   
   .top-section__green {
-	background: #397c54;
+	background: #459866;
+	margin-top: 10px;
   }
   
   .right-container {
-	background: #292021;
+	background: linear-gradient(rgb(35, 19, 19), rgb(27, 28, 28),rgb(35, 19, 19));
 	height: calc(100% - 50px);
 	padding: 25px;
 	width: calc(50% - 50px);
@@ -398,13 +412,12 @@ h5 span:nth-child(1):after{
 	box-shadow: inset 0 0 2px 2px rgba(0,0,0,.3);
   }
   
-  
-  .hide {
+  .hide{
 	display: none;
   }
   
   .normal {
-	background-image: linear-gradient(#eef2f3,#8e9eab);
+	background-image: linear-gradient(#c5d6d9,#2f3032);
   }
   
   .fighting {
@@ -424,8 +437,7 @@ h5 span:nth-child(1):after{
   }
   
   .rock {
-	background-image: linear-gradient(#e9d362,
-	#333333);
+	background-image: linear-gradient(#e9d362,#333333);
   }
   
   .bug {
@@ -489,7 +501,6 @@ h5 span:nth-child(1):after{
 	z-index: 1;
 	background-image: linear-gradient(#000000,#682483);
 }
-
 /* loading screen  */
 .child-to-body {
     width: 300px;

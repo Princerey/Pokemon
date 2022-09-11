@@ -6,6 +6,8 @@ const pokeFrontImage = document.querySelector('.poke-front-image');
 const pokeBackImage = document.querySelector('.poke-back-image');
 const pokeTypeOne = document.querySelector('.poke-type-one');
 const pokeTypeTwo = document.querySelector('.poke-type-two');
+const pokeAbilityOne = document.querySelector('.poke-ability-one');
+const pokeAbilityTwo = document.querySelector('.poke-ability-two');
 const pokeWeight = document.querySelector('.poke-weight');
 const pokeHeight = document.querySelector('.poke-height');
 const pokeListItems = document.querySelectorAll('.list-item');
@@ -69,6 +71,9 @@ const fetchPokeData = id => {
       const dataTypes = data['types'];
       const dataFirstType = dataTypes[0];
       const dataSecondType = dataTypes[1];
+      const dataTypes1 = data['abilities'];
+      const dataFirstType1 = dataTypes1[0];
+      const dataSecondType1 = dataTypes1[1];
       pokeTypeOne.textContent = capitalize(dataFirstType['type']['name']);
       if (dataSecondType) {
         pokeTypeTwo.classList.remove('hide');
@@ -78,6 +83,16 @@ const fetchPokeData = id => {
         pokeTypeTwo.textContent = '';
       }
       mainScreen.classList.add(dataFirstType['type']['name']);
+
+      pokeAbilityOne.textContent = capitalize(dataFirstType1['ability']['name']);
+      if (dataSecondType1) {
+        pokeAbilityTwo.classList.remove('hide');
+        pokeAbilityTwo.textContent = capitalize(dataSecondType1['ability']['name']);
+      } else {
+        pokeAbilityTwo.classList.add('hide');
+        pokeAbilityTwo.textContent = '';
+      }
+      mainScreen.classList.add(dataFirstType1['ability']['name']);
 
       pokeName.textContent = capitalize(data['name']);
       pokeId.textContent = '#' + data['id'].toString().padStart(3, '0');
