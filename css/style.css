@@ -5,7 +5,7 @@ html,body {
 	background-color: #31102F;
 	background: radial-gradient(ellipse at center, rgba(49,16,47,1) 0%, rgba(40,11,41,1) 100%);
 	font-family: 'Poppins', sans-serif;
-	/* overflow: hidden; */
+	overflow: hidden;
 }
 #particles-js{
 	position: fixed;
@@ -114,7 +114,7 @@ h5{
     letter-spacing: 7px;
     cursor: pointer;
 	margin-top:75px;
-	margin-right:1000px;
+	margin-right:1100px;
 	z-index:10;
 	text-transform: uppercase;
     border: 5px solid rgb(46, 47, 49)#1e1f23;
@@ -144,7 +144,7 @@ h5 span:nth-child(1):after{
 	align-items: flex-end;
 	display: flex;
 	height: 500px;
-	margin-left: 250px;
+	margin-left: 150px;
 	margin-right: 50px;
 	width: 1000px;
   }
