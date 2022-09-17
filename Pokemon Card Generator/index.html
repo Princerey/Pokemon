@@ -4,16 +4,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokemon Card Generator</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="popup">
+      <button id="close">&times;</button>
+     
+      <div class="wrapper">
+        <h2>Welcome To Poke-Battle</h2>
+        <div class="content">
+          <div class="container">
+            <form>
+               Multiplayer <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="yesCheck"><br> Single Player <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="noCheck"><br><br>
+               
+              <label>Player 1</label>
+              <input placeholder="Enter The Name" type="text" id="userInput">
+              <div id="ifYes" style="visibility:hidden">
+              <label>Player 2</label>
+              <input placeholder="Enter The Name" type="text" id="userInput1">
+            </div>
+              <input type="button" value="submit" id="roh">
+            </form>
+          </div>
+          
+        </div>
+      </div>
+  </div>
     <div class="container1">
       <div id="card"></div>
-      <button class="play">Player 1</button>
+      <button class="play" id="message">Player 1</button>
     </div>
     <div class="container2">
       <div id="card1"></div>
-      <button class="play">Player 2</button>
+      <button class="play" id="message2">Computer</button>
     </div>
     <div class='light x1'></div>
     <div class='light x2'></div>
@@ -27,5 +51,42 @@
     <button id="btn"><span></span>Generate</button>
   </body>
   <script src="script.js"></script>
-  
+  <!-- popup -->
+  <script type="text/javascript">
+         function yesnoCheck() {
+            if (document.getElementById('yesCheck').checked) {
+                document.getElementById('ifYes').style.visibility = 'visible';
+            }
+            else document.getElementById('ifYes').style.visibility = 'hidden';
+        }
+    window.addEventListener("load", function(){
+        setTimeout(
+            function open(event){
+                document.querySelector(".popup").style.display = "block";
+            },
+            500
+        )
+    });
+
+    
+    
+    document.querySelector("#close").addEventListener("click", function(){
+        document.querySelector(".popup").style.display = "none";
+    });
+    document.querySelector("#roh").addEventListener("click", function(){
+        document.querySelector(".popup").style.display = "none";
+        let userInput = document.querySelector ("#userInput") ;
+        let userInput1 = document.querySelector ("#userInput1") ;
+        let message = document.querySelector ("#message") ;
+        message.innerHTML = userInput.value ;
+        
+        if (userInput1.value == "")
+        {
+          message2.innerHTML= "Computer";
+        }
+        else{
+          message2.innerHTML = userInput1.value ;
+        }
+    });
+        </script>
 </html>

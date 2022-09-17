@@ -321,3 +321,113 @@ div[role="progressbar"]::before {
   border: none;
   border-radius: 5px;
 }
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.popup{
+  background-color: #ffffff;
+  width: 400px;
+  padding: 30px 40px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+  border-radius: 8px;
+  font-family: "Poppins",sans-serif;
+  display: none; 
+  text-align: center;
+  z-index: 1;
+  opacity:0.7 ;
+}
+.popup button{
+  position: relative;
+	font-size: 2em;
+	color: rgb(30, 26, 26);
+	text-decoration: none;
+	cursor: pointer;
+	transition: all 0.3s ease-out;
+	border-radius: 50px;
+  top: 0.5em;
+  left: 5.5em;
+}
+/* popup */
+/* h3 {
+	text-align: center;
+	color: #413b3b;
+	text-transform: uppercase;
+	font-size: 80px;
+	font-family: 'Zen Tokyo Zoo', cursive;
+} */
+h5 {
+	text-align: center;
+	color: #82807f;
+	margin: 80px auto;
+	font-size: 20px;
+	width: 50%;
+	line-height: 1.7;
+}
+.box {
+	text-align: center;
+}
+
+.wrapper h2 {
+  position: relative;
+  top: -1em;
+	margin-top: 0;
+	color: #333;
+}
+.wrapper .close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
+}
+.wrapper .close:hover {
+	color: #06D85F;
+}
+.wrapper .content {
+	max-height: 30%;
+	overflow: auto;
+} 
+/*form*/
+/* 
+.container {
+	border-radius: 5px;
+	background-color: #e7e7e7;
+	padding: 20px 0;
+} */
+form label {
+	font-weight: 500;
+	letter-spacing: 3px;
+}
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid rgb(23, 2, 56);
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+  
+}
+input[type="button"] {
+  position: relative;
+	background-color: #413b3b;
+	color: #fff;
+	padding: 15px 50px;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+} 

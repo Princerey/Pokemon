@@ -15,6 +15,8 @@ const typeColor = {
   psychic: "#a29bfe",
   rock: "#2d3436",
   water: "#0190FF",
+  dark:"#000000",
+  steel:"#808080"
 };
 const url = " https://pokeapi.co/api/v2/pokemon/";
 const card = document.getElementById("card");
