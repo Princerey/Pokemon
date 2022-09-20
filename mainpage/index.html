@@ -1,12 +1,48 @@
 <html lang="en">
 <head>
 <title>Pokémon</title>
+<link rel="icon" type="image/x-icon" href="./poke.png">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="css/main.css" rel="stylesheet">
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Nova Flat' rel='stylesheet'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css'>
+<link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
 <link href="css/paths.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div><img class="circle" src="./sq.gif"></div>
+<section id="we" >
+
+	<nav class="navbar navbar-expand-custom navbar-mainbg">
+        <a class="navbar-brand navbar-logo" href="#poke">Pokémon</a>
+        <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars text-white"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#we"><i class="fa fa-home" aria-hidden="true"></i>
+                    Home
+                </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pokedex/index.html"><i class="fa-solid fa-database"></i>Pokedex</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0);"><i class="fas fa-gamepad"></i>Poke-Battle</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0);"><i class="fas fa-puzzle-piece"></i></i>Poke-Puzzle</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 <div class="container">
 <div class="wrap assembled">
 <div class="poly-wrap p0">
@@ -885,11 +921,64 @@
 <div class="poly-wrap p291">
 <div class="poly"></div>
 </div>
-<div class="shadow"></div></div>
+<div class="shadow">
+
 </div>
+</div>
+</div>
+<div id="container1">
+    <span id="text1"></span>
+    <span id="text2"></span>
+</div>
+
+<svg id="filters">
+    <defs>
+        <filter id="threshold">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+									0 1 0 0 0
+									0 0 1 0 0
+									0 0 0 255 -140" />
+        </filter>
+    </defs>
+</svg>
+<div>
+    <img src="./pokem.png" class="logo" height="120px" width="190">
+    <img src="./line.png" class="line">
+    <span class="info"><div class="rohan"><h5>Pikachu <img src="./pika.png "height="60px" width="60px" class="pika"></h5>Pikachu is an electric-type Pokemon , which attacks using electricity from two 
+    red pouches on its cheeks. </span></div>
+    </div>
+
+	
+</section>
+<section class="rohit" id="poke">
+    <div class="wrap1">
+        <button class="button" type="button" id="roh"><i class="fa fa-refresh" aria-hidden="true"></i>Surprise Me!<br></button>
+      </div>
+      <p class="anan"><img src="./poke.png" height="23" width="23"> Featured Pokémon</p>
+    <div class='testimonial'>
+        <div class='testimonials'>
+        </div>
+        <div class='navigation'></div>
+        <div class='arrow-left'>
+          <i class='fa fa-chevron-left'></i>
+        </div>
+        <div class='arrow-right'>
+          <i class='fa fa-chevron-right'></i>
+        </div>
+    </div>
+    <a class="homee" href="#we"><i class="fa fa-home" aria-hidden="true"></i></a>
+</section>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 	<script src="js/paths.js"></script>
-
+    <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+    <script src='https://unpkg.com/gsap@3/dist/Draggable.min.js'></script>
+    <script  src="js/script1.js"></script>
 	<script src="js/main.js"></script>
+    <script src="js/texta.js"></script>
+    <script src="js/cursor.js"></script>
+	<script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js'></script>
+<script  src="js/script.js"></script>
 </body>
 </html>

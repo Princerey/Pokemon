@@ -404,7 +404,8 @@ h5 span:nth-child(1):after{
   
   .left-button:hover,
   .right-button:hover {
-	background: white;
+	/* color: #0e2123;  */
+	background:#385a81 ;
   }
   
   .left-button:active,
@@ -568,3 +569,13 @@ h5 span:nth-child(1):after{
     from { background: rgb(219, 208, 208);}
     to { background: #9e081a; }
   }
+  .homee{
+	position:relative;
+	font-size: 2.5em;
+	top:-15.3em;
+	left:31.2em;
+	color: rgb(248, 216, 216);
+}
+a:hover{
+	color: #c3bef0;
+}

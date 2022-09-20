@@ -1,3 +1,7 @@
+* {
+	margin: 0;
+	padding: 0;
+}
 :root {--p0-shine:rgba(255,255,255,0);
 --p1-shine:rgba(255,255,255,0);
 --p2-shine:rgba(255,255,255,0);
