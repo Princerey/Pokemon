@@ -1,5 +1,6 @@
 html {
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 	}
 section {
 	background: linear-gradient(1turn, #3f87a6, #ebf8e1, #cca881);
@@ -25,6 +26,7 @@ a:hover{
 * {
 	margin: 0;
 	padding: 0;
+	/* height:auto; */
 }
 i {
 	margin-right: 10px;
@@ -310,7 +312,7 @@ i {
   .logo{
 	position: relative;
 	bottom:11em;
-	left:32em;
+	left:29.5em;
   }
   
   /* anim */
@@ -351,8 +353,8 @@ h5{
 .homee{
 	position:relative;
 	font-size: 2.5em;
-	top:3.6em;
-	left:36em;
+	top:3em;
+	left:34.5em;
 }
 /* cursor */
 @import "compass/css3"; 
