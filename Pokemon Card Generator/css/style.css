@@ -884,10 +884,14 @@ button */
 }
 
 .checked .loader-wrapper {
+  
   animation: wrapper-loader-anim 4.2s linear;
-  width:95px;
-  height:95px;
-  transform:scale(0)
+  width: 212px;
+  height: 233px;
+  /* margin-top: -2em; */
+  padding-top: 2em;
+  top: -2em;
+  transform: scale(0);
 }
 
 .checked .submit {

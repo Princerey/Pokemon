@@ -8,9 +8,6 @@ function moveCircle29(m) {
     }
   });
 }
-$(window).on('mousemove', moveCircle29);
-
-
 var	wrapper = $( "#button-wrapper" );
 
 $( ".submit" ).click(function() {
