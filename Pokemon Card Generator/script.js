@@ -1,21 +1,21 @@
 const typeColor = {
-  bug: "#26de81",
-  dragon: "#ffeaa7",
-  electric: "#fed330",
-  fairy: "#FF0069",
+  bug: "rgb(35 126 80 / 94%)",
+  dragon: "rgb(212 191 124 / 85%)",
+  electric: "rgb(197 170 69 / 95%)",
+  fairy: "rgb(174 75 116 / 96%)",
   fighting: "#30336b",
-  fire: "#f0932b",
-  flying: "#81ecec",
-  grass: "#00b894",
-  ground: "#EFB549",
-  ghost: "#a55eea",
-  ice: "#74b9ff",
-  normal: "#95afc0",
-  poison: "#6c5ce7",
-  psychic: "#a29bfe",
-  rock: "#2d3436",
-  water: "#0190FF",
-  dark:"#000000",
+  fire: "rgb(255 179 0 / 68%)",
+  flying: "rgb(115 172 208 / 77%)",
+  grass: "rgb(32 106 92 / 88%)",
+  ground: "rgb(155 117 46 / 88%)",
+  ghost: "rgb(75 41 108)",
+  ice: "rgb(89 132 176 / 94%)",
+  normal: "rgb(75 105 124 / 94%)",
+  poison: "rgb(70 59 151)",
+  psychic: "rgb(64 59 131)",
+  rock: "#2d3436", 
+  water: "rgb(1 161 255 / 43%)",
+  dark:"rgb(40 35 35 / 90%)",
   steel:"#808080"
 };
 const url = " https://pokeapi.co/api/v2/pokemon/";
@@ -142,33 +142,38 @@ let generateCard2 = (data2) => {
 let appendTypes = (types) => {
   types.forEach((item) => {
     let span = document.createElement("SPAN");
-    span.textContent = item.type.name;
+    span.textContent = item.type.name[0].toUpperCase() + item.type.name.slice(1);
     document.querySelector(".types").appendChild(span);
   });
 };
 let appendTypes2 = (types2) => {
   types2.forEach((item) => {
     let span = document.createElement("SPAN");
-    span.textContent = item.type.name;
+    span.textContent = item.type.name[0].toUpperCase() + item.type.name.slice(1);
     document.querySelector(".types2").appendChild(span);
   });
 };
 let styleCard = (color) => {
-  card.style.background = `radial-gradient(circle at 50% 0%, ${color} 36%, #ffffff 36%)`;
+  card.style.background = `radial-gradient(circle at 50% 0%, ${color} 36%, #ddd 36%)`;
   card.querySelectorAll(".types span").forEach((typeColor) => {
     typeColor.style.backgroundColor = color;
   });
 };
 let styleCard2 = (color2) => {
-  card1.style.background = `radial-gradient(circle at 50% 0%, ${color2} 36%, #ffffff 36%)`;
+  card1.style.background = `radial-gradient(circle at 50% 0%, ${color2} 36%, #ddd 36%)`;
   card1.querySelectorAll(".types2 span").forEach((typeColor) => {
     typeColor.style.backgroundColor = color2;
   });
 };
 
 btn.addEventListener("click", getPokeData);
-window.addEventListener("load", getPokeData);
+btn.addEventListener("click", getPokeData);
 btn.addEventListener("click", getPokeData2);
-window.addEventListener("load", getPokeData2);
+btn.addEventListener("click", getPokeData2);
+
 
 //card2
+const button = document.getElementById('rohit')
+button.onclick = () => {
+  window.location.reload();
+}
