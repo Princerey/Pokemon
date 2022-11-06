@@ -174,11 +174,15 @@ left: 85%;
 /* background */
 
 .container1 {
+  
   width: 340px;
   position: absolute;
   transform: translate(-50%, -50%);
   top: 55%;
   left: 25%;
+  border-radius: 20px;
+ 
+  
 }
 .container2 {
   width: 340px;
@@ -186,13 +190,17 @@ left: 85%;
   transform: translate(-50%, -50%);
   top: 55%;
   left: 75%;
+  border-radius: 20px;
 }
 #card {
   position: relative;
   width: 100%;
   padding: 30px 20px;
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15); */
   border-radius: 20px;
+  
+  
+
 }
 #card img {
   display: block;
@@ -205,7 +213,7 @@ left: 85%;
   position: relative;
   width: 100%;
   padding: 30px 20px;
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15); */
   border-radius:20px;
 }
 #card1 img {
@@ -280,7 +288,7 @@ left: 85%;
 }
 div[role="progressbar"] {
   --size: 5rem;
-  --fg: #2d3436;
+  --fg: #1e2628;
   --bg: #bbbbbb;
   --pgPercentage: var(--value);
   border-radius: 150%;
@@ -298,6 +306,57 @@ div[role="progressbar"] {
 div[role="progressbar"]::before {
   counter-reset: percentage var(--value);
 }
+div[role="progressbar1"] {
+  position: relative;
+  --size: 10rem;
+  --fg: #1e2628;
+  --bg: #bbbbbb;
+  --pgPercentage: var(--value);
+  border-radius: 150%;
+  animation: growProgressBar 2s 1 forwards;
+  width: var(--size);
+  height: var(--size);
+  place-items: center;
+  background: 
+    radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+    conic-gradient(var(--fg) calc(var(--pgPercentage) * 0.5%), var(--bg) 0)
+    ;
+  font-size: calc(var(--size) / 6);
+  color: var(--fg);
+  top:-11em;
+}
+div[role="progressbar1"]::before {
+  counter-reset: percentage var(--value);
+}
+.a{
+  color: #404060;
+  position: relative;
+  top: 1.6em;
+  font-family: "nova flat";
+  font-size: 1.1em;
+  place-items: center;
+  align-items: center;
+  text-align: center;
+  
+}
+.c{
+  font-family: "nova flat";
+  font-size: 1.2em;
+  position: relative;
+  top: 1.2em;
+  place-items: center;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+
+}
+.be{
+  opacity: 0;
+}
+.be1{
+  opacity: 0;
+}
+
 .stats p {
   color: #404060;
   position: relative;
@@ -312,6 +371,7 @@ div[role="progressbar"]::before {
   top: 1.2em;
 }
 .play{
+  position: relative;
   display: block;
   padding: 13px 50px;
   font-size: 25px;
@@ -323,6 +383,24 @@ div[role="progressbar"]::before {
   margin: 50px auto;
   border: none;
   border-radius: 50px;
+  bottom:6.5em;
+  right:15.3em;
+}
+.play1{
+  position: relative;
+  display: block;
+  padding: 13px 50px;
+  font-size: 25px;
+  font-family: "merienda";
+  font-weight: bold;
+  background-color: #c1b5b5f0;
+  color: #101010;
+  position: relative;
+  margin: 50px auto;
+  border: none;
+  border-radius: 50px;
+  bottom:10.9em;
+  right:-15.3em;
 }
 *,*:before,*:after{
     padding: 0;
@@ -395,6 +473,7 @@ div[role="progressbar"]::before {
 	 border-radius: 10px;
 	 box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
   padding: 35px;
+ 
 }
 
 .square {
@@ -440,7 +519,7 @@ div[role="progressbar"]::before {
 .square:nth-child(4) {
   width: 50px;
   height: 50px;
-  bottom: 130px;
+  bottom: 100px;
   left: 435px;
 }
 .square:nth-child(5) {
@@ -455,6 +534,26 @@ div[role="progressbar"]::before {
   top: 280px;
   right: 340px;
   z-index: 2;
+ 
+  
+
+}
+.ron{
+  color: #1a1205;
+}
+.rog{
+  font-family: 'nova flat';
+  font-size: 1.4em;
+  color: #041b15;
+}
+.square:nth-child(7) {
+  width: 350px;
+  height: 120px;
+  top: 420px;
+  right: 990px;
+  z-index: 2;
+  font-family: 'poppins';
+  font-size: 1em;
 }
 
 .wrapper .close {
@@ -643,6 +742,7 @@ input[type="button"] {
   /* button anim */
   .button {
     position: relative;
+    display: block;
     min-width: 180px;
     min-height: 50px;
     font-family: 'nova flat';
@@ -653,15 +753,16 @@ input[type="button"] {
     font-weight: 500;
     color: #a97b9e;
     background: #284542;
-  background: linear-gradient(90deg, rgb(64, 35, 66) 0%, rgb(55, 56, 56) 100%);
+    background: linear-gradient(90deg, rgb(64, 35, 66) 0%, rgb(55, 56, 56) 100%);
     border: none;
     border-radius: 1000px;
     box-shadow: 0px 4px 11px rgb(34, 5, 36);
     transition: all 0.3s ease-in-out 0s;
     cursor: pointer;
     outline: none;
-    left:33.8em;
-    top:2em;
+    right: -34em;
+    top:7em;
+    z-index: 0;
     }
 
   .button:hover, .button:focus {
@@ -980,4 +1081,197 @@ button */
   to {
     stroke-dashoffset: 0;
   }
+}
+.none{
+  display: none;
+}
+.none1{
+  display: none;
+}
+.beautify{
+ 
+  font-size: 1.65em;
+  color: #d4a5a5;
+  position: relative;
+  width: 11em;
+  
+}
+.beautify1{
+ 
+  font-size: 1.45em;
+  color: hsl(0, 4%, 36%);
+  position: relative;
+  font-family: 'nova flat'
+    
+}
+.line-1{
+  font-family: 'Nova flat'  ;
+  position: relative;
+  left:0.35em;
+  height: 1.3em;
+  
+  margin: 0 auto;
+  border-right: 2px solid rgba(255,255,255,.75);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);    
+}
+.line-2{
+  position: relative;
+  left:0.35em;
+  height: 1.3em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255,255,255,.75);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);    
+}
+
+
+/* Animation */
+.anim-typewriter{
+  
+animation: typewriter 3s steps(37) 1s 0.85 normal both,
+           blinkTextCursor 500ms steps(30) infinite normal;
+           animation-delay: 3s;
+}
+.anim-typewriter1{
+  
+  animation: typewriter 3.5s steps(50) 1s 1 normal both,
+             blinkTextCursor 500ms steps(30) infinite normal;
+             animation-delay: 5s;
+  }
+@keyframes typewriter{
+from{width: 0;}
+to{width: 16em;}
+}
+@keyframes blinkTextCursor{
+from{border-right-color: rgba(255,255,255,.75);}
+to{border-right-color: transparent;}
+}
+
+
+
+
+.blur{
+  transition: 1.5s ease-in;
+  transition-delay: 6.5s;
+  opacity: 0.1; 
+}
+.bg{
+  transition: 1.5 ease-in ;
+  transition-delay: 6.5s;
+  background-color: #554d63;
+}
+.nonbt{
+  transition: 0.8s ease-out;
+  transition-delay: 5.7s;
+  opacity: 0;
+  z-index: -1;
+}
+.b{
+  transition: 0.7s ease-in;
+  transition-delay: 6.5s;
+  position: relative;
+  font-family: "nova flat";
+  font-size: 1.2em;
+  place-items: center;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  top:-16em;
+  right:20em;
+  font-weight:600;
+  z-index: 2;
+}
+.b1{
+  transition: 0.7s ease-in;
+  transition-delay: 6.5s;
+  position: relative;
+  font-family: "nova flat";
+  font-size: 1.2em;
+  place-items: center;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  top:-18.7em;
+  left:20em;
+  font-weight:600;
+  z-index: 2;
+}
+.circular-progress-bar {
+  position: relative;
+  margin: 0 auto;
+  top:-21em;
+  left: -24em;
+}
+.circular-progress-bar1 {
+  position: relative;
+  margin: 0 auto;
+  bottom:40em;
+  right: -24em;
+}
+.progress-percentage, .progress-text {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 0px 60px;
+}
+
+.progress-percentage {
+font-size: 60px;
+margin-top: .4em;
+  transform: translate(-50%, -85%);
+  font-family: "nova flat";
+  padding-bottom: .9em;
+}
+
+.progress-text {
+  transform: translate(-50%, 0%);
+  color: #dad6d6;
+  font-size: 28px;
+  font-family: "nova flat";
+}
+.progress-percentage1 {
+	font-size: 60px;
+    transform: translate(-50%, -85%);
+    position: absolute;
+    width: 100%;
+    top: 39%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0px 60px;
+    padding-bottom: .9em;
+    font-family: "nova flat";
+    margin-top: .4em;
+}
+.win1{
+  transition: all 0.4s ease-in-out;
+  transform:scale(1.4);
+  transform: translate(-50%, -52%);
+  transition-delay: 11s;
+  border-radius: 10px;
+  box-shadow: 0px 9px 30px 0px rgba(255,149,5,0.3);
+  
+}
+.home2{
+  z-index: 0;
+	position:relative;
+	font-size: 2.5em;
+	bottom:1.9em;
+	left:28.7em;
+	color: rgb(248, 216, 216);
+}
+a{
+	color: rgb(248, 216, 216);
+
+}
+a:hover{
+	color: #c3bef0;
 }

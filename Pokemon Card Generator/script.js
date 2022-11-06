@@ -1,3 +1,5 @@
+
+var f1;
 const typeColor = {
   bug: "rgb(35 126 80 / 94%)",
   dragon: "rgb(212 191 124 / 85%)",
@@ -22,6 +24,7 @@ const url = " https://pokeapi.co/api/v2/pokemon/";
 const card = document.getElementById("card");
 const btn = document.getElementById("btn");
 const card1 = document.getElementById("card1");
+
 // const btn1 = document.getElementById("btn1");
 
 let getPokeData = () => {
@@ -92,12 +95,28 @@ let generateCard = (data) => {
             
           </div>
         </div>
-        </div>
+
   `;
+  $(document).ready(function() {
+    setTimeout(function(){
+     fs=hp/8+statAttack/8+statDefense/8+statSpeed/8;
+    $(".my-progress-bar").circularProgress({
+        line_width: 6,
+        color: "#ccc",
+        starting_position: 0, // 12.00 o' clock position, 25 stands for 3.00 o'clock (clock-wise)
+        percent: 0, // percent starts from
+        percentage: true,
+        text: "Final Score"
+    }).circularProgress('animate',fs, 1000);
+  },8100);
+  });
   appendTypes(data.types);
   styleCard(themeColor);
 };
+
+
 let generateCard2 = (data2) => {
+  
   // Get necessary data and assign it to variables
   console.log(data2);
   const hp = data2.stats[0].base_stat;
@@ -126,19 +145,37 @@ let generateCard2 = (data2) => {
           <div>
           <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:${statDefense}"><h3>${statDefense}</h3>
           <p>Defense</p></div>
-            
           </div>
           <div>
           <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:${statSpeed}"><h3>${statSpeed}</h3>
           <p>Speed</p></div>
             
           </div>
-        </div>
-        </div>
+          </div>
   `;
+  
+  $(document).ready(function() {
+    setTimeout(function(){
+   fs1=hp/8+statAttack/8+statDefense/8+statSpeed/8;
+    $(".my-progress-bar1").circularProgress1({
+        line_width: 6,
+        color: "#ccc",
+        starting_position: 0, // 12.00 o' clock position, 25 stands for 3.00 o'clock (clock-wise)
+        percent: 0, // percent starts from
+        percentage1: true,
+        text: "Final Score"
+    }).circularProgress1('animate',fs1, 1000);
+  },8300);
+
+
+  });
+
+  // document.getElementById("86").innerHTML=`[ ${hp} + ${statAttack} + ${statDefense} + ${statSpeed} ]`;
+
   appendTypes2(data2.types);
   styleCard2(themeColor);
 };
+
 let appendTypes = (types) => {
   types.forEach((item) => {
     let span = document.createElement("SPAN");
@@ -165,6 +202,7 @@ let styleCard2 = (color2) => {
     typeColor.style.backgroundColor = color2;
   });
 };
+
 
 btn.addEventListener("click", getPokeData);
 btn.addEventListener("click", getPokeData);
