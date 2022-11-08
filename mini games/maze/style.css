@@ -1,0 +1,252 @@
+html, body {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#mazeContainer {
+  transition-property: opacity;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  position: relative;
+  top: 37px;
+  opacity: 0.8;
+  display: inline-block;
+  background-color: rgba(157, 144, 144, 0.6);
+  margin: auto;
+  width: 500px;
+  height: 500px;
+}
+
+#mazeContainer #mazeCanvas {
+  margin: 0;
+  display: block;
+  border: none;
+  width: 500px;
+  height: 500px;
+}
+
+input,
+select {
+  transition-property: background-color opacity;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+  background-color: rgba(157, 144, 144, 0.6);
+  height: 45px;
+  width: 150px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input:hover,
+select:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+input:active,
+select:active {
+  background-color: black;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
+.custom-select {
+  display: inline-block;
+}
+
+.custom-select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: 125px center;
+}
+
+#Message-Container {
+  visibility: hidden;
+  color: white;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+#Message-Container #message {
+  width: 300px;
+  height: 300px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -150px;
+  margin-top: -150px;
+}
+
+#page {
+  font-family: "Segoe UI", Arial, sans-serif;
+  text-align: center;
+  height: auto;
+  width: auto;
+  margin: auto;
+}
+
+#page #menu {
+  margin: auto;
+  padding: 10px;
+  height: 65px;
+  box-sizing: border-box;
+}
+
+#page #menu h1 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 3.2rem;
+}
+
+#page #view {
+  position: absolute;
+  top: 65px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+}
+
+.border {
+  border: 1px black solid;
+  border-radius: 5px;
+}
+
+#gradient {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  background: radial-gradient(circle, rgba(121, 9, 99, 1) 0%, rgba(106, 8, 87, 1) 2%, rgba(67, 5, 55, 1) 11%, rgba(52, 4, 43, 1) 26%, rgba(49, 3, 40, 1) 46%, rgba(33, 2, 27, 1) 65%, rgba(49, 3, 40, 1) 87%, rgba(0, 0, 0, 1) 100%);
+  background-size: 400% 400%;
+}
+
+@media only screen and (max-width: 400px) {
+
+  input,
+  select {
+    width: 120px;
+  }
+}
+
+.ana {
+  width: 300px;
+  margin: 120px 0 0 30px;
+}
+
+.anan {
+  color: rgb(182, 182, 182);
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  top: -18em;
+  left: 29em;
+  list-style: none;
+  font-size: 35px;
+  /* line-height: 70px; */
+}
+
+.am,
+.amm {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgb(70, 6, 57);
+  box-shadow:
+    -0.2em -0.2em 0.2em rgb(47, 4, 39),
+    -0.3em -0.3em 0.4em rgb(69, 6, 57),
+    -0.1em -0.1em 0.3em inset rgb(82, 31, 72),
+    0.1em 0.1em 0.1em rgb(63, 0, 50),
+    0.2em 0.2em 0.2em rgb(65, 0, 52);
+}
+
+.amm {
+  position: relative;
+  left: 2em;
+}
+
+.instr{
+  transition-property: background-color opacity;
+  cursor: pointer;
+  background-color: rgba(157, 144, 144, 0.4);
+  width: 200px;
+  padding: 40px 20px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 50px;
+  font-size: 15px;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+.drop {
+  background: rgba(157, 144, 144, 0.4);
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.2);
+  position: absolute;
+  backdrop-filter: blur(5px);
+ -webkit-backdrop-filter: blur(5px);
+  display: block;
+  margin: 0 auto;
+}
+.drop2 {
+  width: 40px;
+  height: 40px;
+  top: 55px;
+  left: -85%;
+  right: 0;
+  z-index: 4;
+}
+
+.drop3 {
+  width: 60px;
+  height: 60px;
+  top: 190px;
+  right: 1120px;
+  z-index: 3;
+}
+
+.drop4 {
+ width: 40px;
+ height: 40px;
+ border-radius: 20%;
+ top: 20px;
+ right: 1000px;
+}

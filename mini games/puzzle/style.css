@@ -1,0 +1,202 @@
+﻿body {
+    font-family: 'Poppins';
+    margin: 0;
+    background: radial-gradient(circle, rgba(121, 9, 99, 1) 0%, rgba(106, 8, 87, 1) 2%, rgba(67, 5, 55, 1) 11%, rgba(52, 4, 43, 1) 26%, rgba(76, 6, 62, 1) 46%, rgba(33, 2, 27, 1) 65%, rgba(49, 3, 40, 1) 87%, rgba(0, 0, 0, 1) 100%);
+}
+
+h2 {
+    font-weight: normal;
+    text-align: center;
+}
+
+h3 {
+    font-weight: normal;
+    margin: 3px 0px;
+    text-align: center;
+}
+
+/* puzzle */
+#collage {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#collage #playPanel {
+    background-color: #c2defc;
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 800px;
+    width: 95%;
+    background: rgba(255, 255, 255, 0.3);
+    border: #f5f2f2 1px solid;
+}
+
+#collage #actualImageBox {
+    display: inline-block;
+    font-size: 0.8em;
+    margin: 0px 9px 0px 37px;
+    vertical-align: top;
+    width: 280px;
+    border-radius: 10px;
+}
+
+#actualImage {
+    border-radius: 10px;
+}
+
+#collage #stepBox,
+#collage #timeBox {
+    display: inline-block;
+    width: 48%;
+}
+
+#collage #stepBox div {
+    /* background-color: #c2defc; */
+    display: inline-block;
+    padding: 1px 4px;
+    margin: 0px auto;
+    max-width: 800px;
+}
+
+#collage img#actualImage {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 280px;
+    width: 280px;
+}
+
+#collage #sortable {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    width: 424px;
+    border-radius: 10px;
+}
+
+#collage #sortable li {
+    cursor: pointer;
+    margin: 1px;
+    padding: 0;
+    float: left;
+    border-radius: 10px;
+    border: #5e5e5e 1px solid;
+    width: 100px;
+    height: 100px;
+}
+
+#collage button {
+    background-color: #f5f2f2;
+    border: 1px solid #cce;
+    display: inline;
+    font-size: 14px;
+    height: auto;
+    width: auto;
+    padding: 3px 8px;
+}
+
+.button-83 {
+    appearance: button;
+    background: linear-gradient(to bottom, #fff, #fcdfaa);
+    border: 0 solid #e5e7eb;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #482307;
+    column-gap: 1rem;
+    display: flex;
+    font-size: 100%;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0;
+    outline: 2px solid transparent;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    text-transform: none;
+    transition: all .1s cubic-bezier(.4, 0, .2, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    box-shadow: -6px 8px 10px rgba(81, 41, 10, 0.1), 0px 2px 2px rgba(81, 41, 10, 0.2);
+}
+
+.button-83:active {
+    background-color: #f3f4f6;
+    box-shadow: -1px 2px 5px rgba(81, 41, 10, 0.15), 0px 1px 1px rgba(81, 41, 10, 0.15);
+    transform: translateY(0.125rem);
+}
+
+.button-83:focus {
+    box-shadow: rgba(72, 35, 7, .46) 0 0 0 4px, -6px 8px 10px rgba(81, 41, 10, 0.1), 0px 2px 2px rgba(81, 41, 10, 0.2);
+}
+
+.button-25 {
+    background: linear-gradient(to bottom, #fff, #fcdfaa);
+    border: 1px solid #000000;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-align: center;
+    box-sizing: border-box;
+    color: #482307;
+    display: flex;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+#levelPanel {
+    font-size: 7px;
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 280px;
+    height: 50px;
+    background: linear-gradient(to bottom, #fff, #fcdfaa);
+    border: 1px solid #000000;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+    border-radius: 7px;
+}
+
+
+input[type="radio"] {
+    appearance: none;
+    display: none;
+}
+
+label {
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    overflow: hidden;
+    transition: linear 0.3s;
+    color: #6e6e6edd;
+}
+
+input[type="radio"]:checked + label {
+    background-color:#482307;
+    color: #f1f3f5;
+    font-weight: 900;
+    transition: 0.3s;
+    padding: 5px;
+    border-radius: 5px;
+}
+.back{
+    color: #e5e7eb;
+    margin: 30px 0 0 10px;
+    text-decoration: none;
+} 
+
+.back:hover{
+    color: #fcdfaa;
+}
