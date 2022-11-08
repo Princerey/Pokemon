@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Poké-Games</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
+    <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <!DOCTYPE html>
+    <div class="bubble" id="bubble1"></div>
+    <div class="bubble" id="bubble2"></div>
+    <div class="bubble" id="bubble3"></div>
+    <div class="bubble" id="bubble4"></div>
+    <div class="bubble" id="bubble5"></div>
+    <div class="bubble" id="bubble6"></div>
+    <div class="bubble" id="bubble7"></div>
+    <div class="bubble" id="bubble8"></div>
+    <div class="bubble" id="bubble9"></div>
+    <div class="bubble" id="bubble10"></div>
+
+    <div id="ProductCard">
+        <input type="radio" class="sliderSelection" name="position" id="input1" checked />
+        <input type="radio" class="sliderSelection" name="position" id="input2" />
+        <input type="radio" class="sliderSelection" name="position" id="input3" />
+        <input type="radio" class="sliderSelection" name="position" id="input4" />
+        <input type="radio" class="sliderSelection" name="position" id="input5" />
+        <!-- <a class="sliderSelection1" href=""><i class="fa fa-chevron-right" aria-hidden="true"></i></a> -->
+        <div id="sliderContainer">
+            <span id="slider"></span>
+        </div>
+        <p id="carouselTitle">Instructions</p>
+        <div id="carousel">
+            <div class="item">
+                <div id="producs1" class="productTable">
+                    <div>
+                        <p>
+                            Using minimum moves and time, drag the tiles and arrange them to obtain our Pokémon illustration.
+                        </p>
+                        <a href="/puzzle/index.html" class="button-86">Play</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div id="producs2" class="productTable">
+                    <div>
+                        <p>Help the poke ball reach the Pokémon in minimum number of moves. You can choose a level from easy to extreme</p>
+                        <a href="/maze/index.html" class="button-86">Play</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div id="producs3" class="productTable">
+                    <div>
+                        <p>Select one from single player and multiplayer. Place your Pokémon in a continuous line i-e vertically, horizontally, or diagonally to win.</p>
+                        <a href="/tic-tac-toe/index.html" class="button-86">Play</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div id="producs4" class="productTable">
+
+                    <div>
+                        <p>The tiles hide the faces of our Pokémons. Turn and match the similar pairs to win.</p>
+                        <a href="/memory/index.html" class="button-86">Play</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div id="producs5" class="productTable">
+                    <div>
+                        <p>Hold the cursor to stretch out a stick as long as you think would help our Pokémon travel
+                            safely, not falling into the pit.</p>
+                        <a href="/stick/index.html" class="button-86">Play</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="carousel2">
+            <div class="item2">
+                <h3>Pokézzle</h3>
+            </div>
+            <div class="item2">
+                <h3>Poké-Maze</h3>
+            </div>
+            <div class="item2">
+                <h3>Poké<br>Tic-Tac-Toe</h3>
+            </div>
+            <div class="item2">
+                <h3>Poké-Finds</h3>
+            </div>
+            <div class="item2">
+                <h3>Poké-Move</h3>
+            </div>
+
+        </div>
+        <div id="rotatingDiv">
+            <div id="TopLeftHideOverflow">
+                <div id="svgContainer">
+                    <svg style="width: 110%; height:110%;" viewBox="0 0 450 450" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="grad1">
+                                <stop offset="5%" stop-color="#060113f0" />
+                                <stop offset="95%" stop-color="#282530f2" />
+                            </linearGradient>
+                            <linearGradient id="grad2">
+                                <stop offset="5%" stop-color="#090741e9" />
+                                <stop offset="95%" stop-color="#323e61fa" />
+                            </linearGradient>
+                            <linearGradient id="grad3">
+                                <stop offset="5%" stop-color="#490547e9" />
+                                <stop offset="95%" stop-color="#0c0207e9" />
+                            </linearGradient>
+                            <linearGradient id="grad4">
+                                <stop offset="5%" stop-color="#413310f3" />
+                                <stop offset="85%" stop-color="#211905f3" />
+                            </linearGradient>
+                            <linearGradient id="grad5">
+                                <stop offset="5%" stop-color="#5a372ff9" />
+                                <stop offset="95%" stop-color="#2e1d19f9" />
+                            </linearGradient>
+                        </defs>
+                        <g id="Layer_1">
+                            <g stroke="null">
+                                <path id="PentaPath" stroke="null"
+                                    d="m270.68091,27.851l133.69,97.129c13.324,9.6484 23.25,23.266 28.355,38.906c5.1055,15.637 5.125,32.488 0.05859,48.141l-51.195,157.18c-5.0781,15.633 -14.973,29.258 -28.27,38.922c-13.297,9.6641 -29.312,14.871 -45.75,14.879l-165.28,0c-16.438,-0.00781 -32.453,-5.2148 -45.75,-14.879c-13.297,-9.6641 -23.191,-23.289 -28.273,-38.922l-51.051,-157.18c-5.0664,-15.652 -5.0469,-32.504 0.0586,-48.141c5.1055,-15.641 15.031,-29.258 28.355,-38.906l133.55,-97.129c13.297,-9.6562 29.312,-14.859 45.746,-14.859c16.438,0 32.449,5.2031 45.75,14.859l0.00581,0z" />
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="rotatingDiv2" id="rotImg1">
+                <div class="imageGroupeContainer">
+                    <div class="imageContainer imageContainer1"><img class="rotatingImg" src="pics/001.png"></div>
+                    <div class="imageContainer imageContainer2"><img class="rotatingImg" src="pics/002.png"></div>
+                    <div class="imageContainer imageContainer3"><img class="rotatingImg" src="pics/003.png"></div>
+                </div>
+            </div>
+            <div class="rotatingDiv2" id="rotImg2">
+                <div class="imageGroupeContainer">
+                    <div class="imageContainer imageContainer1"><img class="rotatingImg" src="pics/004.png"></div>
+                    <div class="imageContainer imageContainer2"><img class="rotatingImg" src="pics/005.png"></div>
+                    <div class="imageContainer imageContainer3"><img class="rotatingImg" src="pics/006.png"></div>
+                </div>
+            </div>
+            <div class="rotatingDiv2" id="rotImg3">
+                <div class="imageGroupeContainer">
+                    <div class="imageContainer imageContainer1"><img class="rotatingImg" src="pics/007.png"></div>
+                    <div class="imageContainer imageContainer2"><img class="rotatingImg" src="pics/008.png"></div>
+                    <div class="imageContainer imageContainer3"><img class="rotatingImg" src="pics/009.png"></div>
+                </div>
+            </div>
+            <div class="rotatingDiv2" id="rotImg4">
+                <div class="imageGroupeContainer">
+                    <div class="imageContainer imageContainer1"><img class="rotatingImg" src="pics/010.png"></div>
+                    <div class="imageContainer imageContainer2"><img class="rotatingImg" src="pics/011.png"></div>
+                    <div class="imageContainer imageContainer3"><img class="rotatingImg" src="pics/012.png"></div>
+                </div>
+            </div>
+            <div class="rotatingDiv2" id="rotImg5">
+                <div class="imageGroupeContainer">
+                    <div class="imageContainer imageContainer1"><img class="rotatingImg" src="pics/013.png"></div>
+                    <div class="imageContainer imageContainer2"><img class="rotatingImg" src="pics/014.png"></div>
+                    <div class="imageContainer imageContainer3"><img class="rotatingImg" src="pics/015.png"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    </div>
+    <a class="homee" href="/home.html"><i class="fa-solid fa-house"></i></a>
+</body>
+
+</html>

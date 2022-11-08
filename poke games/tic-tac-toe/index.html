@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Poké Tic-Tac-Toe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="jumbotron">
+        <div class="container" id="bg">
+
+            <div class="container" id="turn-info">
+                <div class="container pull-right" id="blue">
+                    <h4>Your Turn!</h4>
+                </div>
+                <div class="container pull-left" id="green">
+                    <h4>Your Turn!</h4>
+                </div>
+            </div>
+
+
+            <div class="container" id="outer">
+
+                <h5 class="info" id="reset">Reset</h5>
+                <h5 class="info"><span id="player2-info">Computer</span> : <span id="player2-score">0</span>
+                    &nbsp;&nbsp; <span id="player1-info">PLAYER</span> : <span id="player1-score">0</span></h5>
+
+                <div class="container" id="main">
+
+                    <div class="container green-bg" id="page0"></div>
+                    <div class="container green-bg" id="page1">
+                        <h2>Welcome to <br>Poké Tic-Tac-Toe!</h2>
+                        <h4>Select your option</h4>
+                        <h3 class="center-block" id="one-player">One Player</h3>
+                        <h3 class="center-block" id="two-player">Two Players</h3>
+                    </div>
+                    <div class="container green-bg dont-show" id="page2">
+                        <h2>Select your Pokémon</h2>
+                        <h2 id="xo2"><a href="#" class="big-font" id="x2"><img src="Pachirisu.png" width="80px"></a>
+                            &nbsp;&nbsp; <a href="#" class="big-font" id="o2"><img src="seel.png" width="110px"></a>
+                        </h2>
+                        <h4 class="center-block" id="back2"><span class="glyphicon glyphicon-chevron-left"
+                                aria-hidden="true"></span> Back</h4>
+                    </div>
+                    <div class="container green-bg dont-show" id="page3">
+                        <h2>Player 1 &#58; Select your Pokémon</h2>
+                        <h2 id="xo3"><a href="#" class="big-font" id="x3"><img src="Pachirisu.png" width="80px"></a>
+                            &nbsp;&nbsp; <a href="#" class="big-font" id="o3"><img src="seel.png" width="110px"></a>
+                        </h2>
+                        <h4 class="center-block" id="back3"><span class="glyphicon glyphicon-chevron-left"
+                                aria-hidden="true"></span> Back</h4>
+                    </div>
+                    <div class="container green-bg dont-show" id="page4">
+                        <div class="row">
+                            <div class="col-xs-4" id="r11"></div>
+                            <div class="col-xs-4" id="r12"></div>
+                            <div class="col-xs-4" id="r13"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4" id="r21"></div>
+                            <div class="col-xs-4" id="r22"></div>
+                            <div class="col-xs-4" id="r23"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4" id="r31"></div>
+                            <div class="col-xs-4" id="r32"></div>
+                            <div class="col-xs-4" id="r33"></div>
+                        </div>
+                    </div>
+                    <div class="container dont-show" id="page5"></div>
+                    <h1 class="dont-show" id="message"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js'></script>
+    <script src="./script.js"></script>
+zz
+</body>
+
+</html>
