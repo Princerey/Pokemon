@@ -4,10 +4,12 @@ html, body {
   position: fixed;
   padding: 0;
   margin: 0;
+  margin-top: 30px;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  
 }
 
 #mazeContainer {
@@ -15,13 +17,15 @@ html, body {
   transition-duration: 1s;
   transition-timing-function: linear;
   position: relative;
-  top: 37px;
+  top: 80px;
   opacity: 0.8;
   display: inline-block;
   background-color: rgba(157, 144, 144, 0.6);
   margin: auto;
   width: 500px;
   height: 500px;
+  right:15px;
+  border-radius: 13px;
 }
 
 #mazeContainer #mazeCanvas {
@@ -71,14 +75,19 @@ select:focus {
 
 .custom-select {
   display: inline-block;
+  padding-right: 15px;
+  font-family: "poppins";
+ 
 }
 
 .custom-select select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAh0lEQVQ4T93TMQrCUAzG8V9x8QziiYSuXdzFC7h4AcELOPQAdXYovZCHEATlgQV5GFTe1ozJlz/kS1IpjKqw3wQBVyy++JI0y1GTe7DCBbMAckeNIQKk/BanALBB+16LtnDELoMcsM/BESDlz2heDR3WePwKSLo5eoxz3z6NNcFD+vu3ij14Aqz/DxGbKB7CAAAAAElFTkSuQmCC');
   background-repeat: no-repeat;
   background-position: 125px center;
+  font-family: "poppins";
 }
 
 #Message-Container {
@@ -115,7 +124,7 @@ select:focus {
 }
 
 #page #menu {
-  margin: auto;
+  margin-top: auto;
   padding: 10px;
   height: 65px;
   box-sizing: border-box;
@@ -163,51 +172,16 @@ select:focus {
   }
 }
 
-.ana {
-  width: 300px;
-  margin: 120px 0 0 30px;
-}
-
-.anan {
-  color: rgb(182, 182, 182);
-  font-family: "Montserrat", sans-serif;
-  position: relative;
-  top: -18em;
-  left: 29em;
-  list-style: none;
-  font-size: 35px;
-  /* line-height: 70px; */
-}
-
-.am,
-.amm {
-  width: 70px;
-  height: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background-color: rgb(70, 6, 57);
-  box-shadow:
-    -0.2em -0.2em 0.2em rgb(47, 4, 39),
-    -0.3em -0.3em 0.4em rgb(69, 6, 57),
-    -0.1em -0.1em 0.3em inset rgb(82, 31, 72),
-    0.1em 0.1em 0.1em rgb(63, 0, 50),
-    0.2em 0.2em 0.2em rgb(65, 0, 52);
-}
-
-.amm {
-  position: relative;
-  left: 2em;
-}
 
 .instr{
+  position: relative;
   transition-property: background-color opacity;
-  cursor: pointer;
   background-color: rgba(157, 144, 144, 0.4);
-  width: 200px;
-  padding: 40px 20px;
+  width: 250px;
+  padding: 20px 20px;
   border: none;
+  top:200px;
+  left:50px;
   border-radius: 10px;
   color: white;
   font-family: "Montserrat", sans-serif;
@@ -216,37 +190,88 @@ select:focus {
   text-align: center;
   border: 1px solid rgba(255,255,255,0.2);
 }
+/* #playPanel {
+  position: relative;
+  left:320px;
+  background-color: #c2defc;
+  border-radius: 15px;
+  padding: 40px;
+  padding-bottom: 80px;
+  max-width: 800px;
+  width: 95%;
+  background: rgba(255, 255, 255, 0.3);
+  border: #f5f2f2 1px solid;
+} */
+.back{
+  color: #e5e7eb;
+  margin: 30px 0 0 10px;
+  text-decoration: none;
+  font-family: "poppins";
+  position: relative;
+  top: 190px;
+  left:10px;
+} 
+
+.back:hover{
+  color: #fcdfaa;
+}
 .drop {
-  background: rgba(157, 144, 144, 0.4);
+  background: rgba(211, 199, 199, 0.325);
   border-radius: 10px;
-  border: 1px solid rgba(255,255,255,0.2);
+  border: 1px solid rgba(20, 18, 18, 0.514);
   position: absolute;
   backdrop-filter: blur(5px);
  -webkit-backdrop-filter: blur(5px);
   display: block;
   margin: 0 auto;
+  font-size: 25px;
+  color: #230303;
 }
 .drop2 {
-  width: 40px;
-  height: 40px;
-  top: 55px;
-  left: -85%;
+  width: 50px;
+  height: 50px;
+  top: 470px;
+  left: 68.3%;
   right: 0;
-  z-index: 4;
 }
+.drop6 {
+  width: 50px;
+  height: 50px;
+  top: 280px;
+  left: 68.3%;
+  right: 0;
+}
+.drop1 {
+  /* background: rgba(211, 199, 199, 0.325); */
+  /* border-radius: 10px; */
+  /* border: 1px solid rgba(20, 18, 18, 0.514); */
+  position: absolute;
+  backdrop-filter: blur(5px);
+ -webkit-backdrop-filter: blur(5px);
+  display: block;
+  margin: 0 auto;
+  font-size: 22px;
+  color: #ffffff;
+}
+.drop7 {
+  width: 50px;
+  height: 50px;
+  top: 385px;
+  left: 70%;
+  right: 0;
+}
+
 
 .drop3 {
   width: 60px;
   height: 60px;
-  top: 190px;
-  right: 1120px;
-  z-index: 3;
+  top: 365px;
+  left:1175px;
 }
-
-.drop4 {
- width: 40px;
- height: 40px;
- border-radius: 20%;
- top: 20px;
- right: 1000px;
+.drop5 {
+  width: 60px;
+  height: 60px;
+  top: 365px;
+  left:1350px;
+  z-index: 4;
 }

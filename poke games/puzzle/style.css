@@ -4,7 +4,7 @@
     background: radial-gradient(circle, rgba(121, 9, 99, 1) 0%, rgba(106, 8, 87, 1) 2%, rgba(67, 5, 55, 1) 11%, rgba(52, 4, 43, 1) 26%, rgba(76, 6, 62, 1) 46%, rgba(33, 2, 27, 1) 65%, rgba(49, 3, 40, 1) 87%, rgba(0, 0, 0, 1) 100%);
 }
 
-h2 {
+h1 {
     font-weight: normal;
     text-align: center;
 }
@@ -33,6 +33,18 @@ h3 {
     border: #f5f2f2 1px solid;
 }
 
+#playPanel1 {
+    position: relative !important;
+    margin-top:80px !important;
+    background-color: #c2defc;
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 800px;
+    width: 95%;
+    background: rgba(255, 255, 255, 0.3);
+    border: #f5f2f2 1px solid;
+    position: relative;
+}
 #collage #actualImageBox {
     display: inline-block;
     font-size: 0.8em;
@@ -107,7 +119,7 @@ h3 {
     font-size: 100%;
     font-weight: 700;
     line-height: 24px;
-    margin: 0;
+    margin-top: 5px;
     outline: 2px solid transparent;
     padding: 1rem 1.5rem;
     text-align: center;
@@ -125,7 +137,7 @@ h3 {
     transform: translateY(0.125rem);
 }
 
-.button-83:focus {
+.button-83:hover {
     box-shadow: rgba(72, 35, 7, .46) 0 0 0 4px, -6px 8px 10px rgba(81, 41, 10, 0.1), 0px 2px 2px rgba(81, 41, 10, 0.2);
 }
 
@@ -188,7 +200,7 @@ input[type="radio"]:checked + label {
     color: #f1f3f5;
     font-weight: 900;
     transition: 0.3s;
-    padding: 5px;
+    padding: 6px;
     border-radius: 5px;
 }
 .back{
@@ -199,4 +211,12 @@ input[type="radio"]:checked + label {
 
 .back:hover{
     color: #fcdfaa;
+}
+.text{
+    text-align: left;
+    box-sizing: border-box;
+    color: #482307;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 10px
 }

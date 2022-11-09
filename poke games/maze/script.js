@@ -538,7 +538,7 @@ window.onload = function() {
   };
 
   finishSprite = new Image();
-  finishSprite.src = "ash.png"+
+  finishSprite.src = "Snorlax.png"+
   "?" +
   new Date().getTime();
   finishSprite.setAttribute("crossOrigin", " ");
@@ -584,3 +584,23 @@ function makeMaze() {
     document.getElementById("mazeContainer").style.opacity = "100";
   }
 }
+function left(){
+window.dispatchEvent(new KeyboardEvent('keydown', {
+  keyCode: 37
+}));
+}
+function up(){
+  window.dispatchEvent(new KeyboardEvent('keydown', {
+    keyCode: 38
+  }));
+  }
+  function down(){
+    window.dispatchEvent(new KeyboardEvent('keydown', {
+      keyCode: 40
+    }));
+    }
+    function right(){
+      window.dispatchEvent(new KeyboardEvent('keydown', {
+        keyCode: 39
+      }));
+      }

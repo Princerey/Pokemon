@@ -5,6 +5,8 @@
   <title>Poke-Maze</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
 </head>
 <body>
@@ -26,7 +28,7 @@
       <div id="menu">
         <div class="custom-select">
           <select id="diffSelect">
-                    <option value="10">Easy &nbsp; &#709;</option>
+                    <option value="10">Easy</option>
                     <option value="15">Medium</option>
                     <option value="25">Hard</option>
                     <option value="38">Extreme</option>                                      
@@ -42,25 +44,19 @@
     </div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
-    <p class="instr">Use the Keys('←', '↑', '→', '↓') on your keyboard to move the Poké Ball to Pikachu.</p>
-    <div class="drop drop2"></div>
-      <div class="drop drop3"></div>
-      <div class="drop drop4"></div>
-    <img class="ana" src="pokemon.gif">
-    <ul class="anan">
-      <li class="am">P</li>
-      <li class="amm">O</li>
-      <li class="am">K</li>
-      <li class="amm">E</li>
-      <li class="am">M</li>
-      <li class="amm">A</li>
-      <li class="am">Z</li>
-      <li class="amm">E</li>
-    </ul>
+    <p class="instr">Select Difficulty and press the Start button. <br>Use the Keys('←', '↑', '→', '↓') on your keyboard or screen to move the Poké Ball to Snorlax.</p>
+    <div ><button onclick=down() class="drop drop2"><i class="fa-solid fa-caret-down"></i></button></div>
+    <div><button onclick=left()  class="drop drop3"><i class="fa-solid fa-caret-left"></i></button></div>
+    <div ><button onclick=up() class="drop drop6"><i class="fa-solid fa-caret-up"></i></button></div>
+    <div class="drop1 drop7"><i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+    <div ><button onclick=right() class="drop drop5"><i class="fa-solid fa-caret-right"></i></i></button></div>
   </body>
 </html>
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js'></script><script  src="./script.js"></script>
-
+  <div class="back">
+    <a class="back" href="/poke games/dash main/index.html"><i class="fa-solid fa-chevron-left"></i>
+    <span>&nbsp; Back to main menu</span></a>
+</div>
 </body>
 </html>

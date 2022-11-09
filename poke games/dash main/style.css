@@ -19,6 +19,7 @@ body {
     position: relative;
     height: 500px;
     width: 800px;
+    left: 40px;
     margin: 0;
     display: grid;
     grid-template-rows: 20% 15% 12% 11% 11% 11% 20%;
@@ -33,6 +34,7 @@ body {
     position: relative;
     left: -30px;
     font-weight: 700;
+    color: #221104;
 }
 
 .productTable {
@@ -153,61 +155,61 @@ body {
 
 #bubble1 {
     --size: 0.7;
-    left: 570px;
+    left: 610px;
     top: 10px;
 }
 
 #bubble2 {
     --size: 1.4;
-    left: 220px;
+    left: 260px;
     top: 300px;
 }
 
 #bubble3 {
     --size: 2.1;
-    left: 620px;
+    left: 660px;
     top: 800px;
 }
 
 #bubble4 {
     --size: 1.6;
-    left: 720px;
+    left: 760px;
     top: 100px;
 }
 
 #bubble5 {
     --size: 0.8;
-    left: 820px;
+    left: 860px;
     top: 600px;
 }
 
 #bubble6 {
     --size: 1;
-    left: 90px;
+    left: 150px;
     top: 100px;
 }
 
 #bubble7 {
     --size: 2;
-    left: 470px;
+    left: 510px;
     top: 500px;
 }
 
 #bubble8 {
     --size: 4.1;
-    left: 950px;
+    left: 990px;
     top: 200px;
 }
 
 #bubble9 {
     --size: 1;
-    left: 1170px;
+    left: 1210px;
     top: 10px;
 }
 
 #bubble10 {
     --size: 0.8;
-    left: 150px;
+    left: 190px;
     top: 550px;
 }
 
@@ -595,7 +597,7 @@ div.item2 {
 }
 
 div.item2 h3 {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 40px;
     color: white;
     position: relative;
