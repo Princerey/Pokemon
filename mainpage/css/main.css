@@ -311,8 +311,8 @@ i {
   }
   .logo{
 	position: relative;
-	bottom:11em;
-	left:29.5em;
+	bottom:10em;
+	left:28em;
   }
   
   /* anim */
@@ -353,8 +353,8 @@ h5{
 .homee{
 	position:relative;
 	font-size: 2.5em;
-	top:3.5em;
-	left:34.5em;
+	top:3em;
+	left:32em;
 }
 /* cursor */
 @import "compass/css3"; 
