@@ -23,62 +23,62 @@ let countdown;
 const quizArray = [
     { 
         id: "0",
-        question:"./pics/Electrode1.png",
-        options: ["Electrode", "Clefairy", "Jigglypuff", "Venonat"],
-        correct: "Electrode",
+        question:"pics/Poliwhirl.png",
+        options: ["Poliwhirl", "Poliwblu", "Poliwag", "Poliwrath"],
+        correct: "Poliwhirl",
     },
     {
         id: "1",
-        question: "",
-        options: ["Wailmer", "Swablu", "Minun", "Altaria"],
-        correct: "Altaria",
+        question:"pics/Nidoking.png",
+        options: ["Nidorina", "Nidorino", "Nidoran", "Nidoking"],
+        correct: "Nidoking",
     },
     {
         id: "2",
-        question: "",
-        options: ["Kabutops", "Zubat", "Doduo", "Muk"],
-        correct: "Kabutops",
+        question:"pics/Growlithe.png",
+        options: ["Growlithe", "Articuno", "Jolteon", "Arcanine"],
+        correct: "Growlithe",
     },
     {
         id: "3",
-        question: "",
-        options: ["Suicune", "Pupitar", "Entei", "Phanpy"],
-        correct: "Suicune",
+        question:"pics/Mewtwo.png",
+        options: ["Mewtwo", "Meow", "Mew", "Mewtoo"],
+        correct: "Mewtwo",
     },
     {
         id: "4",
-        question: "",
-        options: ["Medicham", "Zangoose", "Corphish", "Armaldo"],
-        correct: "Medicham",
+        question:"pics/Vulpix.png",
+        options: ["Vulpix", "Ponyta", "Ninetails", "Rapidash"],
+        correct: "Vulpix",
     },
     {
         id: "5",
-        question: "",
-        options: ["Slowbro", "Rapidash", "Bellsprout", "Kakuna"],
-        correct: "Kakuna",
+        question:"pics/Weezing.png",
+        options: ["Gengar", "Koffing", "Ditto", "Weezing"],
+        correct: "Weezing",
     }, {
         id: "6",
-        question: "",
-        options: ["Shiftry", "Seedot", "Ralts", "Pelipper"],
-        correct: "Ralts",
+        question:"pics/Electrode.png",
+        options: ["Moltres", "Magnemite", "Electrode", "Magneton"],
+        correct: "Electrode",
     },
     {
         id: "7",
-        question: "",
-        options: ["Tangela", "Kadabra", "Tentacruel", "Magneton"],
-        correct: "Tangela",
+        question:"pics/Drowzee.png",
+        options: ["Drowzee", "Kadabra", "Hypno", "Abra"],
+        correct: "Drowzee",
     },
     {
         id: "8",
-        question: "",
-        options: ["Victreebel", "Tentacool", "Weepinbell", "Machop"],
-        correct: "Weepinbell",
+        question:"pics/Dragonite.png",
+        options: ["Dratini", "Dragonair", "Dragonite", "Dragoknight"],
+        correct: "Dragonite",
     },
     {
         id: "9",
-        question: "./pics/Hariyama.png",
-        options: ["Kirlia", "Breloom", "Hariyama", "Ninjask"],
-        correct: "Hariyama",
+        question:"pics/Tangela.png",
+        options: ["Electrabuzz", "Mr. Mime", "Tangela", "Jynx"],
+        correct: "Tangela",
     },
 ];
 
@@ -140,7 +140,7 @@ function quizCreator() {
         countOfQuestion.innerHTML = 1 + " of " + quizArray.length + " Question";
         let question_DIV = document.createElement("div");
         question_DIV.classList.add("question");
-        question_DIV.innerHTML = `<img src="${i.question}"> </img>`;
+        question_DIV.innerHTML = `<img class="imga" src="${i.question}"> </img>`;
         div.appendChild(question_DIV);
         div.innerHTML += `
     <button class="option-div" onclick="checker(this)">${i.options[0]}</button>
