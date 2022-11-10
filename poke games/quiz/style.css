@@ -1,0 +1,213 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    height: 100vh;
+    background: radial-gradient(circle, rgba(121, 9, 99, 1) 0%, rgba(106, 8, 87, 1) 2%, rgba(67, 5, 55, 1) 11%, rgba(52, 4, 43, 1) 26%, rgba(49, 3, 40, 1) 46%, rgba(33, 2, 27, 1) 65%, rgba(49, 3, 40, 1) 87%, rgba(0, 0, 0, 1) 100%);
+    overflow: hidden;
+  }
+  .start-screen,
+  .score-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #display-container {
+    background: rgba(255, 255, 255, 0.3);
+    border: #f5f2f2 1px solid;
+    padding: 3.1em 1.8em;
+    width: 80%;
+    max-width: 37.5em;
+    margin: 0 auto;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 0.6em;
+  }
+  .header {
+    margin-bottom: 1.8em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.6em;
+    border-bottom: 0.1em solid #c0bfd2;
+  }
+  .timer-div {
+    background-color: rgb(255, 240, 252);
+    width: 7.5em;
+    border-radius: 1.8em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7em 1.8em;
+  }
+  .question {
+    margin-bottom: 1.25em;
+    font-weight: 600;
+  }
+  .option-div {
+    font-size: 0.9em;
+    width: 40%;
+    padding: 1em;
+    margin: 0.3em 0;
+    text-align: left;
+    outline: none;
+    /* background: transparent; */
+    border: 1px solid #c0bfd2;
+    border-radius: 10px;
+  }
+  .option-div:disabled {
+    color: #000000;
+    cursor: not-allowed;
+  }
+  #next-button {
+    font-size: 1em;
+    margin-top: 1.5em;
+    background-color: rgba(52, 4, 43, 1);
+    color: #ffffff;
+    padding: 0.7em 1.8em;
+    border-radius: 0.3em;
+    float: right;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
+  }
+  .hide {
+    display: none;
+  }
+  .incorrect {
+    background-color: #ffdde0;
+    color: #d32f2f;
+    border:3px solid #d32f2f;
+  }
+  .correct {
+    background-color: #eaffd7;
+    color: #689f38;
+    border:3px solid #689f38;
+  }
+  #user-score {
+    font-size: 1.5em;
+    color: #ffffff;
+  }
+
+  .psy img{
+    height:300px;
+    margin: 20px;
+  }
+  .tex{
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #f5f2f2;
+  }
+
+.button-62 {
+  background: linear-gradient(to bottom right, #c94139, #fed43e);
+  border: 0;
+  border-radius: 7px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 600;
+  padding:0.5rem 3rem;
+  text-align: center;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.button-62:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button-62:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+#restart{
+  margin-top: 30px;
+}
+
+.score-container{
+  background: rgba(255, 255, 255, 0.3);
+  border: #f5f2f2 1px solid;
+  height: 500px;
+  width: 500px;
+  margin: 100px 0 0 470px;
+  border-radius: 20px;
+}
+
+.blur {
+  position: absolute;
+  background: rgba(255,255,255,0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+.blur0{
+  width: 90px;
+  height: 90px;
+  top: 30px;
+  left: 300px;
+}
+.blur1{
+  width: 200px;
+  height: 200px;
+  top: 200px;
+  left: 70px;
+}
+.blur2{
+  width: 120px;
+  height: 120px;
+  top: 500px;
+  left: 300px;
+}
+.blur3{
+  width: 50px;
+  height: 50px;
+  top: 450px;
+  left: 50px;
+}
+.blur4{
+  width: 120px;
+  height: 120px;
+  top: 180px;
+  left: 1030px;
+}
+.blur5{
+  width: 50px;
+  height: 50px;
+  top: 50px;
+  left: 1300px;
+}
+.blur6{
+  width: 120px;
+  height: 120px;
+  top: 300px;
+  left: 1300px;
+}
+.blur7{
+  width: 200px;
+  height: 200px;
+  top: 480px;
+  left: 1070px;
+}
+.blur8{
+  width:90px;
+  height: 60px;
+  top: 620px;
+  left: 520px;
+}
+.blur9{
+  width:120px;
+  height: 60px;
+  top: 20px;
+  left: 750px;
+}

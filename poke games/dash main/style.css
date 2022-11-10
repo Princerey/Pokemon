@@ -1,5 +1,7 @@
 html {
     height: 100%;
+    overflow: hidden;
+    animation: none ;
 }
 
 body {
@@ -833,4 +835,15 @@ input[type="radio"] {
     top: 280px;
     left: 300px;
 	color: rgb(248, 216, 216);
+}
+.homee:hover{
+    color: rgb(255, 255, 255);
+}
+.left{
+    text-decoration: none;
+    z-index: 100;
+}
+.right{
+    text-decoration: none;
+    z-index: 100;
 }

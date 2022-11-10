@@ -15,7 +15,7 @@ html,body{
     background: radial-gradient(circle, rgba(121, 9, 99, 1) 0%, rgba(106, 8, 87, 1) 2%, rgba(67, 5, 55, 1) 11%, rgba(52, 4, 43, 1) 26%, rgba(49, 3, 40, 1) 46%, rgba(33, 2, 27, 1) 65%, rgba(49, 3, 40, 1) 87%, rgba(0, 0, 0, 1) 100%);
 }
 #bg{
-    box-shadow: 0 13px 30px;
+    /* box-shadow: 0 13px 30px; */
     padding:0;
     border-radius:20px;
     min-width: 400px;
@@ -23,8 +23,9 @@ html,body{
     width: 400px;
     height: 400px;
     position: relative;
+    left:105px;
     background: rgba(255, 255, 255, 0.3);
-    border: #f5f2f2 1px solid;
+    border: #e5d8d8 1px solid;
     /* background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%); */
 }
 #turn-info{
@@ -33,15 +34,19 @@ html,body{
 
 #outer{
     border-radius: 20px;
-    box-shadow: inset 0 0 10px;
+    /* box-shadow: inset 0 0 10px; */
     height: 400px;
     width: 400px;
     padding:40px;
+    align-items: center;
+    justify-content: center;
 }
 
 
 .dont-show{
     display:none;
+    font-family: "poppins";
+    font-size: 20px;
 }
 .row{
     margin:0;
@@ -76,14 +81,14 @@ html,body{
     width: 200px;
     padding:10px;
     border:2px solid rgb(152, 152, 152);
-    border-radius: 5px;
+    border-radius: 10px;
 
 }
 #one-player:hover,#two-player:hover,#back2:hover,#back3:hover{
     border-color: white;
-    box-shadow:0 0 10px;
+    box-shadow:0 0 5px;
     cursor:pointer;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 #back2,#back3{
@@ -93,6 +98,7 @@ html,body{
     width: 100px;
     position: relative;
    top:-1em;
+   border-radius: 10px;
 }
 #xo3,#xo2{
     margin-top:60px;  
@@ -113,25 +119,40 @@ html,body{
    position: relative;
    top:-1em;
 }
+.big-font img:hover{
+    border: 2px dashed rgba(230,230,230,.5);
+    transform: scale(1.1);
+ }
+
 .info{
     margin-top:-25px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
     color:black;
     font-weight:bold;
     display:none;
     position:absolute;
 }
 #reset{
+    font-family: "poppins";
     cursor:pointer;
     color:#f3f5f3;
     right: 40px;
+    top: 33px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
     font-weight: 300;
-    background: rgb(242, 242, 242,0.2);
-    padding: 5px;
-    font-size: 15px;
+    background: linear-gradient( #071429,#1d191997);
+    padding-left: 9px;
+    padding-right: 9px;
+    font-size: 14px;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
 }
 #reset:hover{
-    color:lightgrey;
+    color:rgb(118, 142, 152);
 }
 #green,#blue{
     background-color:rgb(85, 38, 6);
@@ -151,7 +172,7 @@ html,body{
 }
 
 .green-bg{
-    background: linear-gradient( #17191c,#000000);
+    background: linear-gradient( #071429,#1d191997);
     padding:6px;
     color: white;
     text-align:center;
@@ -162,6 +183,7 @@ html,body{
     top: 0;
     left: 0;
     z-index: 10;
+    border-radius: 10px;
 }
 #page5{
     background-color: rgba(0,0,0,0.33);
@@ -175,11 +197,13 @@ html,body{
 
 #message{
     color:white;
+    font-family: "poppins";
     z-index: 20;
     position: absolute;
     text-align:center;
     width: 100%;
     top:30%;
+    font-size: 28px;
 }
 
 .disable {
@@ -190,10 +214,28 @@ html,body{
 
 
 #main{
+    
     height: 100%;
     padding: 0;
     position: relative;
 }
 #page0{
     z-index: 5;
+}
+.back{
+    position: relative;
+    color: #e5e7eb;
+    margin: 30px 0 0 10px;
+    text-decoration: none;
+    font-size: 16px;
+    top:150px;
+right:660px;
+} 
+
+.back:hover{
+    color: #fcdfaa;
+    text-decoration: none;
+}
+.select{
+    font-size: 28px;
 }

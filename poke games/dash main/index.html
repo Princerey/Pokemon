@@ -11,8 +11,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
 </head>
 
 <body>
-    <!-- partial:index.partial.html -->
-    <!DOCTYPE html>
     <div class="bubble" id="bubble1"></div>
     <div class="bubble" id="bubble2"></div>
     <div class="bubble" id="bubble3"></div>
@@ -25,6 +23,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     <div class="bubble" id="bubble10"></div>
 
     <div id="ProductCard">
+        <!-- <button class="right" onclick=right()><i class="fa-solid fa-chevron-right"></i></button>
+        <button class="left" onclick=left()><i class="fa-solid fa-chevron-left"></i></button> -->
         <input type="radio" class="sliderSelection" name="position" id="input1" checked />
         <input type="radio" class="sliderSelection" name="position" id="input2" />
         <input type="radio" class="sliderSelection" name="position" id="input3" />
@@ -75,9 +75,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
             <div class="item">
                 <div id="producs5" class="productTable">
                     <div>
-                        <p>Hold the cursor to stretch out a stick as long as you think would help our Pokémon travel
-                            safely, not falling into the pit.</p>
-                        <a href="/stick/index.html" class="button-86">Play</a>
+                        <p>Guess the name of the Pokemons from their outline. Answer 'em all correctly to become a Pokemon Master.</p>
+                        <a href="/poke games/quiz/index.html" class="button-86">Play</a>
                     </div>
                 </div>
             </div>
@@ -97,7 +96,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
                 <h3>Poké-Finds</h3>
             </div>
             <div class="item2">
-                <h3>Poké-Move</h3>
+                <h3>Poké<br>Master</h3>
             </div>
 
         </div>
@@ -172,10 +171,23 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
                 </div>
             </div>
         </div>
-    </div>
-    
+        </div>
+        
     </div>
     <a class="homee" href="/home.html"><i class="fa-solid fa-house"></i></a>
+    <!-- <script>
+        function left(){
+window.dispatchEvent(new KeyboardEvent('keydown', {
+  keyCode: 37
+}));
+}
+function right(){
+    document.getElementById("input2").click()
+      window.dispatchEvent(new KeyboardEvent('keydown', {
+        keyCode: 39
+      }));
+      }
+        </script> -->
 </body>
 
 </html>

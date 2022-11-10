@@ -17,14 +17,14 @@ html, body {
   transition-duration: 1s;
   transition-timing-function: linear;
   position: relative;
-  top: 80px;
+  top: 40px;
   opacity: 0.8;
   display: inline-block;
   background-color: rgba(157, 144, 144, 0.6);
   margin: auto;
   width: 500px;
   height: 500px;
-  right:15px;
+  right:10px;
   border-radius: 13px;
 }
 
@@ -103,6 +103,7 @@ select:focus {
   right: 0;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 1;
+  font-family: "poppins";
 }
 
 #Message-Container #message {
@@ -110,9 +111,10 @@ select:focus {
   height: 300px;
   position: fixed;
   top: 50%;
-  left: 50%;
+  left: 49.3%;
   margin-left: -150px;
   margin-top: -150px;
+
 }
 
 #page {
@@ -230,14 +232,14 @@ select:focus {
 .drop2 {
   width: 50px;
   height: 50px;
-  top: 470px;
+  top: 450px;
   left: 68.3%;
   right: 0;
 }
 .drop6 {
   width: 50px;
   height: 50px;
-  top: 280px;
+  top: 260px;
   left: 68.3%;
   right: 0;
 }
@@ -256,7 +258,7 @@ select:focus {
 .drop7 {
   width: 50px;
   height: 50px;
-  top: 385px;
+  top: 365px;
   left: 70%;
   right: 0;
 }
@@ -265,13 +267,90 @@ select:focus {
 .drop3 {
   width: 60px;
   height: 60px;
-  top: 365px;
+  top: 345px;
   left:1175px;
 }
 .drop5 {
   width: 60px;
   height: 60px;
-  top: 365px;
+  top: 345px;
   left:1350px;
   z-index: 4;
+}
+.button-83 {
+  font-family: "poppins";
+  appearance: button;
+  position: relative;
+  right:20px;
+  background: linear-gradient(to bottom, #fff, #fcdfaa);
+  border: 0 solid #e5e7eb;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #482307;
+  column-gap: 1rem;
+  display: flex;
+  font-size: 100%;
+  font-weight: 700;
+  /* line-height: 24px; */
+  justify-content: center ;
+  margin-top: 5px;
+  outline: 2px solid transparent;
+  /* padding: 1rem 1rem; */
+  text-align: center;
+  text-transform: none;
+  transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  /* box-shadow: -6px 8px 10px rgba(81, 41, 10, 0.1), 0px 2px 2px rgba(81, 41, 10, 0.2); */
+}
+
+.button-83:active {
+  background-color: #f3f4f6;
+  box-shadow: -1px 1px 2px rgba(15, 8, 2, 0.15), 0px 1px 1px rgba(41, 21, 5, 0.15);
+  transform: translateY(0.125rem);
+}
+
+.button-83:hover {
+  box-shadow: rgba(30, 16, 5, 0.46) 0 0 0 4px, -6px 8px 10px rgba(81, 41, 10, 0.1), 0px 2px 2px rgba(81, 41, 10, 0.2);
+}
+.button-84 {
+  font-family: "poppins";
+  position: relative;
+  bottom:50px;
+  left:160px;
+  appearance: button;
+  background: linear-gradient(to bottom, #fff, #fcdfaa);
+  border: 0 solid #e5e7eb;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #482307;
+  column-gap: 1rem;
+  display: flex;
+  font-size: 100%;
+  font-weight: 700;
+  /* line-height: 24px; */
+  justify-content: center;
+  margin-top: 5px;
+  outline: 2px solid transparent;
+  /* padding: 1rem 1rem; */
+  text-align: center;
+  text-transform: none;
+  transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  /* box-shadow: -6px 8px 10px rgba(81, 41, 10, 0.1), 0px 2px 2px rgba(81, 41, 10, 0.2); */
+}
+.roh{
+  text-decoration: none;
+}
+.button-84:active {
+  background-color: #f3f4f6;
+  box-shadow: -1px 1px 2px rgba(15, 8, 2, 0.15), 0px 1px 1px rgba(41, 21, 5, 0.15);
+  transform: translateY(0.125rem);
+}
+
+.button-84:hover {
+  box-shadow: rgba(30, 16, 5, 0.46) 0 0 0 4px, -6px 8px 10px rgba(81, 41, 10, 0.1), 0px 2px 2px rgba(81, 41, 10, 0.2);
 }

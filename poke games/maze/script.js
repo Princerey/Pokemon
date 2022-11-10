@@ -33,7 +33,7 @@ function changeBrightness(factor, sprite) {
 }
 
 function displayVictoryMess(moves) {
-  document.getElementById("moves").innerHTML = "You Moved " + moves + " Steps.";
+  document.getElementById("moves").innerHTML = " in " + moves + " Steps.";
   toggleVisablity("Message-Container");  
 }
 

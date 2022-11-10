@@ -90,15 +90,15 @@ $(document).ready(()=>{
         paintCount = 0;
         $("#turn-info").show();
 
-        let compMsg = "Player 1's Turn";
-        let playerMsg = "Player 2's Turn";
+        let compMsg = "Player 1";
+        let playerMsg = "Player 2";
         let fadePage = $("#page3");
         let peiceX = $("#x3");
         let peiceO = $("#o3");
         let back = $("#back3");
 
         if(isComputer){
-            compMsg = "Computer's Turn";
+            compMsg = "Computer";
             playerMsg = "Your Turn";
             fadePage = $("#page2");
             peiceX = $("#x2");
@@ -178,11 +178,11 @@ $(document).ready(()=>{
 
         if(checkWin(compPeice)[0]){ //if computer wins
             player1score++;
-            doWinner(compPeice,true,player1score,"Player 1 Wins!");
+            doWinner(compPeice,true,player1score,"Player 1 Wins 🎉");
         }
         else if(checkWin(playerPeice)[0]){ //if player wins
             player2score++;
-            doWinner(playerPeice,false,player2score,"Player 2 Wins");
+            doWinner(playerPeice,false,player2score,"Player 2 Wins 🎉");
         }
         else if(paintCount>8){
             paintCount = 0;
@@ -229,8 +229,8 @@ $(document).ready(()=>{
             $("#page5").fadeIn(()=>{
 
                 let winMsg = msg;
-                if(isComputer && isGreen) winMsg = "You lose :(";
-                if(isComputer && !isGreen) winMsg = "You Win!!!";
+                if(isComputer && isGreen) winMsg = "You Lost ☹️";
+                if(isComputer && !isGreen) winMsg = "You Won 🎉";
 
                 $("#message").html(winMsg).show();
                 if(isGreen) $("#player2-score").html(score);
@@ -271,7 +271,7 @@ $(document).ready(()=>{
 
     function autoCompMove(){
         turnCount++;
-        if(paintCount>8 || turnCount>4 || !isGameOn) return;
+        if(paintCount>8 || turnCount>4 || !isGameOn ) return;
         isComputerTurn = true;
         $("#blue").slideToggle(()=>{
             $("#green").slideToggle(()=>{
@@ -306,7 +306,7 @@ $(document).ready(()=>{
         let count = 0;
         if(paintCount === 3 && b[1][1] == compPeice){
             if(b[0][0] == playerPeice && b[2][2] == playerPeice)
-                smartPositions = [[2,0],[0,2]];
+                smartPositions = [[1,0],[0,1]];
             else if(b[2][0] == playerPeice && b[0][2] == playerPeice)
                 smartPositions = [[0,0],[2,2]];
         }

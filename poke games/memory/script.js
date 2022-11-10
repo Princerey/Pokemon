@@ -22,9 +22,9 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
   }
 
   render() {
-    return /*#__PURE__*/(
-      React.createElement("div", { className: "area__footer" }, /*#__PURE__*/
-      React.createElement("p", null, "Turns : ", this.props.turns), /*#__PURE__*/
+    return  (
+      React.createElement("div", { className: "area__footer" },  
+      React.createElement("p", null, "Turns : ", this.props.turns),  
       React.createElement("p", null, "Time : ", this.state.elapsed, " sec")));
 
 
@@ -47,7 +47,7 @@ class Tile extends React.Component {
   }
 
   render() {
-    return /*#__PURE__*/(
+    return  (
       React.createElement("div", {
         onClick: this.handleClick,
         className:
@@ -56,10 +56,10 @@ class Tile extends React.Component {
         "tile--selected" :
         this.props.status === "matched" ?
         "tile--selected tile--matched" :
-        "") }, /*#__PURE__*/
+        "") },  
 
 
-      React.createElement("div", { className: "tile--front" }), /*#__PURE__*/
+      React.createElement("div", { className: "tile--front" }),  
       React.createElement("div", {
         className: "tile--back",
         style: { backgroundColor: this.props.accent } 
@@ -193,26 +193,31 @@ class PlayArea extends React.Component {
       activeTile: null });
 
   }
-
+  refresh(){
+    window.location.reload("Refresh")
+  }
   render() {
     let cindex = 0;
-    return /*#__PURE__*/(
-      React.createElement("div", { className: "area__wrapper" }, /*#__PURE__*/
-      React.createElement("h1", { className: "area__head" }, "The Memory Games"), /*#__PURE__*/
+    return  (
+      React.createElement("div", { className: "area__wrapper" },
+      React.createElement("div", { className: "play" }, 
+      // React.createElement("h1", { className: "area__head" }, "The Poké Memory Game"),
       React.createElement("ul", { className: "area" },
-      this.state.tiles.map((e) => /*#__PURE__*/
+      this.state.tiles.map((e) =>  
       React.createElement(Tile, {
         index: cindex++,
         status: e.status,
         icon: e.icon,
         accent: e.accent,
-        onClickListener: this.handleClick }))),
-
-
-
-      !this.props.gameOver ? /*#__PURE__*/
+        onClickListener: this.handleClick })))),
+      !this.props.gameOver ?
       React.createElement(PlayFooter, { turns: this.state.turns, gameOver: this.props.gameOver }) :
-      null));
+      null,
+      React.createElement("button", { className: "modal__btn1", onClick:this.refresh }, "Reset"),
+      React.createElement("div", { className: "back1" }, 
+      React.createElement("a", { className: "back1", href:"/poke games/dash main/index.html"}, 
+      React.createElement("span",null," < Back to main menu")))
+      ));
 
 
   }}
@@ -224,26 +229,19 @@ class PlayModal extends React.Component {
   }
 
   render() {
-    return /*#__PURE__*/(
-      React.createElement("div", { className: this.props.gameOver ? "modal__wrapper" : "hidden" }, /*#__PURE__*/
-      React.createElement("div", { className: "modal" }, /*#__PURE__*/
-      React.createElement("div", { className: "modal--top overlay" }, /*#__PURE__*/
-      React.createElement("p", null, /*#__PURE__*/
-      React.createElement("b", null, "High Score"), " : ", this.props.highScore, " pts")), /*#__PURE__*/
-
-
-      React.createElement("div", { className: "modal--bottom" }, /*#__PURE__*/
-      React.createElement("p", null, "Hey there, You think you\u2019ve got a sharp memory? Let\u2019s see how far you can go."), /*#__PURE__*/
-
-
-
-      React.createElement("button", { className: "modal__btn", onClick: this.props.onPlayClick }, "Play")))));
-
-
-
-
-
-
+    return  (
+      React.createElement("div", { className: this.props.gameOver ? "modal__wrapper" : "hidden" },  
+      React.createElement("div", { className: "modal" },  
+      React.createElement("div", { className: "modal--top overlay" },  
+      React.createElement("p", null,  
+      React.createElement("b", null, "Your Score"), " : ", this.props.highScore, " pts")),  
+      React.createElement("div", { className: "modal--bottom" },  
+      React.createElement("p", null, "Hey there, You think you\u2019ve got a sharp memory? Let\u2019s see how far you can go."),  
+      React.createElement("button", { className: "modal__btn", onClick: this.props.onPlayClick }, "Play"))),
+      React.createElement("div", { className: "back" }, 
+      React.createElement("a", { className: "back", href:"/poke games/dash main/index.html"}, 
+      React.createElement("span",null," < Back to main menu")))
+      ));
   }}
 
 
@@ -277,12 +275,12 @@ class App extends React.Component {
   }
 
   render() {
-    return /*#__PURE__*/(
-      React.createElement("div", null, /*#__PURE__*/
+    return  (
+      React.createElement("div", null,  
       React.createElement(PlayModal, {
         gameOver: this.state.gameOver,
         highScore: this.state.score,
-        onPlayClick: this.initCards }), /*#__PURE__*/
+        onPlayClick: this.initCards }),  
 
       React.createElement(PlayArea, {
         gameOver: this.state.gameOver,
@@ -293,4 +291,4 @@ class App extends React.Component {
   }}
 
 
-ReactDOM.render( /*#__PURE__*/React.createElement(App, null), document.getElementById("root"));
+ReactDOM.render(  React.createElement(App, null), document.getElementById("root"));
