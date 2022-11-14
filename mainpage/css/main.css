@@ -498,3 +498,31 @@ h5 {
 		overflow: hidden;
 	}
 } 
+
+
+
+.feedback-button {
+	height: 40px;
+	border: solid 3px #CCCCCC;
+	background: #333;
+	width: 100px;
+	line-height: 32px;
+	-webkit-transform: rotate(-90deg);
+	font-weight: 600;
+	color: white !important;
+	transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	text-align: center;
+	font-size: 17px;
+	position: fixed;
+	right: -40px;
+	top: 45%;
+	font-family: "POPPINS";
+	z-index: 999;
+	text-decoration: none;
+  }
+  .feedback-button:hover{
+	text-decoration: none;
+
+  }
