@@ -301,19 +301,23 @@ function empty() {
   var y;
   x = document.getElementById("email").value;
   y = document.getElementById("msg").value;
-if ((x == "") || (y == "")) {
-  alert("Fields cannot be empty");
+if (x == "") {
+  alert("Please enter the E-mail");
   return false;
 };
+if (y == "") {
+  alert("Please write us something");
+  return false;
+};
+
+
   if(x != "" && y!= ""){
     $(document).ready(function () {
-      $('.send').on("click", function () {
         $('.plane').addClass('fly'); $('.hidden').addClass('visible');
         $('.replace').removeClass('fa-paper-plane').addClass('fa-check');
         $('.rohit').text('SENT').addClass('fade');
         $('.data').text('Thanks for your Feedback 😉').addClass('fade');
         $(this).addClass('done');
-      });
     });
   };
 }

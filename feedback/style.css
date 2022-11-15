@@ -183,12 +183,17 @@ header h1 {
   border-radius: 0.3em;
   color: black;
   background-color: white;
+  font-family: "poppins";
+}
+[property=email] {
+  font-family: "poppins";
 }
 
 [property=comment]::placeholder {
   font-size: 110%;
   color: gray;
   filter: opacity(45%);
+  font-family: "poppins";
 }
 
 [property=comment]:focus {
@@ -214,6 +219,7 @@ header h1 {
   font-size: 110%;
   color: gray;
   filter: opacity(45%);
+  font-family: "poppins";
 }
 
 .email:focus {

@@ -143,6 +143,14 @@
     //     document.querySelector(".popup").style.display = "none";
     // });
     document.querySelector("#roh").addEventListener("click", function(){
+      var x;
+  x = document.getElementById("userInput").value;
+if (x == "") {
+  alert("Please enter the name of the Player");
+  return false;
+};
+
+if(x != ""){
         document.querySelector(".popup").style.display = "none";
         let userInput = document.querySelector ("#userInput") ;
         let userInput1 = document.querySelector ("#userInput1") ;
@@ -156,7 +164,9 @@
         else{
           message2.innerHTML = userInput1.value ;
         }
+      }
     });
+  
 
     
         </script>
