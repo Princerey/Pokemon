@@ -448,7 +448,7 @@ h5 {
 	align-items: center;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1024px) {
 	.all {
 		display: none;
 	}
@@ -477,28 +477,6 @@ h5 {
 	width: 100%;
 }
 }
-
-
-@media only screen and (min-width: 1700px) {
-	.all {
-		display: none;
-	}
-
-	.error {
-		display: block;
-		padding: 100px 10px 900px 20px;
-		font-size: 50px;
-	}
-
-	.error img {
-		width: 800px;
-	}
-
-	body {
-		overflow: hidden;
-	}
-} 
-
 
 
 .feedback-button {
