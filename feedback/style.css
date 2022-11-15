@@ -10,6 +10,9 @@ html {
   padding: 0;
 }
 
+body{
+/* padding-bottom: 10px; */
+}
 .feedback-button {
   height: 40px;
   border: solid 3px #CCCCCC;
@@ -41,7 +44,7 @@ html {
   background-color: rgba(72, 72, 72, 0.4);
   padding: 35px;
   width: 1000px;
-  height: 850px;
+  height: 835px;
   /* height: 120%; */
   float: left;
   left: 50%;
@@ -69,9 +72,9 @@ html {
   /* display: grid; */
   /* grid-template-columns: 1fr 1fr; */
   /* box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); */
-  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
   height: 740px;
   padding: 3em;
   display: flex;
