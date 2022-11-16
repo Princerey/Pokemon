@@ -1,8 +1,10 @@
+<p align="center" >
+<img src="https://github.com/Princerey/Pokemon/blob/main/images/buter.gif" alt="butterfree-gif" width="150px"  />
+</p>
+
 # Pokemon <img src="https://github.com/Princerey/Pokemon/blob/main/mainpage/pika.png" alt="Pokemon-Website" width="50px" /> [![GitHub](https://img.shields.io/github/license/Princerey/Pokemon?color=blue)](https://github.com/cobidev/simplefolio/blob/master/LICENSE.md) ![GitHub stars](https://img.shields.io/github/stars/Princerey/Pokemon) 
 
-<p align="center" >
-<img src="https://github.com/Princerey/Pokemon/blob/main/images/buter.gif" alt="butterfree-gif" width="200px"  />
-</p>
+
 
 https://user-images.githubusercontent.com/99486732/202260127-7384b8b3-10d2-4a64-aad6-c73155dec336.mp4
 
