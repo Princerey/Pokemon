@@ -4,13 +4,10 @@
 <img src="https://github.com/Princerey/Pokemon/blob/main/images/buter.gif" alt="butterfree-gif" width="200px"  />
 </p>
 
-<h3 align="center">A full-fledged Pokemon website!</h3>
-
-
-
 https://user-images.githubusercontent.com/99486732/202260127-7384b8b3-10d2-4a64-aad6-c73155dec336.mp4
 
 
+<h3 align="center">A full-fledged Pokemon website!</h3>
 
 ## Features
 
