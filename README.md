@@ -6,10 +6,8 @@
 
 <h3 align="center">A full-fledged Pokemon website!</h3>
 
-<h2 align="center">
-  <img src="" alt="Pokemon-Website" width="600px" />
-  <br>
-</h2>
+ https://github.com/Princerey/Pokemon/blob/main/imgs/Homepage.mp4
+
 
 ## Features
 
