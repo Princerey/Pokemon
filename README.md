@@ -12,7 +12,7 @@
 ⚡️ Modern UI Design + Reveal Animations\
 ⚡️ Poly-wrap components\
 ⚡️ Variety of Fun-pokemon-games\
-⚡️ Data of all Pokemons\
+⚡️ Pokedex having data of all Pokemons\
 ⚡️ Designed with HTML5, CSS3 and Javascript\
 ⚡️ Database- Firebase\
 ⚡️ Available only for Desktop display
@@ -31,4 +31,4 @@
 
 ## Post-Script 🎁
 
-We started this project with a big fight and further a plan of making just a single pokemon card generator page. With time, this developed into a complete Pokemon website as we kept on adding components those once seemed fantastical ideas. 
+We started this project with a big fight and further a plan of making just the pokemon card generator page. With time, this developed into a complete Pokemon website as we kept on adding components those once seemed fantastical ideas. 
