@@ -9,7 +9,7 @@ https://user-images.githubusercontent.com/99486732/202260127-7384b8b3-10d2-4a64-
 
 <h3 align="center">A full-fledged Pokemon website!</h3>
 
-## Features
+## Features <img src="https://github.com/Princerey/Pokemon/blob/main/imgs/009.png" alt="" width="50px" />
 
 ⚡️ Modern UI Design + Reveal Animations\
 ⚡️ Poly-wrap components\
@@ -22,7 +22,7 @@ https://user-images.githubusercontent.com/99486732/202260127-7384b8b3-10d2-4a64-
 <h3> Website Link : **[Pokemon](#)** </h3>
 
 
-## Sneak Peek
+## Sneak Peek <img src="https://github.com/Princerey/Pokemon/blob/main/imgs/039.png" alt="jigglypuff" width="50px" />
 <p align="center" >
 <img src="https://github.com/Princerey/Pokemon/blob/main/imgs/Screenshot%20(118).png" alt="pokedex" />
 <img src="https://github.com/Princerey/Pokemon/blob/main/imgs/Screenshot%20(119).png" alt="poke-battle" />
