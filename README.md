@@ -27,11 +27,11 @@ https://user-images.githubusercontent.com/99486732/202260127-7384b8b3-10d2-4a64-
 
 ## Sneak Peek
 <p align="center" >
-<img src="https://github.com/Princerey/Pokemon/blob/main/imgs/Screenshot%20(116).png" alt="mainpage" />
-<img src="https://github.com/Princerey/Pokemon/blob/main/imgs/Screenshot%20(117).png" alt="slider" />
 <img src="https://github.com/Princerey/Pokemon/blob/main/imgs/Screenshot%20(118).png" alt="pokedex" />
 <img src="https://github.com/Princerey/Pokemon/blob/main/imgs/Screenshot%20(119).png" alt="poke-battle" />
 <img src="https://github.com/Princerey/Pokemon/blob/main/imgs/Screenshot%20(121).png" alt="games-page" />
+  <img src="https://github.com/Princerey/Pokemon/blob/main/imgs/Puzzle.png" alt="puzzle" />
+<img src="https://github.com/Princerey/Pokemon/blob/main/imgs/Feedback.png" alt="feedback" />
 </p>
 
 ## Authors <img src="https://github.com/Princerey/Pokemon/blob/main/imgs/ash-pika.png" alt="pokeball" width="50px" />
