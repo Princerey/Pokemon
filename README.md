@@ -1,4 +1,4 @@
-# Pokemon ⚡️ [![GitHub](https://img.shields.io/github/license/Princerey/Pokemon?color=blue)](https://github.com/cobidev/simplefolio/blob/master/LICENSE.md) ![GitHub stars](https://img.shields.io/github/stars/Princerey/Pokemon) ![GitHub forks](https://img.shields.io/github/forks/Princerey/Pokemon)
+# Pokemon ⚡️ [![GitHub](https://img.shields.io/github/license/Princerey/Pokemon?color=blue)](https://github.com/cobidev/simplefolio/blob/master/LICENSE.md) ![GitHub stars](https://img.shields.io/github/stars/Princerey/Pokemon) 
 
 <h3 align="center">A full-fledged Pokemon website!</h3>
 
