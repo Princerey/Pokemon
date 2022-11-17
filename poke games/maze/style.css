@@ -210,43 +210,86 @@ select:focus {
   text-decoration: none;
   font-family: "poppins";
   position: relative;
-  top: 190px;
-  left:10px;
+  top: 80px;
+  left:7px;
 } 
 
 .back:hover{
   color: #fcdfaa;
 }
-.drop {
+.controls{
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  width: 200px;
+  height: 200px;
+  margin-left: 1100px;
+  /* padding: 40px 0 0 40px; */
+}
+@media only screen and (min-width:1270px) and (max-width: 1400px) {
+
+  .controls{
+    margin-left: 1000px;
+  }
+  .instr{
+    width: 200px;
+  }
+}
+@media only screen and (min-width:1150px) and (max-width: 1270px) {
+
+  .controls{
+    margin-left: 900px;
+  }
+  .instr{
+    width: 190px;
+    left: 10px;
+  }
+}
+@media only screen and (min-width:1023px) and (max-width: 1150px) {
+
+  .controls{
+    margin-left: 810px;
+  }
+  .instr{
+    width: 170px;
+    left: -20px;
+  }
+  .back{
+    top:70px;
+  }
+}
+.cell {
+  flex: 0 0 52%;                       /* don't grow, don't shrink, width */
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+ .drop {
   background: rgba(211, 199, 199, 0.325);
   border-radius: 10px;
   border: 1px solid rgba(20, 18, 18, 0.514);
-  position: absolute;
   backdrop-filter: blur(5px);
  -webkit-backdrop-filter: blur(5px);
-  display: block;
-  margin: 0 auto;
   font-size: 25px;
   color: #230303;
+  width: 100%;
+  height: 100%;
+  
 }
+/*
 .drop2 {
-  width: 50px;
-  height: 50px;
-  top: 450px;
-  left: 68.3%;
-  right: 0;
+  width:4.2%;
+  height: 8%;
+  top: 400px;
+  left: 74.5%;
 }
 .drop6 {
-  width: 50px;
-  height: 50px;
-  top: 260px;
-  left: 68.3%;
-  right: 0;
-}
-.drop1 {
-  /* background: rgba(211, 199, 199, 0.325); */
-  /* border-radius: 10px; */
-  /* border: 1px solid rgba(20, 18, 18, 0.514); */
+  width:4.2%;
+  height: 8%;
+   top: 260px;
+  left: 74.5%;
+} */
+/* .drop1 {
   position: absolute;
   backdrop-filter: blur(5px);
  -webkit-backdrop-filter: blur(5px);
@@ -254,29 +297,27 @@ select:focus {
   margin: 0 auto;
   font-size: 22px;
   color: #ffffff;
+} */
+ .drop7 {
+  color: #ffffff;
+  font-size: 25px;
+  text-align: center;
 }
-.drop7 {
-  width: 50px;
-  height: 50px;
-  top: 365px;
-  left: 70%;
-  right: 0;
-}
-
+/*
 
 .drop3 {
-  width: 60px;
-  height: 60px;
-  top: 345px;
-  left:1175px;
+  width:4.2%;
+  height: 8%;
+  top: 335px;
+  left:69%;
 }
 .drop5 {
-  width: 60px;
-  height: 60px;
-  top: 345px;
-  left:1350px;
+  width:4.2%;
+  height: 8%;
+  left:79%;
   z-index: 4;
-}
+  top: 335px;
+} */
 .button-83 {
   font-family: "poppins";
   appearance: button;

@@ -6,7 +6,7 @@
 }
 
 body {
-  height: 100vh;
+  /* height: 100vh; */
   background: radial-gradient(circle, rgba(121, 9, 99, 1) 0%, rgba(106, 8, 87, 1) 2%, rgba(67, 5, 55, 1) 11%, rgba(52, 4, 43, 1) 26%, rgba(49, 3, 40, 1) 46%, rgba(33, 2, 27, 1) 65%, rgba(49, 3, 40, 1) 87%, rgba(0, 0, 0, 1) 100%);
   overflow: hidden;
 }
@@ -97,6 +97,8 @@ body {
 
 .hide {
   display: none;
+  justify-content: center;
+  align-items: center;
 }
 
 .incorrect {
@@ -161,8 +163,10 @@ body {
   border: #f5f2f2 1px solid;
   height: 500px;
   width: 500px;
-  margin: 100px 0 0 470px;
+  /* margin: 100px 0 0 470px; */
   border-radius: 20px;
+  top:15%;
+  
 }
 
 .blur {
@@ -172,6 +176,7 @@ body {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   z-index: 0;
+
 }
 
 .blur0 {
@@ -256,3 +261,47 @@ body {
 .back:hover{
   color: #fcdfaa;
 }
+.an{
+  display:flex;
+  justify-content: center;
+}
+
+@media (max-width: 1440px) {
+ 
+	.blur6 {
+    left: 1250px;
+    
+  }
+  
+}
+
+@media (max-width: 1400px) {
+  .blur5 {
+    left: 1250px;
+  }
+  
+	.blur6 {
+    left: 1200px;
+    top:320px;
+  }
+  
+}
+@media (max-width: 1325px) {
+  .blur5 {
+    left: 1150px;
+  }
+  
+  .blur7 {
+    left: 1040px;
+  }
+	.blur6 {
+  display: none;
+  }  
+}
+@media (max-width: 1245px) {
+	.blur{
+  display: none;
+  }  
+}
+
+

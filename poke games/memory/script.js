@@ -214,9 +214,6 @@ class PlayArea extends React.Component {
       React.createElement(PlayFooter, { turns: this.state.turns, gameOver: this.props.gameOver }) :
       null,
       React.createElement("button", { className: "modal__btn1", onClick:this.refresh }, "Reset"),
-      React.createElement("div", { className: "back1" }, 
-      React.createElement("a", { className: "back1", href:"/poke games/dash main/index.html"}, 
-      React.createElement("span",null," < Back to main menu")))
       ));
 
 
@@ -238,10 +235,10 @@ class PlayModal extends React.Component {
       React.createElement("div", { className: "modal--bottom" },  
       React.createElement("p", null, "Hey there, You think you\u2019ve got a sharp memory? Let\u2019s see how far you can go."),  
       React.createElement("button", { className: "modal__btn", onClick: this.props.onPlayClick }, "Play"))),
-      React.createElement("div", { className: "back" }, 
-      React.createElement("a", { className: "back", href:"/poke games/dash main/index.html"}, 
+      React.createElement("div", { className: "back1" }, 
+      React.createElement("a", { className: "back1", href:"/poke games/dash main/index.html"}, 
       React.createElement("span",null," < Back to main menu")))
-      ));
+    ));
   }}
 
 

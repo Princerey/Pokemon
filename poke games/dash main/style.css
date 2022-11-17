@@ -847,3 +847,21 @@ input[type="radio"] {
     text-decoration: none;
     z-index: 100;
 }
+@media (max-width: 1500px) {
+	.homee{
+		left:270px;
+    }
+}
+@media (max-width: 1400px) {
+	.homee{
+		left:240px;
+    }
+}
+@media (max-width: 1300px) {
+	.homee{
+		left:210px;
+    }
+    #ProductCard{
+width: 750px;
+    }
+}

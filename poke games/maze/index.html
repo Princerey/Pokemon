@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Poke-Maze</title>
@@ -9,32 +10,39 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
-<html lang="en-GB">
-<head>
-  <meta charset="utf-8">
+  <!-- partial:index.partial.html -->
+  <html lang="en-GB">
+
+  <head>
+    <meta charset="utf-8">
+
   <body>
     <div id="gradient"></div>
     <div id="page">
       <div id="Message-Container">
         <div id="message">
           <h1>Congratulations!</h1>
-          <p>You caught Snorlax <p id="moves"></p></p>
-          
-          <span><input class="button-83" type="button" onclick="toggleVisablity('Message-Container')" value="Play Again" />
-          <a href="/poke games/dash main/index.html" class="roh"><input type="button" class="button-84" value="Exit"></input></a>
+          <p>You caught Snorlax
+          <p id="moves"></p>
+          </p>
+
+          <span><input class="button-83" type="button" onclick="toggleVisablity('Message-Container')"
+              value="Play Again" />
+            <a href="/poke games/dash main/index.html" class="roh"><input type="button" class="button-84"
+                value="Exit"></input></a>
           </span>
         </div>
       </div>
       <div id="menu">
         <div class="custom-select">
           <select id="diffSelect">
-                    <option value="10">Easy</option>
-                    <option value="15">Medium</option>
-                    <option value="25">Hard</option>
-                    <option value="38">Extreme</option>                                      
-                </select>
+            <option value="10">Easy</option>
+            <option value="15">Medium</option>
+            <option value="25">Hard</option>
+            <option value="38">Extreme</option>
+          </select>
         </div>
         <input id="startMazeBtn" type="button" onclick="makeMaze()" value="Start" />
       </div>
@@ -45,20 +53,31 @@
       </div>
     </div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
-    <p class="instr">Select Difficulty and press the Start button. <br>Use the Keys('←', '↑', '→', '↓') on your keyboard or screen to move the Poké Ball to Snorlax.</p>
-    <div ><button onclick=down() class="drop drop2"><i class="fa-solid fa-caret-down"></i></button></div>
-    <div><button onclick=left()  class="drop drop3"><i class="fa-solid fa-caret-left"></i></button></div>
-    <div ><button onclick=up() class="drop drop6"><i class="fa-solid fa-caret-up"></i></button></div>
-    <div class="drop1 drop7"><i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-    <div ><button onclick=right() class="drop drop5"><i class="fa-solid fa-caret-right"></i></i></button></div>
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+    <p class="instr">Select Difficulty and press the Start button. <br>Use the Keys('←', '↑', '→', '↓') on your keyboard
+      or screen to move the Poké Ball to Snorlax.</p>
+    <div class="controls">
+      <div class="cell"></div>
+      <div><button onclick=up() class="cell drop drop6"><i class="fa-solid fa-caret-up"></i></button></div>
+      <div class="cell"></div>
+      <div><button onclick=left() class="cell drop drop3"><i class="fa-solid fa-caret-left"></i></button></div>
+      <div class="cell drop1 drop7"><i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+      <div><button onclick=right() class="cell drop drop5"><i class="fa-solid fa-caret-right"></i></i></button></div>
+      <div class="cell"></div>
+      <div><button onclick=down() class="cell drop drop2"><i class="fa-solid fa-caret-down"></i></button></div>
+      <div class="cell"></div>
+    </div>
   </body>
-</html>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js'></script><script  src="./script.js"></script>
+
+  </html>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js'></script>
+  <script src="./script.js"></script>
   <div class="back">
     <a class="back" href="/poke games/dash main/index.html"><i class="fa-solid fa-chevron-left"></i>
-    <span>&nbsp; Back to main menu</span></a>
-</div>
+      <span>&nbsp; Back to main menu</span></a>
+  </div>
 </body>
+
 </html>
