@@ -15,44 +15,93 @@ const typeColor = {
   normal: "rgb(75 105 124 / 94%)",
   poison: "rgb(70 59 151)",
   psychic: "rgb(64 59 131)",
-  rock: "#2d3436", 
+  rock: "#2d3436",
   water: "rgb(1 161 255 / 43%)",
-  dark:"rgb(40 35 35 / 90%)",
-  steel:"#808080"
+  dark: "rgb(40 35 35 / 90%)",
+  steel: "#808080"
 };
 const url = " https://pokeapi.co/api/v2/pokemon/";
 const card = document.getElementById("card");
 const btn = document.getElementById("btn");
 const card1 = document.getElementById("card1");
 
-// const btn1 = document.getElementById("btn1");
 
 let getPokeData = () => {
   // Generate a random number between 1 and 150
   let id = Math.floor(Math.random() * 600) + 1;
+  let id1 = Math.floor(Math.random() * 600) + 1;
   // Combine the pokeapi url with pokemon id
   const finalUrl = url + id;
+  const finalUrl1 = url + id1;
+
 
   // Fetch generated URL
   fetch(finalUrl)
     .then((response) => response.json())
     .then((data) => {
       generateCard(data);
-    });
-};
-let getPokeData2 = () => {
-  // Generate a random number between 1 and 150
 
-  let id2 = Math.floor(Math.random() * 150) + 1;
-  // Combine the pokeapi url with pokemon id
-  const finalUrl2 = url + id2;
-  // Fetch generated URL
-    fetch(finalUrl2)
+    });
+  fetch(finalUrl)
+    .then((response) => response.json())
+    .then((data) => {
+      generatefs(data);
+
+    });
+
+
+  fetch(finalUrl1)
     .then((response) => response.json())
     .then((data2) => {
       generateCard2(data2);
     });
+  fetch(finalUrl1)
+    .then((response) => response.json())
+    .then((data2) => {
+      generatefs(data2);
+    });
 };
+var i = 1;
+var rohit;
+var ananya;
+let generatefs = (data) => {
+
+  console.log(data);
+  const hp = data.stats[0].base_stat;
+  const statAttack = data.stats[1].base_stat;
+  const statDefense = data.stats[2].base_stat;
+  const statSpeed = data.stats[5].base_stat;
+  var fs = hp / 8 + statAttack / 8 + statDefense / 8 + statSpeed / 8;
+  if (i == 1) {
+    rohit = fs;
+  }
+  if (i == 2) {
+    ananya = fs;
+    let userInput = document.querySelector("#userInput");
+    let userInput1 = document.querySelector("#userInput1");
+    console.log(rohit > ananya);
+    console.log(rohit);
+    console.log(ananya);
+    if (userInput1.value == "") {
+      if (rohit > ananya) {
+        document.getElementById("69").innerHTML = userInput.value + " Wins" + `<br><img src="pokémon-happy.gif">`;
+      }
+      else {
+        document.getElementById("69").innerHTML = "Computer Wins" + `<br><img src="pokémon-happy.gif">`;
+      }
+    }
+    else {
+      if (rohit > ananya) {
+        document.getElementById("69").innerHTML = userInput.value + " Wins" + `<br><img src="pokémon-happy.gif">`;
+      }
+      else {
+        document.getElementById("69").innerHTML = userInput1.value + " Wins" + `<br><img src="pokémon-happy.gif">`;
+      }
+
+    }
+  }
+  i = i + 1;
+}
 
 //Generate Card
 
@@ -97,18 +146,18 @@ let generateCard = (data) => {
         </div>
 
   `;
-  $(document).ready(function() {
-    setTimeout(function(){
-     fs=hp/8+statAttack/8+statDefense/8+statSpeed/8;
-    $(".my-progress-bar").circularProgress({
+  $(document).ready(function () {
+    setTimeout(function () {
+      fs = hp / 8 + statAttack / 8 + statDefense / 8 + statSpeed / 8;
+      $(".my-progress-bar").circularProgress({
         line_width: 6,
         color: "#ccc",
         starting_position: 0, // 12.00 o' clock position, 25 stands for 3.00 o'clock (clock-wise)
         percent: 0, // percent starts from
         percentage: true,
         text: "Final Score"
-    }).circularProgress('animate',fs, 1000);
-  },8100);
+      }).circularProgress('animate', fs, 1000);
+    }, 8100);
   });
   appendTypes(data.types);
   styleCard(themeColor);
@@ -116,7 +165,7 @@ let generateCard = (data) => {
 
 
 let generateCard2 = (data2) => {
-  
+
   // Get necessary data and assign it to variables
   console.log(data2);
   const hp = data2.stats[0].base_stat;
@@ -153,19 +202,19 @@ let generateCard2 = (data2) => {
           </div>
           </div>
   `;
-  
-  $(document).ready(function() {
-    setTimeout(function(){
-   fs1=hp/8+statAttack/8+statDefense/8+statSpeed/8;
-    $(".my-progress-bar1").circularProgress1({
+
+  $(document).ready(function () {
+    setTimeout(function () {
+      fs1 = hp / 8 + statAttack / 8 + statDefense / 8 + statSpeed / 8;
+      $(".my-progress-bar1").circularProgress1({
         line_width: 6,
         color: "#ccc",
         starting_position: 0, // 12.00 o' clock position, 25 stands for 3.00 o'clock (clock-wise)
         percent: 0, // percent starts from
         percentage1: true,
         text: "Final Score"
-    }).circularProgress1('animate',fs1, 1000);
-  },8300);
+      }).circularProgress1('animate', fs1, 1000);
+    }, 8300);
 
 
   });
@@ -205,9 +254,7 @@ let styleCard2 = (color2) => {
 
 
 btn.addEventListener("click", getPokeData);
-btn.addEventListener("click", getPokeData);
-btn.addEventListener("click", getPokeData2);
-btn.addEventListener("click", getPokeData2);
+btn.addEventListener("click", generatefs);
 
 
 //card2
