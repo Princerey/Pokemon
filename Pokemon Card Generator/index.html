@@ -1,174 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8">
-    <title>Poke-Battle</title>
-    <link rel="icon" type="image/x-icon" href="./ash2.png">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
-    <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Dekko' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css'>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<link href='https://fonts.googleapis.com/css?family=Nova Flat' rel='stylesheet'>
-    <link rel="stylesheet" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <title>Poke-Battle</title>
+  <link rel="icon" type="image/x-icon" href="./ash2.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Dekko' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css'>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <link href='https://fonts.googleapis.com/css?family=Nova Flat' rel='stylesheet'>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-<link rel="stylesheet" href="./style.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1">  <defs>    <filter id="goo">      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />      <feBlend in="SourceGraphic" in2="goo" />    </filter>  </defs></svg>
-<!-- partial -->
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="goo">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+        <feBlend in="SourceGraphic" in2="goo" />
+      </filter>
+    </defs>
+  </svg>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-  </head>
-  <body>
-    <span class="home2"><a  href="/home.html"><i class="fa fa-home" aria-hidden="true"></i></a></span>
-     <div class="popup">
-      
-        <div class="square" style="--i:0;"> </div>
-        <div class="square" style="--i:1;"></div>
-        <div class="square" style="--i:2;"></div>
-        <div class="square" style="--i:3;"></div>
-        <div class="square" style="--i:4;"></div>
-        <div class="square" style="--i:5;"></div>
-        <div class="square" style="--i:6;"><div class="rog">How to play:</div><p class="ron">
-          1.	Select ‘Single-Player’ or ‘Multi-Player’<br>
-          2.	Enter the name of the players.<br>
-          3.	Click ‘Play’ to start the game.</p></div>
-        <img src="chr.gif" height="100px" width="=75px" class="ash"></img>
-      <div class="box">  
+</head>
+
+<body>
+  <span class="home2"><a href="/home.html"><i class="fa fa-home" aria-hidden="true"></i></a></span>
+  <div class="popup">
+
+    <div class="square" style="--i:0;"> </div>
+    <div class="square" style="--i:1;"></div>
+    <div class="square" style="--i:2;"></div>
+    <div class="square" style="--i:3;"></div>
+    <div class="square" style="--i:4;"></div>
+    <div class="square" style="--i:5;"></div>
+    <div class="square" style="--i:6;">
+      <div class="rog">How to play:</div>
+      <p class="ron">
+        1. Select ‘Single-Player’ or ‘Multi-Player’<br>
+        2. Enter the name of the players.<br>
+        3. Click ‘Play’ to start the game.</p>
+    </div>
+    <img src="chr.gif" height="100px" width="=75px" class="ash"></img>
+    <div class="box">
       <div class="wrapper">
         <p class="welc"><a href="https://usecheck.com/" class="btn-shine" target="_blank">Welcome to Poké-Battle</a></p>
         <div class="content">
           <div class="container">
             <form class="toggle">
-              <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="yesCheck" value="creative"><label for="yesCheck" class="er">Multiplayer</label>
-              
+              <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="yesCheck" value="creative"><label
+                for="yesCheck" class="er">Multiplayer</label>
+
               <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="noCheck" value="creative">
-              <label for="noCheck"class="ew">Single Player</label>
+              <label for="noCheck" class="ew">Single Player</label>
               <div id="flap"><span class="content1">.</span></div>
-               </form>
-               <br><br>
-               <form><br>
+            </form>
+            <br><br>
+            <form><br>
               <label>Player 1</label>
               <input placeholder="Enter The Name" type="text" id="userInput" required>
               <div id="ifYes" style="visibility:hidden">
-              <label>Player 2</label>
-              <input placeholder="Enter The Name" type="text" id="userInput1">
-            </div>
+                <label>Player 2</label>
+                <input placeholder="Enter The Name" type="text" id="userInput1">
+              </div>
               <input type="button" value="submit" id="roh">
+
             </form>
           </div>
-         </div>
+        </div>
       </div>
     </div>
   </div>
   <div><img class="circle" src="./ch.gif"></div>
-    <div class="container1" id="12">
-      <div id="card"></div>
-      
-    </div>
-    <button class="play" id="message">Player 1 </button>
-      
-    <div class="container2" id="13">
-      <div id="card1"></div> 
-    </div>
-    <button class="play1" id="message2">Computer</button>
-    <button class="button" type="button" id="rohit"><i class="fa fa-refresh" aria-hidden="true"></i> Restart<br></button>
-    <p id="id9" class="none">Calculating Final Score .....<br></p>
-    <p id="id10" class="none1">[HP+Attack+Defense+Speed] /8<br></p>
+  <div class="container1" id="12">
+    <div id="card"></div>
 
-      <div class="my-progress-bar" id="15"></div>
-      <!-- <p class="be" id="10"><span id="85"></span><br>------------------<br>8</p> 
-      <p class="be1" id="100"><span id="86"></span><br>------------------<br>8</p>  -->
-      <div class="my-progress-bar1 " id="150"></div>
-      <br>
+  </div>
+  <button class="play" id="message">Player 1 </button>
 
-    <div class='light x1'></div>
-    <div class='light x2'></div>
-    <div class='light x3'></div>
-    <div class='light x4'></div>
-    <div class='light x5'></div>
-    <div class='light x6'></div>
-    <div class='light x7'></div>
-    <div class='light x8'></div>
-    <div class='light x9'></div>
-    <div id="button-wrapper">
-      <a class="submit" id="btn" href="#" onclick="addClass()">Play</a>
-     
-         <div class="loader-wrapper">
-         <span class="loader yellow"></span>
-         <span class="loader pink"></span>
-         </div>
-        <span class="loader orange"></span>
-         
-     <div class="check-wrapper">
-    <svg version="1.1"width="60px" height="38px" viewBox="0 0 64.5 37.4">
-    <polyline class="check" points="5,13 21.8,32.4 59.5,5 "/>
-    </svg>
-     </div>
-      
-     </div>
-     
-   
-    <script src="cursor1.js"></script>
+  <div class="container2" id="13">
+    <div id="card1"></div>
+  </div>
+  <button class="play1" id="message2">Computer</button>
+
+  <button class="button" type="button" id="rohit"><i class="fa fa-refresh" aria-hidden="true"></i> Restart<br></button>
+  <p id="id9" class="none">Calculating Final Score .....<br></p>
+  <p id="id10" class="none1">[HP+Attack+Defense+Speed] /8<br></p>
+
+  <div class="my-progress-bar" id="15"></div>
+  <div class="my-progress-bar1 " id="150"></div>
+  <br>
+  <div class="fs"><span id="69"></span></div>
+  <div class='light x1'></div>
+  <div class='light x2'></div>
+  <div class='light x3'></div>
+  <div class='light x4'></div>
+  <div class='light x5'></div>
+  <div class='light x6'></div>
+  <div class='light x7'></div>
+  <div class='light x8'></div>
+  <div class='light x9'></div>
+  <div id="button-wrapper">
+    <a class="submit" id="btn" href="#" onclick="addClass()">Play</a>
+
+    <div class="loader-wrapper">
+      <span class="loader yellow"></span>
+      <span class="loader pink"></span>
+    </div>
+    <span class="loader orange"></span>
+
+    <div class="check-wrapper">
+      <svg version="1.1" width="60px" height="38px" viewBox="0 0 64.5 37.4">
+        <polyline class="check" points="5,13 21.8,32.4 59.5,5 " />
+      </svg>
+    </div>
+  </div>
+  <script src="cursor1.js"></script>
   <script src="script.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script src="/Pokemon Card Generator/plugin.js"></script>
+  <script src="/Pokemon Card Generator/plugin.js"></script>
   <script src="radio.js"></script>
 
   <!-- popup -->
   <script type="text/javascript">
-         function yesnoCheck() {
-            if (document.getElementById('yesCheck').checked) {
-                document.getElementById('ifYes').style.visibility = 'visible';
-            }
-            else document.getElementById('ifYes').style.visibility = 'hidden';
+    function yesnoCheck() {
+      if (document.getElementById('yesCheck').checked) {
+        document.getElementById('ifYes').style.visibility = 'visible';
+      }
+      else document.getElementById('ifYes').style.visibility = 'hidden';
+    }
+    window.addEventListener("load", function () {
+      setTimeout(
+        function open(event) {
+          document.querySelector(".popup").style.display = "block";
         }
-    window.addEventListener("load", function(){
-        setTimeout(
-            function open(event){
-                document.querySelector(".popup").style.display = "block";
-            }
-        )
-        
+      )
+
     });
-
-    
-    
-    // document.querySelector("#close").addEventListener("click", function(){
-    //     document.querySelector(".popup").style.display = "none";
-    // });
-    document.querySelector("#roh").addEventListener("click", function(){
+    document.querySelector("#roh").addEventListener("click", function () {
       var x;
-  x = document.getElementById("userInput").value;
-if (x == "") {
-  alert("Please enter the name of the Player");
-  return false;
-};
+      x = document.getElementById("userInput").value;
+      if (x == "") {
+        alert("Please enter the name of the Player");
+        return false;
+      };
 
-if(x != ""){
+      if (x != "") {
         document.querySelector(".popup").style.display = "none";
-        let userInput = document.querySelector ("#userInput") ;
-        let userInput1 = document.querySelector ("#userInput1") ;
-        let message = document.querySelector ("#message") ;
-        message.innerHTML = userInput.value ;
-        
-        if (userInput1.value == "")
-        {
-          message2.innerHTML= "Computer";
+        let userInput = document.querySelector("#userInput");
+        let userInput1 = document.querySelector("#userInput1");
+        let message = document.querySelector("#message");
+        message.innerHTML = userInput.value;
+
+        if (userInput1.value == "") {
+          message2.innerHTML = "Computer";
         }
-        else{
-          message2.innerHTML = userInput1.value ;
+        else {
+          message2.innerHTML = userInput1.value;
         }
       }
     });
-  
+  </script>
+</body>
 
-    
-        </script>
-        </body>
 </html>
