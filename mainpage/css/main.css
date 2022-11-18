@@ -101,7 +101,7 @@ i {
 }
 
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
 	h1 {
 		float: left;
 	}
@@ -132,7 +132,10 @@ i {
 
 .navbar-logo {
 	padding: 15px;
-	color: rgb(21, 9, 9);
+	font-weight: 700 ;
+	font-size: 28px !important;
+	font-family: "poppins";
+	letter-spacing: 2px;
 }
 
 .navbar-mainbg {
@@ -201,6 +204,7 @@ i {
 #navbarSupportedContent .active>a:not(:only-child):after {
 	transform: rotate(90deg);
 }
+
 
 .hori-selector {
 	display: inline-block;
@@ -368,6 +372,8 @@ i {
 	right: 1em;
 	top: 9em;
 	filter: url(#threshold) blur(0.6px);
+	background: #3f87a6;
+width: 200px;
 }
 
 #text1,
@@ -468,17 +474,87 @@ h5 {
 	}
 }
 
-@media only screen and (max-width: 1450px) and (min-width: 1200px){
+@media (max-width: 1490px) {
 .logo{
-	padding-right: 30px;
-	width: 200px;
+	left: 460px;
 }
-#we{
-	width: 100%;
+.homee{
+	left:1380px;
 }
 }
-
-
+@media (max-width: 1440px) {
+	.logo{
+		left: 440px;
+	}
+	.homee{
+		left:1340px;
+	}
+	}
+	@media (max-width: 1400px) {
+		.logo{
+			left: 420px;
+		}
+		.homee{
+			left:1300px;
+		}
+		}
+		@media (max-width: 1360px) {
+			.logo{
+				left: 400px;
+			}
+			.homee{
+				left:1250px;
+			}
+			}
+			@media (max-width: 1310px) {
+				.logo{
+					left: 380px;
+				}
+				.homee{
+					left:1200px;
+				}
+				}
+				@media (max-width: 1260px) {
+					.logo{
+						left: 360px;
+					}
+					.homee{
+						left:1150px;
+					}
+					}
+					@media (max-width: 1200px) {
+						.logo{
+							left: 250px;
+						}
+						.homee{
+					left:1090px;
+						}
+						}
+						@media (max-width: 1160px) {
+							.logo{
+								left: 220px;
+							}
+							.homee{
+								left:1050px;
+							}
+							}
+							@media (max-width: 1110px) {
+								.logo{
+									left: 190px;
+								}
+								.homee{
+									left:1000px;
+								}
+								}
+								@media (max-width: 1060px) {
+									.logo{
+										left: 160px;
+									}
+									.homee{
+										left:950px;
+									}
+									}
+							
 .feedback-button {
 	height: 40px;
 	border: solid 3px #CCCCCC;
@@ -503,4 +579,8 @@ h5 {
   .feedback-button:hover{
 	text-decoration: none;
 
+  }
+  .roh{
+	display: flex;
+	justify-content: center ;
   }

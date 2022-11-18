@@ -1,5 +1,6 @@
 html {
     height: 100%;
+    /* width: 250vh; */
     overflow: hidden;
     animation: none ;
 }
@@ -12,6 +13,11 @@ body {
     font-family: "Poppins";
     height: 100%;
     overflow: hidden;
+    background-repeat: no-repeat;
+    /* position: relative; */
+    /* left: 17%;
+    top: 15%; */
+    
 }
 
 #ProductCard {
@@ -847,21 +853,38 @@ input[type="radio"] {
     text-decoration: none;
     z-index: 100;
 }
-@media (max-width: 1500px) {
-	.homee{
-		left:270px;
+/* @media only screen and (max-width:1700px){
+    body{
+        background-repeat: no-repeat;
     }
+} */
+@media only screen and (min-width:1400px) and (max-width:1700px){
+    .homee{
+        left:270px;
+    }    
 }
-@media (max-width: 1400px) {
-	.homee{
-		left:240px;
-    }
+@media only screen and (min-width:1200px) and (max-width:1400px){
+    .homee{
+        left:250px;
+    }    
 }
-@media (max-width: 1300px) {
-	.homee{
-		left:210px;
+@media only screen and (min-width:1000px) and (max-width:1200px){
+    .homee{
+        left:230px;
+        font-size: 50px;
+    }    
+}
+@media only screen and (min-width:1200px) and (max-width:1360px){
+    html{
+        height: 110%;
+        width: 110%;
     }
-    #ProductCard{
-width: 750px;
+    
+}
+@media only screen and (min-width:1000px) and (max-width:1200px){
+    html{
+        height: 135%;
+        width: 135%;
     }
+    
 }

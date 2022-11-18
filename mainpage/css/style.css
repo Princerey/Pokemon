@@ -314,7 +314,8 @@ position: relative;
     font-size: 28px;
     color: rgb(83, 56, 56);
     top:3em;
-    right:-22em;
+    /* right:-22em;  */
+
   }
   
   /* Animation */
