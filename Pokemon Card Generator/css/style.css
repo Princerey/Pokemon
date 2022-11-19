@@ -952,11 +952,11 @@ input[type="button"] {
   }
 
   60% {
-    background-position: 340px;
+    background-position: 320px;
   }
 
   100% {
-    background-position: 380px;
+    background-position: 360px;
   }
 }
 
@@ -966,11 +966,11 @@ input[type="button"] {
   }
 
   60% {
-    background-position: 340px;
+    background-position: 320px;
   }
 
   100% {
-    background-position: 380px;
+    background-position: 360px;
   }
 }
 
@@ -980,11 +980,11 @@ input[type="button"] {
   }
 
   60% {
-    background-position: 340px;
+    background-position: 320px;
   }
 
   100% {
-    background-position: 380px;
+    background-position: 360px;
   }
 }
 
@@ -994,11 +994,11 @@ input[type="button"] {
   }
 
   60% {
-    background-position: 380px;
+    background-position: 320px;
   }
 
   100% {
-    background-position: 380px;
+    background-position: 360px;
   }
 }
 
@@ -1490,7 +1490,7 @@ input[type="button"] {
 }
 
 .home2 {
-  z-index: 0;
+  z-index: 100;
   position: relative;
   font-size: 2.5em;
   bottom: 1.9em;
@@ -1509,11 +1509,10 @@ a:hover {
 
 .fs{
   position: relative;
-  top: -330px;
-  left: 570px;
-  display: block;
-  transition: 1.5 ease-in;
-  transition-delay: 9.5s;
+  bottom: 1000px;
+  justify-content: center;
+  text-align: center;
+  display: flex;
 }
 
 .fs span {

@@ -58,7 +58,10 @@ let getPokeData = () => {
   fetch(finalUrl1)
     .then((response) => response.json())
     .then((data2) => {
+     const timer =setTimeout(()=>{
       generatefs(data2);
+     },10000);
+     return()=> clearTimeout(timer);
     });
 };
 var i = 1;
@@ -83,16 +86,24 @@ let generatefs = (data) => {
     console.log(rohit);
     console.log(ananya);
     if (userInput1.value == "") {
-      if (rohit > ananya) {
+      if (Math.ceil(rohit) > Math.ceil(ananya)) {
         document.getElementById("69").innerHTML = userInput.value + " Wins" + `<br><img src="pokémon-happy.gif">`;
+      }
+      else if(Math.ceil(rohit) == Math.ceil(ananya))
+      {
+        document.getElementById("69").innerHTML = "Draw Play Again !!" ;
       }
       else {
         document.getElementById("69").innerHTML = "Computer Wins" + `<br><img src="pokémon-happy.gif">`;
       }
     }
     else {
-      if (rohit > ananya) {
+      if (Math.ceil(rohit) > Math.ceil(ananya)) {
         document.getElementById("69").innerHTML = userInput.value + " Wins" + `<br><img src="pokémon-happy.gif">`;
+      }
+      else if(Math.ceil(rohit) == Math.ceil(ananya))
+      {
+        document.getElementById("69").innerHTML = "Draw Play Again !!" ;
       }
       else {
         document.getElementById("69").innerHTML = userInput1.value + " Wins" + `<br><img src="pokémon-happy.gif">`;
@@ -156,7 +167,7 @@ let generateCard = (data) => {
         percent: 0, // percent starts from
         percentage: true,
         text: "Final Score"
-      }).circularProgress('animate', fs, 1000);
+      }).circularProgress('animate', Math.ceil(fs), 1000);
     }, 8100);
   });
   appendTypes(data.types);
@@ -213,7 +224,7 @@ let generateCard2 = (data2) => {
         percent: 0, // percent starts from
         percentage1: true,
         text: "Final Score"
-      }).circularProgress1('animate', fs1, 1000);
+      }).circularProgress1('animate', Math.ceil(fs1), 1000);
     }, 8300);
 
 
