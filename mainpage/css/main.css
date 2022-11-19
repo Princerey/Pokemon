@@ -330,26 +330,26 @@ i {
 	position: relative;
 	height: 130px;
 	width: 250px;
-	top: 25em;
-	right: 33em;
+	top: 14em;
+	right: 35em;
 	z-index: 1;
 	/* transform: rotate(230deg); */
 }
 
 .info {
 	position: relative;
-	width: 400px;
-	height: 170px;
+	max-width: 370px;
+	height: 140px;
 	background: linear-gradient(rgb(76, 69, 80), #3e4749, #5b585f);
 	border: 2px double #3a3737;
-	padding: 30px 25px;
+	padding: 20px 15px;
 	display: flex;
 	border-color: rgb(51, 45, 45);
 	flex-direction: column;
 	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
 	transition: 0.3s ease-in-out;
 	border-radius: 15px;
-	top: 12em;
+	top: 3em;
 	right: 6em;
 	z-index: 1;
 	font-family: 'Nova Flat';
@@ -357,32 +357,9 @@ i {
 	opacity: 0.68;
 }
 
-@media only screen and (min-width:1074px) and (max-width: 1160px) {
-	.info {
-		width: 400px;
-		top: 5em;
-		right: 5em;
-	}
-	.line{
-		top: 18em;
-	right: 21em;
-	}
-}
-
-@media only screen and (min-width:1023px) and (max-width: 1074px) {
-	.info {
-		top: -8em;
-		right: -33em;
-	}
-	.line{
-		top: 18em;
-	right: 21em;
-	}
-}
-
 .logo {
 	position: relative;
-	bottom: 10px;
+	bottom: 170px;
 	left: 500px;
 }
 
@@ -539,10 +516,10 @@ h5 {
 				}
 				@media (max-width: 1260px) {
 					.logo{
-						left: 360px;
+						left: 355px;
 					}
 					.homee{
-						left:1150px;
+						left:1145px;
 					}
 					}
 					@media (max-width: 1200px) {
@@ -553,12 +530,19 @@ h5 {
 					left:1090px;
 						}
 						}
-						@media (max-width: 1160px) {
+						@media (max-width: 1158px) {
 							.logo{
 								left: 220px;
 							}
 							.homee{
 								left:1050px;
+							}
+							.info{
+								top:-4em;
+							}
+							.line{
+								top:7em;
+								right:23em;
 							}
 							}
 							@media (max-width: 1110px) {
