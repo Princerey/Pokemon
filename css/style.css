@@ -68,7 +68,10 @@ body{
   }
 .mainbox{
 	z-index: 1;
-	bottom: 2ch;
+	/* bottom: 2ch; */
+	/* display: flex; */
+	align-items: center;
+	top:135px;
     position :absolute;
     min-width:415px;
 	width: 1094px;
@@ -572,8 +575,8 @@ h5 span:nth-child(1):after{
   }
   .homee{
 	position:relative;
+	top:10px;
 	font-size: 2.5em;
-	top:-15.2em;
 	left:30.7em;
 	color: rgb(248, 216, 216);
 }
