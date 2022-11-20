@@ -241,3 +241,16 @@ left:20px;
 .select{
     font-size: 28px;
 }
+
+.circle {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: 50%;
+	left: 50%;
+	margin: -50px 0 0 -50px;
+	border-radius: 80%;
+	backface-visibility: visible;
+	animation: infinite linear;
+	z-index: 0;
+}

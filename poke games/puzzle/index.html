@@ -1,5 +1,4 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
     <title>Pokézzle</title>
@@ -12,6 +11,7 @@
 </head>
 
 <body>
+    <div><img class="circle" src="../../images/buter.gif"></div>
     <div id="collage">
         <div id="playPanel">
             <div style="display:inline-block; margin:auto; width:95%; vertical-align:top;">
@@ -106,6 +106,20 @@
         <a class="back" href="/poke games/dash main/index.html"><i class="fa-solid fa-chevron-left"></i>
         <span>&nbsp; Back to main menu</span></a>
     </div>
+    <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+    <script>
+        var $circle = $('.circle');
+
+        function moveCircle(e) {
+            TweenLite.to($circle, 1.5, {
+                css: {
+                    left: e.pageX,
+                    top: e.pageY
+                }
+            });
+        }
+        $(window).on('mousemove', moveCircle);
+    </script>
 </body>
 
 </html>

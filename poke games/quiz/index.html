@@ -4,12 +4,15 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Poké-Guess</title>
+  
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
 </head>
 
 <body>
+  <div><img class="circle" src="../../images/buter.gif"></div>
   <div class="start-screen">
     <div class="psy"><img src="psy.png"></div>
     <p class="tex">Guess the Pokémon</p>
@@ -58,6 +61,25 @@
   <a class="back" href="/poke games/dash main/index.html"><i class="fa-solid fa-chevron-left"></i>
   <span>&nbsp; Back to main menu</span></a>
 </div>
+<script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+<script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+<script src='https://unpkg.com/gsap@3/dist/Draggable.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js'></script>
+    <script>
+        var $circle = $('.circle');
+
+        function moveCircle(e) {
+            TweenLite.to($circle, 1.5, {
+                css: {
+                    left: e.pageX,
+                    top: e.pageY
+                }
+            });
+        }
+        $(window).on('mousemove', moveCircle);
+    </script>
 </body>
 
 </html>
