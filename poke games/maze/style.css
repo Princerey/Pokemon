@@ -192,18 +192,7 @@ select:focus {
   text-align: center;
   border: 1px solid rgba(255,255,255,0.2);
 }
-/* #playPanel {
-  position: relative;
-  left:320px;
-  background-color: #c2defc;
-  border-radius: 15px;
-  padding: 40px;
-  padding-bottom: 80px;
-  max-width: 800px;
-  width: 95%;
-  background: rgba(255, 255, 255, 0.3);
-  border: #f5f2f2 1px solid;
-} */
+
 .back{
   color: #e5e7eb;
   margin: 30px 0 0 10px;
@@ -224,7 +213,6 @@ select:focus {
   width: 200px;
   height: 200px;
   margin-left: 1100px;
-  /* padding: 40px 0 0 40px; */
 }
 @media only screen and (min-width:1270px) and (max-width: 1400px) {
 
@@ -259,7 +247,7 @@ select:focus {
   }
 }
 .cell {
-  flex: 0 0 52%;                       /* don't grow, don't shrink, width */
+  flex: 0 0 52%;  
   height: 20px;
   margin-bottom: 10px;
 }
@@ -276,48 +264,12 @@ select:focus {
   height: 100%;
   
 }
-/*
-.drop2 {
-  width:4.2%;
-  height: 8%;
-  top: 400px;
-  left: 74.5%;
-}
-.drop6 {
-  width:4.2%;
-  height: 8%;
-   top: 260px;
-  left: 74.5%;
-} */
-/* .drop1 {
-  position: absolute;
-  backdrop-filter: blur(5px);
- -webkit-backdrop-filter: blur(5px);
-  display: block;
-  margin: 0 auto;
-  font-size: 22px;
-  color: #ffffff;
-} */
  .drop7 {
   color: #ffffff;
   font-size: 25px;
   text-align: center;
 }
-/*
 
-.drop3 {
-  width:4.2%;
-  height: 8%;
-  top: 335px;
-  left:69%;
-}
-.drop5 {
-  width:4.2%;
-  height: 8%;
-  left:79%;
-  z-index: 4;
-  top: 335px;
-} */
 .button-83 {
   font-family: "poppins";
   appearance: button;
@@ -332,18 +284,15 @@ select:focus {
   display: flex;
   font-size: 100%;
   font-weight: 700;
-  /* line-height: 24px; */
   justify-content: center ;
   margin-top: 5px;
   outline: 2px solid transparent;
-  /* padding: 1rem 1rem; */
   text-align: center;
   text-transform: none;
   transition: all .1s cubic-bezier(.4, 0, .2, 1);
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  /* box-shadow: -6px 8px 10px rgba(81, 41, 10, 0.1), 0px 2px 2px rgba(81, 41, 10, 0.2); */
 }
 
 .button-83:active {
@@ -370,18 +319,15 @@ select:focus {
   display: flex;
   font-size: 100%;
   font-weight: 700;
-  /* line-height: 24px; */
   justify-content: center;
   margin-top: 5px;
   outline: 2px solid transparent;
-  /* padding: 1rem 1rem; */
   text-align: center;
   text-transform: none;
   transition: all .1s cubic-bezier(.4, 0, .2, 1);
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  /* box-shadow: -6px 8px 10px rgba(81, 41, 10, 0.1), 0px 2px 2px rgba(81, 41, 10, 0.2); */
 }
 .roh{
   text-decoration: none;
@@ -394,4 +340,17 @@ select:focus {
 
 .button-84:hover {
   box-shadow: rgba(30, 16, 5, 0.46) 0 0 0 4px, -6px 8px 10px rgba(81, 41, 10, 0.1), 0px 2px 2px rgba(81, 41, 10, 0.2);
+}
+
+.circle {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: 50%;
+	left: 50%;
+	margin: -50px 0 0 -50px;
+	border-radius: 80%;
+	backface-visibility: visible;
+	animation: infinite linear;
+	z-index: 0;
 }
