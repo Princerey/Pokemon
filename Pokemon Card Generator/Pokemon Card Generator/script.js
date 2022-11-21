@@ -28,8 +28,8 @@ const card1 = document.getElementById("card1");
 
 let getPokeData = () => {
   // Generate a random number between 1 and 150
-  let id = Math.floor(Math.random() * 400) + 1;
-  let id1 = Math.floor(Math.random() * 400) + 1;
+  let id = Math.floor(Math.random() * 600) + 1;
+  let id1 = Math.floor(Math.random() * 600) + 1;
   // Combine the pokeapi url with pokemon id
   const finalUrl = url + id;
   const finalUrl1 = url + id1;
@@ -87,26 +87,26 @@ let generatefs = (data) => {
     console.log(ananya);
     if (userInput1.value == "") {
       if (Math.ceil(rohit) > Math.ceil(ananya)) {
-        document.getElementById("69").innerHTML = userInput.value + " Wins" + `<br><img src="pokémon-happy.gif" class="squi">`;
-      }
-      else if(Math.ceil(rohit) == Math.ceil(ananya))
-      {
-        document.getElementById("69").innerHTML = "Draw.. Play Again !!" ;
-      }
-      else {
-        document.getElementById("69").innerHTML = "Computer Wins" + `<br><img src="pokémon-happy.gif" class="squi">`;
-      }
-    }
-    else {
-      if (Math.ceil(rohit) > Math.ceil(ananya)) {
-        document.getElementById("69").innerHTML = userInput.value + " Wins" + `<br><img src="pokémon-happy.gif" class="squi">`;
+        document.getElementById("69").innerHTML = userInput.value + " Wins" + `<br><img src="pokémon-happy.gif">`;
       }
       else if(Math.ceil(rohit) == Math.ceil(ananya))
       {
         document.getElementById("69").innerHTML = "Draw Play Again !!" ;
       }
       else {
-        document.getElementById("69").innerHTML = userInput1.value + " Wins" + `<br><img src="pokémon-happy.gif" class="squi">`;
+        document.getElementById("69").innerHTML = "Computer Wins" + `<br><img src="pokémon-happy.gif">`;
+      }
+    }
+    else {
+      if (Math.ceil(rohit) > Math.ceil(ananya)) {
+        document.getElementById("69").innerHTML = userInput.value + " Wins" + `<br><img src="pokémon-happy.gif">`;
+      }
+      else if(Math.ceil(rohit) == Math.ceil(ananya))
+      {
+        document.getElementById("69").innerHTML = "Draw Play Again !!" ;
+      }
+      else {
+        document.getElementById("69").innerHTML = userInput1.value + " Wins" + `<br><img src="pokémon-happy.gif">`;
       }
 
     }

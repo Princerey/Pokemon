@@ -497,7 +497,7 @@ div[role="progressbar1"]::before {
   border: none;
   border-radius: 50px;
   bottom: 6.5em;
-  right: 25%;
+  right: 15.3em;
 }
 
 .play1 {
@@ -514,7 +514,7 @@ div[role="progressbar1"]::before {
   border: none;
   border-radius: 50px;
   bottom: 10.9em;
-  right: -25%;
+  right: -15.3em;
 }
 
 *,
@@ -528,17 +528,16 @@ div[role="progressbar1"]::before {
 .popup {
   position: relative;
   background: linear-gradient(-45deg, #3e3837, #4f2032, #284a57, #23564a);
-  /* background-size: 400% 400%; */
+  background-size: 400% 400%;
   animation: gradient 10s ease infinite;
-  width: 100%;
-  height: 100%;
+  width: 1554px;
+  height: 750px;
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
   top: 50%;
   font-family: "Poppins", sans-serif;
   display: none;
-  align-items: center;
   text-align: center;
   z-index: 1;
   opacity: 0.98;
@@ -584,12 +583,7 @@ h5 {
     background-position: 0% 50%;
   }
 }
-.boxo{
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  margin-top:12px;
-}
+
 .box {
   position: relative;
   width: 390px;
@@ -598,6 +592,8 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
+  left: 37.5%;
+  top: 4%;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
   border-radius: 10px;
@@ -657,7 +653,7 @@ h5 {
 .square:nth-child(4) {
   width: 50px;
   height: 50px;
-  bottom: 50px;
+  bottom: 100px;
   left: 435px;
 }
 
@@ -693,7 +689,7 @@ h5 {
   width: 350px;
   height: 120px;
   top: 420px;
-  left: 10%;
+  right: 990px;
   z-index: 2;
   font-family: 'poppins';
   font-size: 1em;
@@ -852,10 +848,6 @@ input[type="button"] {
   position: relative;
   left: -7px;
 }
-.easein{
-  transition: ease-in;
-transition-duration: 0.5s;
-}
 
 /* cursor */
 @import "compass/css3";
@@ -885,22 +877,16 @@ transition-duration: 0.5s;
 
 .ash {
   position: relative;
-  top: 2.8em;
+  top: 3.9em;
   left: 9.2em;
   z-index: 1;
 
 }
-.res{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  top:7em;
-  overflow: visible;
-}
+
 /* button anim */
 .button {
   position: relative;
-  display: flex;
+  display: block;
   min-width: 180px;
   min-height: 50px;
   font-family: 'nova flat';
@@ -918,9 +904,8 @@ transition-duration: 0.5s;
   transition: all 0.3s ease-in-out 0s;
   cursor: pointer;
   outline: none;
-  /* right: -34em; */
-  justify-content: center;
-  /* top: 7em; */
+  right: -34em;
+  top: 7em;
   z-index: 0;
 }
 
@@ -1453,16 +1438,14 @@ transition-duration: 0.5s;
   position: relative;
   margin: 0 auto;
   top: -21em;
-  left: -25%;
+  left: -24em;
 }
-.squi{
-  margin-top: 8px;
-}
+
 .circular-progress-bar1 {
   position: relative;
   margin: 0 auto;
   bottom: 40em;
-  right: -25%;
+  right: -24em;
 }
 
 .progress-percentage,
@@ -1474,7 +1457,6 @@ transition-duration: 0.5s;
   transform: translate(-50%, -50%);
   text-align: center;
   padding: 0px 60px;
-  color: #dad6d6;
 }
 
 .progress-percentage {
@@ -1505,15 +1487,14 @@ transition-duration: 0.5s;
   padding-bottom: .9em;
   font-family: "nova flat";
   margin-top: .4em;
-  color: #dad6d6;
 }
 
 .home2 {
   z-index: 100;
   position: relative;
   font-size: 2.5em;
-  top: 75%;
-  left: 70%;
+  bottom: 1.9em;
+  left: 28.7em;
   color: rgb(248, 216, 216);
 }
 
@@ -1532,216 +1513,10 @@ a:hover {
   justify-content: center;
   text-align: center;
   display: flex;
-  overflow: visible;  
-
 }
 
 .fs span {
   font-size: 40px;
-  font-family: "Nova flat";
+  font-family: "poppins";
   color: #c3bef0;
-  overflow: visible;  
-}
-.fs img {
-  overflow: visible;  
-}
-@media (max-width: 1570px) {
-  .square:nth-child(1) {
-    right: 420px;
-  }
-  
-  .square:nth-child(2) {
-    left: 370px;
-  }
-  
-  .square:nth-child(3) {
-    right: 445px;
-  }
-  
-  .square:nth-child(4) {
-    left: 385px;
-  }
-  
-  .square:nth-child(5) {
-    left: 470px;
-  }
-  
-  .square:nth-child(6) {
-    right: 290px;
-}
-
-.square:nth-child(7) {
-  left: 7%;
-}
-}
-@media (max-width: 1470px) {
-  .square:nth-child(1) {
-    right: 370px;
-  }
-  
-  .square:nth-child(2) {
-    left: 320px;
-  }
-  
-  .square:nth-child(3) {
-    right: 395px;
-  }
-  
-  .square:nth-child(4) {
-    left: 335px;
-  }
-  
-  .square:nth-child(5) {
-    left: 420px;
-  }
-  
-  .square:nth-child(6) {
-    right: 240px;
-}
-
-.square:nth-child(7) {
-  left: 5%;
-}
-.fs span {
-  font-size: 35px;
-}
-.squi{
-  margin-top: 7px;
-  height: 90%;
-  width: 90%;
-}
-.line-1{
-  font-size: 23px;
-}
-.line-2{
-  font-size: 19px;
-}
-}
-@media (max-width: 1370px) {
-  .square:nth-child(1) {
-    right: 320px;
-  }
-  
-  .square:nth-child(2) {
-    left: 270px;
-  }
-  
-  .square:nth-child(3) {
-    right: 345px;
-  }
-  
-  .square:nth-child(4) {
-    left: 285px;
-  }
-  
-  .square:nth-child(5) {
-    left: 370px;
-  }
-  
-  .square:nth-child(6) {
-    right: 190px;
-}
-
-.square:nth-child(7) {
-  left: 3%;
-}
-.line-1{
-  font-size: 20px;
-}
-.line-2{
-  font-size: 17px;
-}
-}
-@media (max-width: 1270px) {
-  .square:nth-child(1) {
-    right: 270px;
-  }
-  
-  .square:nth-child(2) {
-    left: 220px;
-  }
-  
-  .square:nth-child(3) {
-    right: 295px;
-  }
-  
-  .square:nth-child(4) {
-    left: 235px;
-  }
-  
-  .square:nth-child(5) {
-    left: 320px;
-  }
-  
-  .square:nth-child(6) {
-    right: 140px;
-}
-
-.square:nth-child(7) {
-  left: 2%;
-}
-.fs span {
-  font-size: 30px;
-}
-.squi{
-  margin-top: 15px;
-  height: 80%;
-  width: 80%;
-}
-.button{
-  min-width: 160px;
-}
-.progress-percentage {
-  font-size: 50px;
-}
-.progress-percentage1{
-  font-size: 50px;
-}
-}
-@media (max-width: 1170px) {
-  .square:nth-child(1) {
-    right:200px;
-  }
-  
-  .square:nth-child(2) {
-    display: none;
-  }
-  
-  .square:nth-child(3) {
-    right:225px;
-  }
-  
-  .square:nth-child(4) {
-    display: none;
-  }
-  
-  .square:nth-child(5) {
-    display: none;
-  }
-  
-  .square:nth-child(6) {
-    right:70px;
-}
-
-.square:nth-child(7) {
-  /* animation: none; */
-  /* display: flex; */
-  width: 200px;
-  height: 230px;
-  top: 220px;
-  z-index: 2;
-  font-family: 'poppins';
-  font-size: 1em;
-  left: 6%;
-}
-.button{
-  font-size: 16px;
-  min-width: 140px;
-}
-
-}
-@media (max-width: 1300px) {
-  .home2{
-left:65%;
-  }
 }
