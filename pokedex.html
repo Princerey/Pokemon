@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <title>POKEDEX</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+  integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+  integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+  crossorigin=""></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Nova Flat' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
+  <link rel="stylesheet" type = "text/css" href=  "css/style.css">
+</head>
+<body>
+  <canvas id="stars" width="300" height="300"></canvas>
+  
+  <script src='http://requirejs.org/docs/release/2.1.15/minified/require.js'></script>
+  <script src='https://rawgit.com/ironwallaby/delaunay/master/delaunay.js'></script><script  src="js/stars.js"></script>
+  
+  <div><img class="circle" src="images/chri.gif"></div>
+  <h5><span id="ana1">P<br>o<br>k<br>é<br></span><span><br>d<br>e<br>x</span></h5>
+    
+            <div class="mainbox">
+                    <div class="text">
+            
+                        <div class="pokedex">
+                            <div class="left-container">
+                              <div class="left-container__top-section">
+                                <div class="top-section__blue"><img src="images/pokedex.png" class="blue"></div>
+                                <div class="top-section__small-buttons">
+                                  <div class="top-section__red"></div>
+                                  <div class="top-section__yellow"></div>
+                                  <div class="top-section__green"></div>
+                                </div>
+                              </div>
+                              <div class="left-container__main-section-container">
+                                <div class="left-container__main-section">
+                                  <div class="main-section__white">
+
+                                    <!-- <div class="box child-to-body">
+                                      <div class="poke_box">
+                                          <div class="pokeball">
+                                              <div class="pokeball__button"></div>
+                                          </div>   
+                                      </div>
+                                  </div> -->
+
+                                    <div class="main-section__black">
+                                      <div class="main-screen hide">
+                                        <div class="screen__header">
+                                          <span class="poke-name"></span>
+                                          <span class="poke-id"></span>
+                                        </div>
+                                        <div class="screen__image">
+                                          <img src="" class="poke-front-image" alt="front">
+                                        </div>
+                                        <div class="screen__description">
+                                          <div class="stats__types">
+                                            <span class="poke-type-one"></span>
+                                            <span class="poke-type-two"></span>
+                                          </div>
+                                          <div class="stats__types">
+                                            <span class="poke-ability-one"></span>
+                                            <span class="poke-ability-two"></span>
+                                          </div>
+                                          <div class="screen__stats">
+                                            <p class="stats__weight">
+                                              Weight: <span class="poke-weight"></span><br>
+                                            </p>
+                                            <p class="stats__height">
+                                              Height: <span class="poke-height"></span>
+                                            </p>
+                                          </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  </div>
+                                </div>
+                                <div class="left-container__right">
+                                  <div class="left-container__hinge"></div>
+                                  <div class="left-container__hinge"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="right-container">
+                              <div class="right-container__black">
+                                <div class="right-container__screen">
+                                  <div class="list-item"></div>
+                                  <div class="list-item"></div>
+                                  <div class="list-item"></div>
+                                  <div class="list-item"></div>
+                                  <div class="list-item"></div>
+                                  <div class="list-item"></div>
+                                  <div class="list-item"></div>
+                                  <div class="list-item"></div>
+                                  <div class="list-item"></div>
+                                  <div class="list-item"></div>
+                                  <div class="list-item"></div>
+                                  <div class="list-item"></div>
+                                  <div class="list-item"></div>
+                                  <div class="list-item"></div>
+                                  <div class="list-item"></div>
+                                  <div class="list-item"></div>
+                                  <div class="list-item"></div>
+                                  <div class="list-item"></div>
+                                  <div class="list-item"></div>
+                                  <div class="list-item"></div>
+                                </div>
+                              </div>
+                              <div class="right-container__buttons">
+                                <div class="left-button">Prev</div>
+                                <div class="right-button">Next</div>
+                              </div>
+                            </div>
+                          </div>
+                    </div> 
+                    <a class="homee" href="./index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+        </div>
+<script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" integrity="sha512-Kef5sc7gfTacR7TZKelcrRs15ipf7+t+n7Zh6mKNJbmW+/RRdCW9nwfLn4YX0s2nO6Kv5Y2ChqgIakaC6PW09A==" crossorigin="anonymous"></script>
+<script src="js/stars.js"></script>
+<script src="js/app.js"></script>
+<script src="js/app1.js"></script>
+<script>
+function changeImg(imgNumber){
+    var myImages=["images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg","images/5.jpg","images/6.jpg","images/7.jpg","images/8.jpg"];
+    var imgShown =document.body.style.backgroundImage;
+    var newImgNumber=Math.floor(Math.random()*myImages.length);
+   document.body.style.backgroundImage='url('+myImages[newImgNumber]+')';
+}
+window.onload=changeImg;
+</script>
+<script>
+  var $circle = $('.circle');
+
+function moveCircle(e) {
+  TweenLite.to($circle, 1.5, {
+    css: {
+      left: e.pageX,
+      top: e.pageY
+    }
+  });
+}
+$(window).on('mousemove', moveCircle);
+</script>
+</body>
+
+
+</html>
