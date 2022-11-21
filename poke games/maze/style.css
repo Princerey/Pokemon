@@ -56,6 +56,8 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  font-family: "poppins";
+  /* z-index: 1 !important; */
 }
 
 input:hover,
@@ -155,7 +157,7 @@ select:focus {
 }
 
 #gradient {
-  z-index: -1;
+  z-index: -2;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -352,5 +354,5 @@ select:focus {
 	border-radius: 80%;
 	backface-visibility: visible;
 	animation: infinite linear;
-	z-index: 0;
+	z-index: -1;
 }
