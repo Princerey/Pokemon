@@ -13,11 +13,7 @@ body {
     font-family: "Poppins";
     height: 100%;
     overflow: hidden;
-    background-repeat: no-repeat;
-    /* position: relative; */
-    /* left: 17%;
-    top: 15%; */
-    
+    background-repeat: no-repeat;    
 }
 
 #ProductCard {
@@ -900,4 +896,12 @@ input[type="radio"] {
 	backface-visibility: visible;
 	animation: infinite linear;
 	z-index: 0;
+}
+.lucky {
+    color: #ffffff;
+    width: 500px;
+    margin-top: 510px;
+    position: relative;
+    left: -250px;
+    opacity: 0.4;
 }
