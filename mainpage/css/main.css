@@ -443,7 +443,7 @@ h5 {
 	background: -moz-radial-gradient(bottom, circle, rgba(242, 248, 247, 1) 0%, rgba(249, 249, 28, 1) 3%, rgba(247, 214, 46, 1) 8%, rgba(248, 200, 95, 1) 12%, rgba(201, 165, 132, 1) 30%, rgba(115, 130, 133, 1) 51%, rgba(46, 97, 122, 1) 85%, rgba(24, 75, 106, 1) 100%);
 	background: -ms-radial-gradient(bottom, circle, rgba(242, 248, 247, 1) 0%, rgba(249, 249, 28, 1) 3%, rgba(247, 214, 46, 1) 8%, rgba(248, 200, 95, 1) 12%, rgba(201, 165, 132, 1) 30%, rgba(115, 130, 133, 1) 51%, rgba(46, 97, 122, 1) 85%, rgba(24, 75, 106, 1) 100%);
 	height: 100%;
-	padding-top: 170px;
+	padding-top: 130px;
 	color: #ebf8e1;
 	font-family: "Poppins"!important;
 	text-align: center;
@@ -465,7 +465,7 @@ h5 {
 		margin: 0;
 	}
 
-	.error img {
+	.sob {
 		width: 250px;
 	}
 
@@ -591,3 +591,8 @@ h5 {
 	display: flex;
 	justify-content: center ;
   }
+  .git{
+	font-family: "merienda";
+	font-weight: 600;
+  }
+  
