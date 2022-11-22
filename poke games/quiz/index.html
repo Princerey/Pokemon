@@ -11,7 +11,7 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
 </head>
 
-<body>
+<body onload="myfunction()">
   <div><img class="circle" src="../../images/buter.gif"></div>
   <div class="start-screen">
     <div class="psy"><img src="psy.png"></div>
@@ -80,6 +80,18 @@
         }
         $(window).on('mousemove', moveCircle);
     </script>
+        <script type="text/javascript">
+          function myFunction(x) {
+    if (x.matches) { // If media query matches
+      document.body.style.zoom = "85%" 
+    } else {
+      document.body.style.zoom = "100%" 
+    }
+  }
+  var x = window.matchMedia("(max-height: 699px)")
+  myFunction(x)
+  x.addListener(myFunction) 
+  </script>
 </body>
 
 </html>

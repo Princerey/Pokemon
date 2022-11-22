@@ -28,7 +28,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
   <link rel="stylesheet" type = "text/css" href=  "css/style.css">
 </head>
-<body>
+<body onload="myfunction()">
   <canvas id="stars" width="300" height="300"></canvas>
   
   <script src='http://requirejs.org/docs/release/2.1.15/minified/require.js'></script>
@@ -160,6 +160,18 @@ function moveCircle(e) {
   });
 }
 $(window).on('mousemove', moveCircle);
+</script>
+<script type="text/javascript">
+  function myFunction(x) {
+if (x.matches) { // If media query matches
+document.body.style.zoom = "85%" 
+} else {
+document.body.style.zoom = "100%" 
+}
+}
+var x = window.matchMedia("(max-height: 689px)")
+myFunction(x)
+x.addListener(myFunction) 
 </script>
 </body>
 

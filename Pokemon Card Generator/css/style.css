@@ -1515,6 +1515,7 @@ transition-duration: 0.5s;
   top: 75%;
   left: 70%;
   color: rgb(248, 216, 216);
+  overflow: visible;
 }
 
 a {
@@ -1742,6 +1743,11 @@ a:hover {
 }
 @media (max-width: 1300px) {
   .home2{
-left:65%;
+left:70%;
+  }
+}
+@media (max-height: 689px) {
+  .home2{
+    top:-10%;
   }
 }

@@ -9,9 +9,21 @@
     <title>HOME</title>
 </head>
 
-<body>
+<body onload="myfunction()">
     <div class="anim">
         <img src="./pichu.gif" class="pic">
+        <script type="text/javascript">
+            function myFunction(x) {
+      if (x.matches) { // If media query matches
+        document.body.style.zoom = "90%" 
+      } else {
+        document.body.style.zoom = "100%" 
+      }
+    }
+    var x = window.matchMedia("(max-height: 630px)")
+    myFunction(x)
+    x.addListener(myFunction) 
+    </script>
 </body>
 
 </html>

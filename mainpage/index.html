@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body onload="myFunction()">
     <div class="all">
         <div><img class="circle" src="./sq.gif"></div>
         <a class="feedback-button" href="/feedback/index.html">Feedback</a>
@@ -1012,6 +1012,18 @@
           </a>
         
     </div>
+    <script type="text/javascript">
+        function myFunction(x) {
+  if (x.matches) { // If media query matches
+    document.body.style.zoom = "85%" 
+  } else {
+    document.body.style.zoom = "100%" 
+  }
+}
+var x = window.matchMedia("(max-height: 689px)")
+myFunction(x)
+x.addListener(myFunction) 
+</script>
 
 </body>
 

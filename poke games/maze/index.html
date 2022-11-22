@@ -19,7 +19,7 @@
   <head>
     <meta charset="utf-8">
 
-  <body>
+  <body onload="myfunction()">
     <div><img class="circle" src="../../images/buter.gif"></div>
     <div id="gradient"></div>
     <div id="page">
@@ -95,6 +95,18 @@ function moveCircle(e) {
 }
 $(window).on('mousemove', moveCircle);
   </script>
+      <script type="text/javascript">
+        function myFunction(x) {
+  if (x.matches) { // If media query matches
+    document.body.style.zoom = "85%" 
+  } else {
+    document.body.style.zoom = "100%" 
+  }
+}
+var x = window.matchMedia("(max-height: 699px)")
+myFunction(x)
+x.addListener(myFunction) 
+</script>
 </body>
 
 </html>

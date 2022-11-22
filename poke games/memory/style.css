@@ -374,3 +374,11 @@ left:240px;
 	animation: infinite linear;
 	z-index: 0;
 }
+@media (max-height: 689px) {
+.area__wrapper{
+padding-top: 8%;
+}
+.back1{
+  top:0px;
+}
+}

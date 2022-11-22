@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
 </head>
 
-<body>
+<body onload="myfunction()">
   <!-- partial:index.partial.html -->
   <div id="feedback-main">
 
@@ -181,7 +181,18 @@
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
   <script src="./script.js"></script>
-
+  <script type="text/javascript">
+    function myFunction(x) {
+if (x.matches) { // If media query matches
+document.body.style.zoom = "85%" 
+} else {
+document.body.style.zoom = "100%" 
+}
+}
+var x = window.matchMedia("(max-height: 699px)")
+myFunction(x)
+x.addListener(myFunction) 
+</script>
 </body>
 
 </html>

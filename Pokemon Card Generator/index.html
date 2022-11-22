@@ -38,7 +38,7 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 </head>
 
-<body>
+<body onload="myfunction()">
   <span class="home2"><a href="/index.html"><i class="fa fa-home" aria-hidden="true"></i></a></span>
   <div class="popup">
 
@@ -178,6 +178,18 @@
       }
     });
   </script>
+      <script type="text/javascript">
+        function myFunction(x) {
+  if (x.matches) { // If media query matches
+    document.body.style.zoom = "85%" 
+  } else {
+    document.body.style.zoom = "100%" 
+  }
+}
+var x = window.matchMedia("(max-height: 699px)")
+myFunction(x)
+x.addListener(myFunction) 
+</script>
 </body>
 
 </html>
