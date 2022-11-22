@@ -906,3 +906,8 @@ input[type="radio"] {
     left: -250px;
     opacity: 0.4;
 }
+@media (max-height:689px){
+#ProductCard {
+    left: 0px;
+}
+}
