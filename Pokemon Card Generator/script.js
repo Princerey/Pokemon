@@ -120,7 +120,7 @@ let generateCard = (data) => {
   // Get necessary data and assign it to variables
   console.log(data);
   const hp = data.stats[0].base_stat;
-  const imgSrc = data.sprites.other.dream_world.front_default;
+  const imgSrc = "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/"+data['id'].toString().padStart(3, '0')+".png"
   const pokeName = data.name[0].toUpperCase() + data.name.slice(1);
   const statAttack = data.stats[1].base_stat;
   const statDefense = data.stats[2].base_stat;
@@ -180,7 +180,7 @@ let generateCard2 = (data2) => {
   // Get necessary data and assign it to variables
   console.log(data2);
   const hp = data2.stats[0].base_stat;
-  const imgSrc = data2.sprites.other.dream_world.front_default;
+  const imgSrc = "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/"+data2['id'].toString().padStart(3, '0')+".png"
   const pokeName = data2.name[0].toUpperCase() + data2.name.slice(1);
   const statAttack = data2.stats[1].base_stat;
   const statDefense = data2.stats[2].base_stat;

@@ -98,8 +98,8 @@ const fetchPokeData = id => {
       pokeId.textContent = '#' + data['id'].toString().padStart(3, '0');
       pokeWeight.textContent = data['weight'];
       pokeHeight.textContent = data['height'];
-      pokeFrontImage.src = data.sprites.other.dream_world.front_default;
-      pokeBackImage.src = data.sprites.other.dream_world.back_default;
+      pokeFrontImage.src = "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/"+data['id'].toString().padStart(3, '0')+".png";
+      // pokeBackImage.src = data.sprites.other.dream_world.back_default;
     });
 };
 
